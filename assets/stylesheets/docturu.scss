@@ -63,6 +63,9 @@ h3 {
 			padding: 11px 9px 10px;
 			margin-right: 5px;
 			margin-left: 5px;
+			background-color: #fbfbfb;
+			border-color:#fbfbfb;
+			opacity: 1;
 		}
 	}
 	.counter_descr {
@@ -78,11 +81,16 @@ h3 {
 		margin-bottom: 95px;
 	}
 	.nav-tabs {
-		border-bottom: none;
 		margin-top: 80px;
+		border-bottom: none;
 		& > li > a {
 			font-weight: bold;
 			font-size: 14px;
+		}
+		& > li:not(.active) > a:hover {
+			background-color: rgba(13, 166, 70, 0.5);
+			border-color: rgba(13, 166, 70, 0.1);
+			border-bottom-color: rgb(13, 166, 70);
 		}
 	}
 }
@@ -90,7 +98,6 @@ h3 {
 	&.drk {
 		background-color: #f8f9f9;
 		padding-bottom: 40px;
-		border-bottom: 1px solid #eaeef3;
 		@media (min-width: 1025px) {
 			.container {
 				width: 1020px;
@@ -242,6 +249,48 @@ h3 {
 			text-decoration: none;
 		}
 	}
+}
+
+.clinic-request {
+	width: 146px;
+	margin: 0 auto;
+	.star-rating {
+		float: left;
+		display: inline-block;
+		img {
+			margin-right: 3px;
+			width: 16px;
+		}
+	}
+	.rating {
+		line-height: 22px;
+		font-size: 18px;
+		font-weight: bold;
+		float: right;
+		text-align: center;
+		padding: 0 0 10px 0;
+		color: #0ea646;
+	}
+}
+.btn-gr {
+	color:#0ea646;
+	border-color:#0ea646;
+	background-color: rgba(0,0,0,0);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 12px 44px;
+	border-radius: 3px;
+	margin-top: 70px;
+	margin-bottom: 29px;
+	&:hover {
+		background-color:#0ea646;
+		color:#fff; 
+	}
+}
+
+.borderbot {
+	border-bottom: 1px solid #eaeef3;
 }
 
 footer {
