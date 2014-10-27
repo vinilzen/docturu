@@ -6822,6 +6822,14 @@ h3 {
   color: #737373;
   font-size: 18px;
 }
+.container-fluid.drk p.mdl {
+  font-size: 15px;
+}
+.container-fluid p.itl {
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 300;
+}
 
 #mainSearch {
   max-width: 1120px;
@@ -6847,6 +6855,21 @@ h3 {
   height: 80px;
 }
 .container-fluid.map .btn {
+  margin-top: 20px;
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 26px;
+}
+
+.container-fluid.green {
+  background-color: #0da646;
+  height: 80px;
+}
+.container-fluid.green .btn {
   margin-top: 20px;
   color: #fff;
   background-color: transparent;
@@ -6932,6 +6955,48 @@ h3 {
 }
 .ico_big.ico3 {
   background-position: right top;
+}
+
+.smi_logo span {
+  display: block;
+}
+.smi_logo a {
+  text-decoration: underline;
+  color: #72709b;
+}
+.smi_logo a:hover {
+  text-decoration: none;
+}
+
+footer {
+  height: 60px;
+}
+footer .copy p {
+  margin-bottom: 0;
+  line-height: 60px;
+  color: #211b70;
+}
+footer .copy p a {
+  font-weight: bold;
+  color: #211b70;
+}
+footer .list-inline {
+  margin-bottom: 0;
+}
+footer .list-inline a {
+  line-height: 60px;
+  color: #737373;
+}
+
+.all_inf {
+  text-decoration: underline;
+  color: #bcbdbd;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.all_inf:hover {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */

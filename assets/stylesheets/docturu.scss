@@ -86,23 +86,33 @@ h3 {
 		}
 	}
 }
-.container-fluid.drk {
-	background-color: #f8f9f9;
-	padding-bottom: 40px;
-	border-bottom: 1px solid #eaeef3;
-	@media (min-width: 1025px) {
-		.container {
-			width: 1020px;
+.container-fluid {
+	&.drk {
+		background-color: #f8f9f9;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #eaeef3;
+		@media (min-width: 1025px) {
+			.container {
+				width: 1020px;
+			}
+		}
+		p {
+			color:#555555;
+			font-weight: 300;
+			font-size: 16px;
+			&.lead {
+				color:#737373;
+				font-size: 18px;
+			}
+			&.mdl {
+				font-size: 15px;
+			}
 		}
 	}
-	p {
-		color:#555555;
+	p.itl {
+		font-style: italic;
+		font-size: 14px;
 		font-weight: 300;
-		font-size: 16px;
-		&.lead {
-			color:#737373;
-			font-size: 18px;
-		}
 	}
 }
 #mainSearch {
@@ -126,6 +136,20 @@ h3 {
 		opacity: .6;
 		height: 80px;
 	}
+	.btn {
+		margin-top: 20px;
+		color: #fff;
+		background-color: transparent;
+		border-color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 14px;
+		padding:10px 26px;
+	}
+}
+.container-fluid.green {
+	background-color: #0da646;
+	height: 80px;
 	.btn {
 		margin-top: 20px;
 		color: #fff;
@@ -204,5 +228,51 @@ h3 {
 	}
 	&.ico3 {
 		background-position: right top;
+	}
+}
+
+.smi_logo {
+	span {
+		display: block;
+	}
+	a {
+		text-decoration: underline;
+		color:#72709b;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+footer {
+	height: 60px;
+	.copy {
+		p {
+			margin-bottom: 0;
+			line-height: 60px;	
+			color:#211b70;
+			a {
+					font-weight: bold;
+					color:#211b70;
+			}
+		}
+	}
+	.list-inline {
+		margin-bottom: 0;
+		a {
+			line-height: 60px;
+			color:#737373;
+		}
+	}
+}
+
+.all_inf {
+	text-decoration: underline;
+	color:#bcbdbd;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	&:hover {
+		text-decoration: none;
 	}
 }
