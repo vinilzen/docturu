@@ -207,7 +207,7 @@ dd {
     @include clearfix(); // Clear the floated `dt` if an empty `dd` is present
   }
 
-  @media (min-width: $grid-float-breakpoint) {
+  //@media (min-width: $grid-float-breakpoint) {
     dt {
       float: left;
       width: 40px;
@@ -218,7 +218,7 @@ dd {
     dd {
       margin-left: 40px;
     }
-  }
+  //}
 }
 
 

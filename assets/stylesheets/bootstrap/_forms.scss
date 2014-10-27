@@ -189,6 +189,9 @@ input[type="month"] {
   &.input-lg {
     line-height: $input-height-large;
   }
+  &.input-lg {
+    line-height: 40px;
+  }
 }
 
 
@@ -296,6 +299,7 @@ input[type="checkbox"] {
   margin-bottom: 0;
 
   &.input-lg,
+  &.input-fr,
   &.input-sm {
     padding-left: 0;
     padding-right: 0;
@@ -311,6 +315,8 @@ input[type="checkbox"] {
 @include input-size('.input-sm', $input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
 
 @include input-size('.input-lg', $input-height-large, $padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
+
+@include input-size('.input-fr', 40px, 10px, 25px, 14px, 18px, 3px);
 
 
 // Form control feedback states
@@ -523,6 +529,9 @@ input[type="checkbox"] {
     }
     .form-control {
       @extend .input-lg;
+    }
+    .form-control {
+      @extend .input-fr;
     }
   }
   .form-group-sm {
