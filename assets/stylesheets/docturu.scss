@@ -45,6 +45,11 @@ h3 {
 		}
 	}
 }
+.mb30 {
+	h3 {
+		font-size: 22px;
+	}
+}
 .lead {
 	color:#737373;
 	max-width: 720px;
@@ -63,6 +68,22 @@ h3 {
 		font-size: 48px;
 		font-weight: bold;
 		color:#fff;
+		position: relative;
+		white-space: nowrap;
+		@media (max-width: $screen-sm-max) {
+			font-size: 42px;
+		}
+		@media (max-width: $screen-xs-max) {
+			font-size: 36px;
+		}
+		small {
+			display: inline;
+			img {
+				position: relative;
+				top: -48px;
+				right: -22px;
+			}
+		}
 	}
 	p {
 		color:#fff;
@@ -155,8 +176,7 @@ h3 {
 	background-size: 100%;
 	height: 80px;
 	.row {
-		background-color: #000;
-		opacity: .6;
+		background-color: rgba(0, 0, 0, 0.6);
 		height: 80px;
 	}
 	.btn {
@@ -168,6 +188,10 @@ h3 {
 		font-weight: bold;
 		font-size: 14px;
 		padding:10px 26px;
+		&:hover {
+			background-color: #fff;
+			color:#636057;
+		}
 	}
 }
 .container-fluid.green {
@@ -245,6 +269,7 @@ h3 {
 	background-repeat: no-repeat;
 	&.ico1 {
 		background-position: left top;
+		background-image: url(../img/doc_tsr_1.png);
 	}
 	&.ico2 {
 		background-position: center top;
@@ -348,18 +373,6 @@ footer {
 	}
 }
 
-.all_inf {
-	text-decoration: underline;
-	color:#bcbdbd;
-	font-size: 14px;
-	margin-top: 20px;
-	display: inline-block;
-	margin-bottom: 20px;
-	&:hover {
-		text-decoration: none;
-	}
-}
-
 .panel-default {
 	margin-left: 5px;
 	margin-right: 5px;
@@ -426,9 +439,27 @@ footer {
 	}
 }
 .fixh {
-	max-height: 187px;
-	overflow: hidden;
-	transition: max-height 0.15s ease-out;
+	@media (min-width: $screen-md) {
+		max-height: 187px;
+		overflow: hidden;
+		transition: max-height 0.15s ease-out;
+	}
+}
+
+.all_inf {
+	text-decoration: underline;
+	color:#bcbdbd;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	margin-bottom: 20px;
+	&:hover {
+		text-decoration: none;
+	}
+
+	@media (max-width: $screen-sm-max) {
+		display: none;
+	}
 }
 .media-heading {
 	color:#211b70;
@@ -442,6 +473,7 @@ footer {
 	color:#42ac48;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 14px;
 }
 .media {
 	margin-bottom: 45px;

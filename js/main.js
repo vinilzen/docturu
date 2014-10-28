@@ -14,4 +14,6 @@ $(function(){
 	$('.all_inf').click(function(){
 		return (this.toggle = !this.toggle) ? a() : b();
 	});
+
+	$('.tab-content select').styler({selectSearch:true});
 });
