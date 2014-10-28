@@ -61,6 +61,7 @@ h3 {
 	background-image: url(../img/bgr.jpg);
 	background-size: cover;
 	padding-top: 200px;
+	min-width: 760px;
 	@media (max-width: 1280px) {
 		padding-top: 100px;
 	}
@@ -130,6 +131,12 @@ h3 {
 			border-bottom-color: rgb(13, 166, 70);
 		}
 	}
+	.container {
+		min-width: 730px;
+	}
+	.tab-pane .form-inline {
+		padding: 0 20px;
+	}
 }
 .container-fluid {
 	&.drk {
@@ -171,7 +178,7 @@ h3 {
 		font-size: 14px;
 	}
 }
-.container-fluid.map {
+.container.map {
 	background-image: url(../img/map.gif);
 	background-size: 100%;
 	height: 80px;
@@ -194,7 +201,7 @@ h3 {
 		}
 	}
 }
-.container-fluid.green {
+.container.green {
 	background-color: #0da646;
 	height: 80px;
 	.btn {
@@ -206,21 +213,18 @@ h3 {
 		font-weight: bold;
 		font-size: 14px;
 		padding:10px 26px;
+		&:hover {
+			background-color: #ffffff;
+			color:#0da646;
+		}
 	}
 }
 
 .specialists {
 	margin-bottom: 25px;
-	@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
-		-moz-column-count: 2;
-		-webkit-column-count: 2;
-		column-count: 2;
-	}
-	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-		-moz-column-count: 3;
-		-webkit-column-count: 3;
-		column-count: 3;
-	}
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
 	@media (min-width: $screen-md-min) and (max-width: 1139px) {
 		-moz-column-count: 4;
 		-webkit-column-count: 4;
@@ -267,6 +271,7 @@ h3 {
 	margin: 0 auto;
 	background-image: url(../img/big_ico.png);
 	background-repeat: no-repeat;
+	border-radius: 50%;
 	&.ico1 {
 		background-position: left top;
 		background-image: url(../img/doc_tsr_1.png);

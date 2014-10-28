@@ -31,8 +31,8 @@
 .navbar-header {
   @include clearfix();
 
-  @media (min-width: $grid-float-breakpoint) {
     float: left;
+  @media (min-width: $grid-float-breakpoint) {
   }
 }
 
@@ -110,9 +110,9 @@
     margin-right: -$navbar-padding-horizontal;
     margin-left:  -$navbar-padding-horizontal;
 
-    @media (min-width: $grid-float-breakpoint) {
       margin-right: 0;
       margin-left:  0;
+    @media (min-width: $grid-float-breakpoint) {
     }
   }
 }
@@ -173,11 +173,11 @@
     text-decoration: none;
   }
 
-  @media (min-width: $grid-float-breakpoint) {
     .navbar > .container &,
     .navbar > .container-fluid & {
       margin-left: -$navbar-padding-horizontal;
     }
+  @media (min-width: $grid-float-breakpoint) {
   }
 }
 
@@ -235,8 +235,6 @@
     line-height: $line-height-computed;
   }
 
-  @media (max-width: $grid-float-breakpoint-max) {
-    // Dropdowns get custom display when collapsed
     .open .dropdown-menu {
       position: static;
       float: none;
@@ -257,24 +255,26 @@
         }
       }
     }
+  @media (max-width: $grid-float-breakpoint-max) {
+    // Dropdowns get custom display when collapsed
   }
 
+  float: left;
+  margin: 0;
+
+  > li {
+    float: left;
+    > a {
+      padding-top:    $navbar-padding-vertical;
+      padding-bottom: $navbar-padding-vertical;
+    }
+  }
+
+  &.navbar-right:last-child {
+    margin-right: -$navbar-padding-horizontal;
+  }
   // Uncollapse the nav
   @media (min-width: $grid-float-breakpoint) {
-    float: left;
-    margin: 0;
-
-    > li {
-      float: left;
-      > a {
-        padding-top:    $navbar-padding-vertical;
-        padding-bottom: $navbar-padding-vertical;
-      }
-    }
-
-    &.navbar-right:last-child {
-      margin-right: -$navbar-padding-horizontal;
-    }
   }
 }
 
@@ -285,13 +285,13 @@
 // issues with parents and chaining. Only do this when the navbar is uncollapsed
 // though so that navbar contents properly stack and align in mobile.
 
-@media (min-width: $grid-float-breakpoint) {
   .navbar-left {
     float: left !important;
   }
   .navbar-right {
     float: right !important;
   }
+@media (min-width: $grid-float-breakpoint) {
 }
 
 
@@ -321,8 +321,6 @@
   // Vertically center in expanded, horizontal navbar
   @include navbar-vertical-align($input-height-base);
 
-  // Undo 100% width for pull classes
-  @media (min-width: $grid-float-breakpoint) {
     width: auto;
     border: 0;
     margin-left: 0;
@@ -335,6 +333,8 @@
     &.navbar-right:last-child {
       margin-right: -$navbar-padding-horizontal;
     }
+  // Undo 100% width for pull classes
+  @media (min-width: $grid-float-breakpoint) {
   }
 }
 
