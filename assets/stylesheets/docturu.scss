@@ -113,7 +113,7 @@ h3 {
 .container-fluid {
 	&.drk {
 		background-color: #f8f9f9;
-		padding-bottom: 40px;
+		// padding-bottom: 40px;
 		@media (min-width: 1025px) {
 			.container {
 				width: 1020px;
@@ -354,6 +354,7 @@ footer {
 	font-size: 14px;
 	margin-top: 20px;
 	display: inline-block;
+	margin-bottom: 20px;
 	&:hover {
 		text-decoration: none;
 	}
@@ -372,6 +373,7 @@ footer {
 
 .panel {
 	border-radius: 6px;
+	margin-bottom: 40px;
 	.panel-body {
 		position: relative;
 	}
@@ -417,4 +419,59 @@ footer {
 		margin:0 auto;
 		width: 120px;
 	}
+}
+.carousel-inner {
+	.blockquote {
+		display: inline-block;
+	}
+}
+.fixh {
+	max-height: 187px;
+	overflow: hidden;
+	transition: max-height 0.15s ease-out;
+}
+.media-heading {
+	color:#211b70;
+	margin-top: 7px;
+	a {
+		color:#211b70;
+		font-size: 18px;
+	}
+}
+.spec span {
+	color:#42ac48;
+	font-style: italic;
+	font-weight: 300;
+}
+.media {
+	margin-bottom: 45px;
+	& > .pull-left {
+		margin-right: 25px;
+	}
+}
+.blockquote {
+	font-style: italic;
+	font-weight: 300;
+	color:#000;
+	font-size: 14px;
+}
+.author {
+	font-weight: 300;
+	color:#000;
+	font-size: 14px;
+	color:#939393;
+	margin-top: 15px;
+	display: inline-block;
+	strong {
+		font-weight: 300;
+		color:#211b70;
+	}
+}
+.navbar-nav > li > a {
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.mb30 {
+	margin-bottom: 30px;
 }
