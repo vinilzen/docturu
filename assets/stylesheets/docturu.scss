@@ -13,7 +13,10 @@
 	height: 60px;
 	img {
 		padding-top: 10px;
-		padding-right: 60px;
+		padding-right: 20px;
+		@media (min-width: 992px) {
+			padding-right: 60px;
+		}
 	}
 }
 .navbar-nav > li > a.hand {
@@ -273,6 +276,7 @@ h3 {
 .clinic-request {
 	width: 146px;
 	margin: 0 auto;
+	clear:both;
 	.star-rating {
 		float: left;
 		display: inline-block;
@@ -352,5 +356,65 @@ footer {
 	display: inline-block;
 	&:hover {
 		text-decoration: none;
+	}
+}
+
+.panel-default {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.smi_logo {
+	margin-bottom: 45px;
+	span {
+		margin-top: 10px;
+	}
+}
+
+.panel {
+	border-radius: 6px;
+	.panel-body {
+		position: relative;
+	}
+	.arrow {
+		bottom: -12px;
+		left: 50%;
+		border-color: transparent;
+		margin-left: -12px;
+		border-top-color: #999;
+		border-top-color: rgba(0,0,0,.15);
+		border-width: 12px;
+		border-bottom-width: 0;
+		position: absolute;
+		display: block;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		&:after {
+			bottom: 1px;
+			margin-left: -11px;
+			content: " ";
+			border-top-color: #fff;
+			border-width: 11px;
+			border-left: transparent;
+			border-right: transparent;
+			border-bottom-width: 0;
+			border-left-width: 11px;
+			border-right-width: 11px;
+			position: absolute;
+			display: block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+		}
+	}
+}
+.img-center {
+	@media (max-width: 991px) {
+		margin-top: 40px;
+	}
+	a {
+		display: block;
+		margin:0 auto;
+		width: 120px;
 	}
 }

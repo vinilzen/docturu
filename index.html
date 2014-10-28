@@ -27,34 +27,35 @@
   </head>
 
   <body>
-
-    <div class="navbar" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#" title="Doctu.ru">
-            <img src="img/logo_doctu.png" alt="doctu.ru">
-          </a>
+    <div class="container">
+      <div class="navbar" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" title="Doctu.ru">
+              <img src="img/logo_doctu.png" alt="doctu.ru">
+            </a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="hand">Партнерство для клиник</a></li>
+              <li><a href="#about">О проекте</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" role="form">
+              <div class="form-group">
+                <select name="city" id="city" class="form-control">
+                  <option value="">Санкт-Петербург</option>
+                  <option value="">Москва</option>
+                </select>
+              </div>
+            </form>
+          </div><!--/.navbar-collapse -->
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#" class="hand">Партнерство для клиник</a></li>
-            <li><a href="#about">О проекте</a></li>
-          </ul>
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <select name="city" id="city" class="form-control">
-                <option value="">Санкт-Петербург</option>
-                <option value="">Москва</option>
-              </select>
-            </div>
-          </form>
-        </div><!--/.navbar-collapse -->
       </div>
     </div>
 
@@ -486,23 +487,24 @@
         </div>
         <div class="row">
           <div class="col-md-3 text-center">
-            <a href="">
+            <p class="img-center"><a href="#">
               <img src="img/clin-ico1.jpg" alt="">
-            </a>
+            </a></p>
             <div class="caption">
-              <h3><a href="">ОС-ТАВИГО</a></h3>
+              <h3><a href="#">ОС-ТАВИГО</a></h3>
               <div class="clinic-request">
                 <div class="star-rating">
                   <img src="img/goldstar.png"><img src="img/goldstar.png"><img src="img/goldstar.png"><img src="img/goldstar.png"><img src="img/goldstar.png">
                 </div>
                 <div class="rating">4.9</div>
               </div>
+              <div class="clearfix visible-sm-block"></div>
             </div>
           </div>
           <div class="col-md-3 text-center">
-            <a href="">
-              <img src="img/clin-ico2.jpg" alt="">
-            </a>
+            <p class="img-center"><a href="#">
+                <img src="img/clin-ico2.jpg" alt="">
+            </a></p>
             <div class="caption">
               <h3><a href="">МедПросвет</a></h3>
               <div class="clinic-request">
@@ -511,12 +513,13 @@
                 </div>
                 <div class="rating">4.9</div>
               </div>
+              <div class="clearfix visible-sm-block"></div>
             </div>
           </div>
           <div class="col-md-3 text-center">
-            <a href="">
+            <p class="img-center"><a href="#">
               <img src="img/clin-ico3.jpg" alt="">
-            </a>
+            </a></p>
             <div class="caption">
               <h3><a href="">СМ-Клиника</a></h3>
               <div class="clinic-request">
@@ -525,12 +528,13 @@
                 </div>
                 <div class="rating">4.9</div>
               </div>
+              <div class="clearfix visible-sm-block"></div>
             </div>
           </div>
           <div class="col-md-3 text-center">
-            <a href="">
+            <p class="img-center"><a href="#">
               <img src="img/clin-ico4.jpg" alt="">
-            </a>
+            </a></p>
             <div class="caption">
               <h3><a href="">Гранж</a></h3>
               <div class="clinic-request">
@@ -539,6 +543,7 @@
                 </div>
                 <div class="rating">4.9</div>
               </div>
+              <div class="clearfix visible-sm-block"></div>
             </div>
           </div>
           <div class="col-sm-12 text-center">
@@ -591,6 +596,7 @@
             <div class="panel panel-default">
               <div class="panel-body">
                   <p class="itl">XIV столетие. В Европе свирепствует чума. Виновницей смертоносной беды признают беззащитную девушку, подозревая ее в колдовстве. Умирающий кардинал просит рыцаря Бэймена доставить ведьму в далекое аббатство, где ее чары должны быть разрушены. Шестеро верховых и повозка с </p>
+                  <div class="arrow"></div>
               </div>
             </div>
             <p class="text-center smi_logo">
@@ -603,7 +609,8 @@
           <div class="col-md-4 text-left">
             <div class="panel panel-default">
               <div class="panel-body">
-                <p class="itl">Даг — простой вышибала, работающий в провинциальном баре. Однажды, ввязавшись в драку на хоккейном матче с одним из игроков, он попадает в поле зрения тренера команды мастеров. Ему срочно нужен игрок, который сможет защитить на льду ведущего нападающего клуба. Даг не умеет стоять на коньках, но этому можно научиться, зато в драке ему нет равных!»</p>
+                <p class="itl">Даг — простой вышибала, работающий в провинциальном баре. Однажды, ввязавшись в драку на хоккейном матче с одним из игроков, он попадает в поле зрения тренера команды мастеров. Ему срочно нужен игрок, который сможет защитить на льду ведущего нападающего клуба.</p>
+                <div class="arrow"></div>
               </div>
             </div>
             <p class="text-center smi_logo">
@@ -616,7 +623,8 @@
           <div class="col-md-4 text-left">
             <div class="panel panel-default">
               <div class="panel-body">
-                <p class="itl">Два лучших выпускника полицейской академии оказались по разные стороны баррикады: один из них — агент мафии в рядах правоохранительных органов, другой — «крот», внедрённый в мафию. Каждый считает своим долгом обнаружить и уничтожить противника, но постоянная жизнь в искажённых реалиях меняет внутренний мир героев.»</p>
+                <p class="itl">Два лучших выпускника полицейской академии оказались по разные стороны баррикады: один из них — агент мафии в рядах правоохранительных органов, другой — «крот», внедрённый в мафию. Каждый считает своим долгом обнаружить и уничтожить противника, постоянная жизнь.»</p>
+                <div class="arrow"></div>
               </div>
             </div>
             <p class="text-center smi_logo">
@@ -640,13 +648,13 @@
         </div>
         <div class="row">
           <div class="col-md-4 text-left">
-            <p class="mdl">XIV столетие. В Европе свирепствует чума. Виновницей смертоносной беды признают беззащитную девушку, подозревая ее в колдовстве. Умирающий кардинал просит рыцаря Бэймена доставить ведьму в далекое аббатство, где ее чары должны быть разрушены. Шестеро верховых и повозка с </p>
+            <p class="mdl">Для современного человека <strong>запись к врачу через интернет</strong> является необходимой в быту услугой. Ведь такой сервис решает вопросы экономии времени и сохранения душевного комфорта. Однако среди услуг, которые предлагает обычная <strong>поликлиника, запись к врачу онлайн</strong> значится крайне редко. Сайт <a href="http://www.doctu.ru">www.doctu.ru</a> готов взять на себя подобные заботы. Дополнительно сайт предоставляет бесплатный доступ к самой обширной базе врачей, содержащей полную информацию о каждом докторе города.</p>
           </div>
           <div class="col-md-4 text-left">
-            <p class="mdl">Даг — простой вышибала, работающий в провинциальном баре. Однажды, ввязавшись в драку на хоккейном матче с одним из игроков, он попадает в поле зрения тренера команды мастеров. Ему срочно нужен игрок, который сможет защитить на льду ведущего нападающего клуба. Даг не умеет стоять на коньках, но этому можно научиться, зато в драке ему нет равных!»</p>
+            <p class="mdl">Одна из проблем, с которой сталкивается каждый, кто пробовал <strong>самозапись к врачу</strong>, это ненадежность сервиса. Неизвестно, куда попадает заявка, произошла ли запись. На <a href="http://www.doctu.ru">www.doctu.ru</a> же все прозрачно. Сразу после <strong>онлайн записи</strong> пациенту звонит администратор клиники и подтверждает время. Нет причин переживать о приеме: он обязательно состоится. После приема пользователь может оставить свой отзыв о враче: именно таким образом формируется рейтинг докторов на сайте. Отзывы других пациентов доступны для чтения.</p>
           </div>
           <div class="col-md-4 text-left">
-            <p class="mdl">Два лучших выпускника полицейской академии оказались по разные стороны баррикады: один из них — агент мафии в рядах правоохранительных органов, другой — «крот», внедрённый в мафию. Каждый считает своим долгом обнаружить и уничтожить противника, но постоянная жизнь в искажённых реалиях меняет внутренний мир героев.»</p>
+            <p class="mdl">Некоторые пациенты <strong>записываются к врачам</strong> только бесплатных поликлиник, тогда как иные предпочитают частные клиники. Другие сервисы не могут обеспечить пользователям <strong>онлайн запись</strong> в те и другие учреждения. Однако с помощью данного сайта Вы можете <strong>записаться к врачу</strong> как на платный, так и на бесплатный прием. Так <strong>запись через интернет</strong> окончательно стирает границы технических возможностей и превращается в удобный повседневный инструмент.</p>
           </div>
           <!-- .col-md-4.text-center*6>p>lorem50 -->
         </div>

@@ -1691,7 +1691,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1180px;
+    width: 1140px;
   }
 }
 
@@ -6727,7 +6727,12 @@ button.close {
 }
 .navbar-brand img {
   padding-top: 10px;
-  padding-right: 60px;
+  padding-right: 20px;
+}
+@media (min-width: 992px) {
+  .navbar-brand img {
+    padding-right: 60px;
+  }
 }
 
 .navbar-nav > li > a.hand {
@@ -7000,6 +7005,7 @@ h3 a:hover {
 .clinic-request {
   width: 146px;
   margin: 0 auto;
+  clear: both;
 }
 .clinic-request .star-rating {
   float: left;
@@ -7080,6 +7086,68 @@ footer .list-inline a {
 }
 .all_inf:hover {
   text-decoration: none;
+}
+
+.panel-default {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.smi_logo {
+  margin-bottom: 45px;
+}
+.smi_logo span {
+  margin-top: 10px;
+}
+
+.panel {
+  border-radius: 6px;
+}
+.panel .panel-body {
+  position: relative;
+}
+.panel .arrow {
+  bottom: -12px;
+  left: 50%;
+  border-color: transparent;
+  margin-left: -12px;
+  border-top-color: #999;
+  border-top-color: rgba(0, 0, 0, 0.15);
+  border-width: 12px;
+  border-bottom-width: 0;
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.panel .arrow:after {
+  bottom: 1px;
+  margin-left: -11px;
+  content: " ";
+  border-top-color: #fff;
+  border-width: 11px;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom-width: 0;
+  border-left-width: 11px;
+  border-right-width: 11px;
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+@media (max-width: 991px) {
+  .img-center {
+    margin-top: 40px;
+  }
+}
+.img-center a {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
