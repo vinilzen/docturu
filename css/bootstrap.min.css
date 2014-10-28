@@ -7252,27 +7252,37 @@ h3 a:hover {
   padding: 0 20px;
 }
 
-.container-fluid.drk {
+.container.borderbot {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .container.borderbot .row {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.container.drk {
   background-color: #f8f9f9;
 }
 @media (min-width: 1025px) {
-  .container-fluid.drk .container {
+  .container.drk .container {
     width: 1020px;
   }
 }
-.container-fluid.drk p {
+.container.drk p {
   color: #555555;
   font-weight: 300;
   font-size: 16px;
 }
-.container-fluid.drk p.lead {
+.container.drk p.lead {
   color: #737373;
   font-size: 18px;
 }
-.container-fluid.drk p.mdl {
+.container.drk p.mdl {
   font-size: 15px;
 }
-.container-fluid p.itl {
+.container p.itl {
   font-style: italic;
   font-size: 14px;
   font-weight: 300;
@@ -7295,6 +7305,7 @@ h3 a:hover {
   background-image: url(../img/map.gif);
   background-size: 100%;
   height: 80px;
+  width: 100%;
 }
 .container.map .row {
   background-color: rgba(0, 0, 0, 0.6);
@@ -7318,6 +7329,7 @@ h3 a:hover {
 .container.green {
   background-color: #0da646;
   height: 80px;
+  width: 100%;
 }
 .container.green .btn {
   margin-top: 20px;
