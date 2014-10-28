@@ -6746,11 +6746,17 @@ h2 {
 }
 
 h3 {
+  margin-top: 38px;
+  margin-bottom: 25px;
+}
+h3 a {
+  text-decoration: none;
   font-weight: 300;
   font-size: 24px;
   color: #211b70;
-  margin-top: 38px;
-  margin-bottom: 25px;
+}
+h3 a:hover {
+  text-decoration: underline;
 }
 
 .lead {
@@ -6765,6 +6771,11 @@ h3 {
   background-image: url(../img/bgr.jpg);
   background-size: cover;
   padding-top: 200px;
+}
+@media (max-width: 1280px) {
+  .jumbotron {
+    padding-top: 100px;
+  }
 }
 .jumbotron h1 {
   font-size: 48px;
@@ -6796,6 +6807,11 @@ h3 {
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
   margin-bottom: 95px;
+}
+@media (max-width: 1280px) {
+  .jumbotron .tab-content {
+    margin-bottom: 50px;
+  }
 }
 .jumbotron .nav-tabs {
   margin-top: 80px;
@@ -6968,10 +6984,16 @@ h3 {
   display: block;
 }
 .smi_logo a {
+  text-decoration: none;
+}
+.smi_logo a img {
+  max-width: 100%;
+}
+.smi_logo a span {
   text-decoration: underline;
   color: #72709b;
 }
-.smi_logo a:hover {
+.smi_logo a:hover span {
   text-decoration: none;
 }
 
@@ -7022,6 +7044,7 @@ footer {
   height: 60px;
 }
 footer .copy p {
+  white-space: nowrap;
   margin-bottom: 0;
   line-height: 60px;
   color: #211b70;
@@ -7033,11 +7056,21 @@ footer .copy p a {
 footer .list-inline {
   margin-bottom: 0;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  footer .list-inline {
+    margin-right: -10px;
+  }
+}
 footer .list-inline a {
   line-height: 60px;
   color: #737373;
 }
 
+@media (max-width: 992px) {
+  .copy p, .list-inline {
+    text-align: center;
+  }
+}
 .all_inf {
   text-decoration: underline;
   color: #bcbdbd;
