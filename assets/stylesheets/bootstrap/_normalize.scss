@@ -49,20 +49,21 @@ summary {
 // Remove excess height in iOS 5 devices.
 //
 
-audio:not([controls]) {
+/* audio:not([controls]) {
   display: none;
   height: 0;
 }
+ */
 
 //
 // Address `[hidden]` styling not present in IE 8/9/10.
 // Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
 //
-
+/* 
 [hidden],
 template {
   display: none;
-}
+} */
 
 // Links
 // ==========================================================================
@@ -90,16 +91,15 @@ a:hover {
 //
 // Address styling not present in IE 8/9/10/11, Safari, and Chrome.
 //
-
+/* 
 abbr[title] {
   border-bottom: 1px dotted;
-}
+} */
 
 //
 // Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
 //
 
-b,
 strong {
   font-weight: bold;
 }
@@ -107,10 +107,10 @@ strong {
 //
 // Address styling not present in Safari and Chrome.
 //
-
+/* 
 dfn {
   font-style: italic;
-}
+} */
 
 //
 // Address variable `h1` font-size and margin within `section` and `article`
@@ -125,11 +125,11 @@ h1 {
 //
 // Address styling not present in IE 8/9.
 //
-
+/* 
 mark {
   background: #ff0;
   color: #000;
-}
+} */
 
 //
 // Address inconsistent and variable font size in all browsers.
@@ -143,7 +143,7 @@ small {
 // Prevent `sub` and `sup` affecting `line-height` in all browsers.
 //
 
-sub,
+/* sub,
 sup {
   font-size: 75%;
   line-height: 0;
@@ -157,7 +157,7 @@ sup {
 
 sub {
   bottom: -0.25em;
-}
+} */
 
 // Embedded content
 // ==========================================================================
@@ -173,10 +173,10 @@ img {
 //
 // Correct overflow not hidden in IE 9/10/11.
 //
-
+/* 
 svg:not(:root) {
   overflow: hidden;
-}
+} */
 
 // Grouping content
 // ==========================================================================
@@ -184,11 +184,11 @@ svg:not(:root) {
 //
 // Address margin not present in IE 8/9 and Safari.
 //
-
+/* 
 figure {
   margin: 1em 40px;
 }
-
+ */
 //
 // Address differences between Firefox and other browsers.
 //
@@ -202,22 +202,22 @@ hr {
 //
 // Contain overflow in all browsers.
 //
-
+/* 
 pre {
   overflow: auto;
-}
+} */
 
 //
 // Address odd `em`-unit font size rendering in all browsers.
 //
 
-code,
+/* code,
 kbd,
 pre,
 samp {
   font-family: monospace, monospace;
   font-size: 1em;
-}
+} */
 
 // Forms
 // ==========================================================================
@@ -236,7 +236,6 @@ samp {
 
 button,
 input,
-optgroup,
 select,
 textarea {
   color: inherit; // 1
