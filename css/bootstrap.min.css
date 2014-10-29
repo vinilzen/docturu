@@ -26,14 +26,6 @@ summary {
   display: block;
 }
 
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -7135,7 +7127,7 @@ h2 {
   font-weight: 300;
   font-size: 36px;
   color: #000;
-  margin-top: 90px;
+  margin-top: 60px;
   margin-bottom: 30px;
 }
 
@@ -7145,7 +7137,7 @@ h3 {
 }
 h3 a {
   text-decoration: none;
-  font-weight: 300;
+  font-weight: normal;
   font-size: 24px;
   color: #211b70;
 }
@@ -7251,6 +7243,9 @@ h3 a:hover {
 .jumbotron .tab-pane .form-inline, .jumbotron .tab-pane .navbar-form {
   padding: 0 20px;
 }
+.jumbotron .tab-pane .form-inline .row, .jumbotron .tab-pane .navbar-form .row {
+  height: 40px;
+}
 
 .container.borderbot {
   width: 100%;
@@ -7272,12 +7267,13 @@ h3 a:hover {
 }
 .container.drk p {
   color: #555555;
-  font-weight: 300;
+  font-weight: normal;
   font-size: 16px;
 }
 .container.drk p.lead {
   color: #737373;
   font-size: 18px;
+  font-weight: 300;
 }
 .container.drk p.mdl {
   font-size: 15px;
@@ -7285,7 +7281,7 @@ h3 a:hover {
 .container p.itl {
   font-style: italic;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: normal;
 }
 
 #mainSearch {
@@ -7371,7 +7367,7 @@ h3 a:hover {
 }
 .specialists .dl-horizontal dd {
   padding-left: 19px;
-  width: 140px;
+  width: 170px;
 }
 .specialists .dl-horizontal dt {
   height: 22px;
@@ -7381,7 +7377,7 @@ h3 a:hover {
   background-color: #0da646;
 }
 .specialists strong {
-  font-weight: 300;
+  font-weight: normal;
   font-size: 14px;
   color: #211b70;
 }
@@ -7425,7 +7421,6 @@ h3 a:hover {
 }
 .smi_logo a span {
   text-decoration: underline;
-  color: #72709b;
 }
 .smi_logo a:hover span {
   text-decoration: none;
@@ -7584,11 +7579,12 @@ footer .list-inline a {
 
 .all_inf {
   text-decoration: underline;
-  color: #bcbdbd;
+  color: #737373;
   font-size: 14px;
   margin-top: 20px;
   display: inline-block;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .all_inf:hover {
   text-decoration: none;
@@ -7608,10 +7604,14 @@ footer .list-inline a {
   font-size: 18px;
 }
 
+.media-object {
+  border-radius: 5px;
+}
+
 .spec span {
   color: #42ac48;
   font-style: italic;
-  font-weight: 300;
+  font-weight: normal;
   font-size: 14px;
 }
 
@@ -7624,13 +7624,13 @@ footer .list-inline a {
 
 .blockquote {
   font-style: italic;
-  font-weight: 300;
+  font-weight: normal;
   color: #000;
   font-size: 14px;
 }
 
 .author {
-  font-weight: 300;
+  font-weight: normal;
   color: #000;
   font-size: 14px;
   color: #939393;
@@ -7638,7 +7638,7 @@ footer .list-inline a {
   display: inline-block;
 }
 .author strong {
-  font-weight: 300;
+  font-weight: normal;
   color: #211b70;
 }
 

@@ -7,7 +7,7 @@ $(function(){
 	}
 	function b(){
 		$('.fixh').css('max-height',187);
-		$('.all_inf').html('Вся информация')
+		$('.all_inf').html('Показать полностью')
 		return false;
 	};
 
