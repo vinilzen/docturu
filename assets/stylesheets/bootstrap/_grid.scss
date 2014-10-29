@@ -28,10 +28,10 @@
 //
 // Utilizes the mixin meant for fixed width containers, but without any defined
 // width for fluid, full width layouts.
-
+/* 
 .container-fluid {
   @include container-fixed();
-}
+} */
 
 
 // Row
@@ -81,6 +81,6 @@
 //
 // Columns, offsets, pushes, and pulls for the large desktop device range.
 
-@media (min-width: $screen-lg-min) {
+/* @media (min-width: $screen-lg-min) {
   @include make-grid(lg);
-}
+} */

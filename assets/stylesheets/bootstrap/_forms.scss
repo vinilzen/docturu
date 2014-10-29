@@ -299,8 +299,7 @@ input[type="checkbox"] {
   margin-bottom: 0;
 
   &.input-lg,
-  &.input-fr,
-  &.input-sm {
+  &.input-fr {
     padding-left: 0;
     padding-right: 0;
   }
@@ -312,7 +311,7 @@ input[type="checkbox"] {
 // Build on `.form-control` with modifier classes to decrease or increase the
 // height and font-size of form controls.
 
-@include input-size('.input-sm', $input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
+//@include input-size('.input-sm', $input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
 
 @include input-size('.input-lg', $input-height-large, $padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
 
@@ -323,17 +322,17 @@ input[type="checkbox"] {
 //
 // Apply contextual and semantic states to individual form controls.
 
-.has-feedback {
+//.has-feedback {
   // Enable absolute positioning
-  position: relative;
+  //position: relative;
 
   // Ensure icons don't overlap text
-  .form-control {
-    padding-right: ($input-height-base * 1.25);
-  }
-}
+  //.form-control {
+  //  padding-right: ($input-height-base * 1.25);
+  //}
+//}
 // Feedback icon (requires .glyphicon classes)
-.form-control-feedback {
+/* .form-control-feedback {
   position: absolute;
   top: ($line-height-computed + 5); // Height of the `label` and its margin
   right: 0;
@@ -343,20 +342,20 @@ input[type="checkbox"] {
   height: $input-height-base;
   line-height: $input-height-base;
   text-align: center;
-}
+} */
 .input-lg + .form-control-feedback {
   width: $input-height-large;
   height: $input-height-large;
   line-height: $input-height-large;
 }
-.input-sm + .form-control-feedback {
+/* .input-sm + .form-control-feedback {
   width: $input-height-small;
   height: $input-height-small;
   line-height: $input-height-small;
-}
+} */
 
 // Feedback states
-.has-success {
+/* .has-success {
   @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
 }
 .has-warning {
@@ -365,13 +364,13 @@ input[type="checkbox"] {
 .has-error {
   @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
 }
-
+ */
 
 // Reposition feedback icon if label is hidden with "screenreader only" state
-.has-feedback label.sr-only ~ .form-control-feedback {
+/* .has-feedback label.sr-only ~ .form-control-feedback {
   top: 0;
 }
-
+ */
 
 // Help text
 //
@@ -472,7 +471,7 @@ input[type="checkbox"] {
 //
 // Horizontal forms are built on grid classes and allow you to create forms with
 // labels on the left and inputs on the right.
-
+/* 
 .form-horizontal {
 
   // Consistent vertical alignment of radios and checkboxes
@@ -545,3 +544,4 @@ input[type="checkbox"] {
     }
   }
 }
+ */
