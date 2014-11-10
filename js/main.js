@@ -15,5 +15,12 @@ $(function(){
 		return (this.toggle = !this.toggle) ? a() : b();
 	});
 
-	$('.tab-content select').styler({selectSearch:true});
+	//$('.tab-content select').styler({selectSearch:true});
+	//
+	$("#mainSearch select").chosen({
+        no_results_text: 'Нет совпадений',
+        allow_single_deselect: true,
+        search_contains: true,
+        width: '100%'
+    });
 });
