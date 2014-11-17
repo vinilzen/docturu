@@ -588,3 +588,68 @@ footer {
 	background-position: left top;
 	float: right;
 }
+
+// Contacts
+#mymap {
+	width: 100%;
+	height: 810px;
+	position: absolute;
+	min-width: 760px;
+}
+.above_map {
+	height: 810px;
+}
+.contacts {
+	border-radius: 5px;
+	background-color: #fff;
+	margin-top: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+	max-width: 340px;
+	padding: 34px 40px;
+	&.rekv {
+		min-width: 290px;
+		margin-left: 0;
+		padding-right: 15px;
+		padding-left: 30px;
+		padding-bottom: 15px;
+	}
+	h1 {
+		font-weight: 300;
+		margin-top: 0;
+	}
+	h2 {
+		font-size: 18px;
+		font-weight: normal;
+		margin-top: 42px;
+		margin-bottom: 25px;
+	}
+	p {
+		font-size: 13px;
+		font-weight: 300;
+		padding-left: 25px;
+		position: relative;
+		img {
+			display: inline-block;
+			position: absolute;
+			left:0;
+			top:0;
+		}
+	}
+	a.reqv {
+		font-size: 18px;
+		color:#211b70;
+		text-decoration: none;
+		display: inline-block;
+		border-bottom: dashed 1px #211b70;
+		line-height: 1.1;
+		&:hover {
+			border-bottom-color: #ffffff;
+			cursor:pointer;
+		}
+	}
+	&.collapsing {
+	    -webkit-transition: none;
+	    transition: none;
+	}
+}
