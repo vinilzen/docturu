@@ -23,4 +23,25 @@ $(function(){
         search_contains: true,
         width: '100%'
     });
+
+    $('#rekv').on('hide.bs.collapse', function () {
+		$('.reqv').html('Показать реквизиты');
+	}).on('show.bs.collapse', function () {
+		$('.reqv').html('Скрыть реквизиты');
+	});
+
+	function set_map_height(){
+		var wh = $( window ).height(),
+			nav_h = $( '.navbar' ).height(),
+			footer_h = $( 'footer .row' ).height();
+
+		$('#mymap, .above_map').height(wh - nav_h - footer_h);
+	}
+
+	if ( $('#mymap').length > 0 ){
+		set_map_height();
+		$( window ).resize(function() {
+			set_map_height();
+		});
+	}
 });
