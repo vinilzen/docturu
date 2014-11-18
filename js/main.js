@@ -35,7 +35,7 @@ $(function(){
 			nav_h = $( '.navbar' ).height(),
 			footer_h = $( 'footer .row' ).height();
 
-		$('#mymap, .above_map').height(wh - nav_h - footer_h);
+		$('#mymap, .above_map').height(wh - nav_h - footer_h - 2);
 	}
 
 	if ( $('#mymap').length > 0 ){
