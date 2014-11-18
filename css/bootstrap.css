@@ -5225,12 +5225,81 @@ footer .list-inline a {
 
 #mymap {
   width: 100%;
-  height: 810px;
   position: absolute;
+  min-width: 760px;
 }
 
-.above_map {
-  height: 810px;
+.above_map, #mymap {
+  min-height: 520px;
+}
+
+.contacts {
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 340px;
+  padding: 34px 40px;
+}
+.contacts h1 {
+  font-weight: 300;
+  margin-top: 0;
+  margin-top: -7px;
+  margin-left: -4px;
+  margin-bottom: -10px;
+}
+.contacts h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 48px;
+  margin-bottom: 15px;
+}
+.contacts h2.move_up {
+  margin-top: 38px;
+}
+.contacts p {
+  font-size: 13px;
+  font-weight: normal;
+  padding-left: 28px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  position: relative;
+}
+.contacts p img {
+  display: inline-block;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+}
+.contacts.rekv {
+  min-width: 290px;
+  margin-left: 0;
+  padding-right: 15px;
+  padding-left: 22px;
+  padding-bottom: 15px;
+  padding-top: 29px;
+}
+.contacts.rekv p {
+  margin-bottom: 8px;
+}
+.contacts a.reqv {
+  font-size: 18px;
+  color: #211b70;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: dashed 1px #211b70;
+  line-height: 1.1;
+  margin-top: 19px;
+}
+.contacts a.reqv:hover {
+  border-bottom-color: #ffffff;
+  cursor: pointer;
+}
+.contacts.collapsing {
+  -webkit-transition: none;
+  transition: none;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
