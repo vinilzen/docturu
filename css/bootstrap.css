@@ -747,6 +747,10 @@ address {
 .container-fluid {
   @include container-fixed();
 } */
+.container-fluid {
+  min-width: 760px;
+}
+
 .row {
   margin-left: -20px;
   margin-right: -20px;
@@ -5300,6 +5304,175 @@ footer .list-inline a {
 .contacts.collapsing {
   -webkit-transition: none;
   transition: none;
+}
+
+.center-img {
+  min-height: 104px;
+}
+
+.drk-blue {
+  background-color: #212830;
+  padding-bottom: 63px;
+}
+.drk-blue .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.drk-blue h2 {
+  color: #fff;
+  margin-bottom: 24px;
+  font-weight: 300;
+  margin-top: 90px;
+}
+.drk-blue .lead {
+  color: #bdbfc0;
+  margin-bottom: 59px;
+}
+.drk-blue .form-control {
+  height: 40px;
+  padding: 10px 12px;
+}
+.drk-blue .form-group {
+  margin-bottom: 15px;
+}
+.drk-blue textarea.form-control {
+  height: auto;
+}
+.drk-blue .btn.btn-success {
+  color: #fff;
+  background-color: #0ea646;
+  text-transform: normal;
+  font-weight: bold;
+  padding-bottom: 14px;
+  -webkit-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
+  border: none;
+  font-size: 14px;
+  margin-top: 45px;
+  padding: 1px 32px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: color .2s linear;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+.drk-blue .btn.btn-success:hover {
+  background-color: #0a8036;
+}
+
+.jumbotron.partners {
+  padding-top: 86px;
+  background-image: url(../img/bgr_partn.jpg);
+}
+.jumbotron.partners h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1023px) {
+  .jumbotron.partners h1 {
+    font-size: 28px;
+  }
+}
+.jumbotron.partners .lead {
+  padding-top: 5px;
+}
+.jumbotron.partners .btn.btn-success {
+  color: #fff;
+  background-color: #0ea646;
+  text-transform: normal;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 40px;
+  padding: 15px 37px;
+  padding-bottom: 14px;
+  margin-left: 15px;
+  -webkit-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
+  border: none;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: color .2s linear;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+.jumbotron.partners .btn.btn-success:hover {
+  background-color: #0a8036;
+}
+
+.mac {
+  margin-bottom: -143px;
+  margin-top: 55px;
+  width: 100%;
+  height: auto;
+  max-width: 760px;
+  max-height: 460px;
+}
+
+.gray {
+  padding-top: 100px;
+  background-color: #f8f9f9;
+  border-bottom: 1px solid #eaeef3;
+}
+.gray .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.gray .media-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  margin-top: -2px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1023px) {
+  .gray .media-heading {
+    font-size: 28px;
+  }
+}
+.gray .media-body p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #646464;
+  margin-top: 3px;
+}
+.gray .media > .pull-left {
+  margin-right: 20px;
+}
+.gray .media {
+  margin-left: 40px;
+  margin-bottom: 29px;
+}
+.gray .media.last {
+  margin-left: 37px;
+}
+
+.plus {
+  margin-top: 98px;
+  margin-bottom: 25px;
+}
+
+.plus_lead {
+  margin-bottom: 60px;
+}
+
+.plus_example {
+  margin-bottom: 92px;
+}
+.plus_example h3 {
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 22px;
+  color: #211b70;
+}
+.plus_example p {
+  line-height: 23px;
+  font-size: 14px;
+  color: #555555;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */

@@ -32,7 +32,10 @@
 .container-fluid {
   @include container-fixed();
 } */
-
+.container-fluid {
+  
+  min-width: 760px;
+}
 
 // Row
 //
