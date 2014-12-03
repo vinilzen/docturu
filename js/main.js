@@ -15,6 +15,21 @@ $(function(){
 		return (this.toggle = !this.toggle) ? a() : b();
 	});
 
+	function c(){
+		$('.media_about_list').css('max-height',600);
+		$('.more_public .btn').html('Свернуть')
+		return false;
+	}
+	function d(){
+		$('.media_about_list').css('max-height',200);
+		$('.more_public .btn').html('Загрузить еще публикации')
+		return false;
+	};
+
+	$('.more_public .btn').click(function(){
+		return (this.toggle = !this.toggle) ? c() : d();
+	});
+
 	//$('.tab-content select').styler({selectSearch:true});
 	//
 	$("#mainSearch select").chosen({

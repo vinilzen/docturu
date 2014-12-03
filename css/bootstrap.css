@@ -5475,4 +5475,8 @@ footer .list-inline a {
   color: #555555;
 }
 
+.jumbotron.about {
+  background-image: url(../img/bgr_about.jpg);
+}
+
 /*# sourceMappingURL=bootstrap.css.map */

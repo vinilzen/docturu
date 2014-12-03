@@ -1,11 +1,3 @@
-// Media objects
-// Source: http://stubbornella.org/content/?p=497
-// --------------------------------------------------
-
-
-// Common styles
-// -------------------------
-
 // Clear the floats
 .media,
 .media-body {
@@ -46,11 +38,29 @@
 }
 
 
-// Media list variation
-// -------------------------
+.media {
+  // Proper spacing between instances of .media
+  margin-top: 15px;
 
-// Undo default ul/ol styles
-.media-list {
-  padding-left: 0;
-  list-style: none;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.media-left,
+.media > .pull-left {
+  padding-right: 10px;
+}
+
+.media-left,
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+
+// Reset margins on headings for tighter default spacing
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
 }
