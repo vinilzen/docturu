@@ -1174,9 +1174,18 @@ footer {
 			}
 		}
 		&>li+li:before {
-			content:'￫';
+			content:' ';
 			color:#c0c0c0;
 			padding-right: 7px;
+			padding-left: 6px;
+			background-image: url(../img/breadarrow.gif);
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			width: 8px;
+			display: inline-block;
+			border-bottom: none;
+			text-decoration: none;
+			height: 7px;
 		}
 	}
 	.text {
