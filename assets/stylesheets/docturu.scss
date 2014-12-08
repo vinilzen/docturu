@@ -1076,15 +1076,17 @@ footer {
 }
 .directory {
 	min-width: 970px;
-	h2 {
+	h1 {
 		margin-top: 47px;
 		margin-bottom: 0;
+		font-weight: 300;
 	}
-	h3 {
+	h2 {
 		color:#211b70;
 		font-size: 24px;
 		margin-bottom: 22px;
 		margin-top: 31px;
+		font-weight: 500;
 	}
 	p {
 		margin-bottom: 13px;
@@ -1141,15 +1143,22 @@ footer {
 			border-bottom-color: transparent;
 		}
 	}
-	h2 {
+	h1 {
 		margin-top: 0;
 		font-weight: 300;
 		margin-left: -3px;
 		padding-top: 0;
 		margin-bottom: 20px;
 	}
-	h3 {
+	h2 {
 		font-size: 24px;
+		margin-top: 38px;
+		margin-bottom: 25px;
+		font-weight: 500;
+		&.best_doc {
+			font-weight: 300;
+			font-size: 36px;
+		}
 	}
 	.breadcrumb {
 		background-color: #fff;
