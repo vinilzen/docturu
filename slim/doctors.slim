@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body
+    == Slim::Template.new("navbar.slim").render
+    .container-fluid.borderbot.bordertop
+      .container.main_inner
+        .row.inner
+          .col-xs-3.left-sidebar
+            == Slim::Template.new("left_filter.slim").render
+          .col-xs-9.text.main-side
+            #searchResults
+              .seo
+                h1 Вы искали: Врачи в Санкт-Петербурге
+                .description.readmore
+                  p Каким бы хорошим здоровьем вы ни обладали, рано или поздно возникнет проблема, для решения которой вам понадобятся врачи того или иного профиля. Вы можете пойти в поликлинику и получить то, что вам причитается по полису ОМС, либо изучить отзывы о врачах, работающих в частных клиниках, и сделать осознанный выбор.
+                  p Как создается рейтинг специалистов?
+                  p В случае с поисковым сервисом doctu.ru – исключительно на основе оценок реальных пациентов. Цель ресурса – информировать об особенностях работы медицинских учреждений, о квалификации, опыте и наличии ученых степеней у докторов, а также о манере общения с клиентами. Именно поэтому рейтинг врачей полностью соответствует действительности.
+                  p На страницах сайта вы можете изучить анкеты, которые оставили детские врачи, терапевты и специалисты узкого профиля, работающие с взрослыми. Удобно, быстро и современно.
+              .bestDoctors
+                .panel.panel-default
+                  .panel-heading
+                    h2 Лучшие врачи
+                  .panel-body
+                    - for item in [1,2,3]
+                      .col-xs-4
+                        .media
+                          .media-left
+                            img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg"
+                          .media-body
+                            h4.media-heading Шеняк Татьяна Михайловна
+                            p Невролог, Иглорефлексотерапевт
+
+    == Slim::Template.new("footer.slim").render

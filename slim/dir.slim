@@ -1,0 +1,85 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body
+    == Slim::Template.new("navbar.slim").render
+    .container-fluid.borderbot.bordertop
+      .container.main_inner
+        .row.directory
+          .col-sm-12
+            h1.text-left Справочник пациента
+          .col-xs-3
+            h2: a[href=""] Акушерство
+            p: a[href="#"] Аденовирус
+            p: a[href="#"] Баланит
+            p: a[href="#"] Гастрит
+            a.all_inf_link href="#" Показать полностью
+          .col-xs-3
+            h2: a[href=""] Аллергология
+            p: a[href="#"] Ринит аллергический
+            p: a[href="#"] Поллиноз
+            p: a[href="#"] Пищевая аллергия
+            a.all_inf_link href="#" Показать полностью
+          .col-xs-3
+            h2: a[href=""] Андрология
+            p: a[href="#"] Lorem.
+            p: a[href="#"] Nam.
+            p: a[href="#"] Quasi.
+            a.all_inf_link href="#" Показать полностью
+          .col-xs-3
+            h2: a[href=""] Анестезиология
+            p: a[href="#"] Lorem.
+            p: a[href="#"] Harum.
+            p: a[href="#"] Veniam?
+            a.all_inf_link href="#" Показать полностью
+          .col-xs-3
+            h2: a[href=""] Венерология
+            p: a[href="#"] Lorem.
+            p: a[href="#"] Aspernatur.
+            p: a[href="#"] Quae!
+            a.all_inf_link href="#" Показать полностью
+          .col-xs-3
+            h2: a[href=""] Гастроэнтерология
+            p: a[href="#"] Lorem.
+            p: a[href="#"] Fuga?
+            p: a[href="#"] Possimus.
+            a.all_inf_link href="#" Показать полностью
+          .col-xs-3
+            h2: a[href=""] Гематология
+            p: a[href="#"] Lorem.
+            p: a[href="#"] Iste?
+            p: a[href="#"] Aut!
+            a.all_inf_link href="#" Показать полностью
+          .col-xs-3
+            h2: a[href=""] Гепатология
+            p: a[href="#"] Гепатит B
+            p: a[href="#"] Гепатит C
+            p: a[href="#"] Гепатит E
+            a.all_inf_link href="#" Показать полностью
+          .col-xs-3
+            h2: a[href=""] Fuga!
+            p: a[href="#"] Lorem.
+            p: a[href="#"] Veritatis.
+            p: a[href="#"] Excepturi.
+            a.all_inf_link href="#" Показать полностью
+          .col-xs-3
+            h2: a[href=""] Ipsam?
+            p: a[href="#"] Lorem.
+            p: a[href="#"] Debitis!
+            p: a[href="#"] Cum!
+            a.all_inf_link href="#" Показать полностью
+          .col-xs-3
+            h2: a[href=""] Consequatur.
+            p: a[href="#"] Lorem.
+            p: a[href="#"] Corporis.
+            p: a[href="#"] Reprehenderit.
+            a.all_inf_link href="#" Показать полностью
+          .col-xs-3
+            h2: a[href=""] Consequatur!
+            p: a[href="#"] Lorem.
+            p: a[href="#"] Unde.
+            p: a[href="#"] Modi!
+            a.all_inf_link href="#" Показать полностью
+
+  == Slim::Template.new("footer.slim").render
