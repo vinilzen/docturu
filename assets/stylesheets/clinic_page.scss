@@ -1,0 +1,322 @@
+#clinicPage {
+  margin: 0 0 20px 0;
+  &>.row {
+    margin: 0;
+  }
+  .avatar {
+    float: left;
+    margin-right: 15px;
+    position: absolute;
+    left: 0;
+  }
+  .buttons {
+    margin-top: 25px;
+  }
+  .tel {
+    border: 1px solid #302a7a;
+    border-radius: 4px;
+    color: #302a7a;
+    display: inline-block;
+    float: right;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 12px 5px;
+    margin-left: 20px;
+    top: -1px;
+    position: relative;
+  }
+  .clinic {
+    .row {
+      margin: 0;
+    }
+    .col-xs-12 {
+      margin: 0;
+      padding: 0;
+    }
+    .col-xs-9 {
+      width: 650px;
+      margin: 0;
+      padding: 0;
+    }
+    .col-xs-3 {
+      width: 180px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .clinic-info {
+    margin-left: 166px;
+    h1 {
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #302a7a;
+      font-size: 18px;
+    }
+    h3 {
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #302a7a;
+    }
+    .specialty {
+      font-size: 13px;
+      color: #0ea646;
+      font-style: italic;
+      margin-bottom: 25px;
+      a {
+        color: #0ea646;
+      }
+      span {
+        display: inline-block;
+        font-size: 13px;
+        border: 1px solid !important;
+        border-color: #555 !important;
+        background-color: #fff;
+        //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+        border-radius: 4px;
+        margin: 13px 0 0 0 !important;
+        padding: 1px 5px 3px;
+        font-style: normal;
+        color: #555;
+      }
+    }
+  }
+  .clinic-request {
+    float: right;
+    width: 146px;
+    div {
+      display: inline-block;
+    }
+    .btn {
+      margin-top: 35px;
+      font-size: 13px;
+      padding: 4px 12px;
+    }
+    .rating {
+      line-height: 22px;
+      font-size: 18px;
+      font-weight: bold;
+      //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+      border-radius: 60px;
+      float: right;
+      text-align: center;
+      width: 20px;
+      padding: 0 0 10px 0;
+      color: #0ea646;
+      margin-left: 0 !important;
+    }
+    .star-rating {
+      float: left;
+      img {
+        margin-right: 3px;
+        width: 16px;
+      }
+    }
+    .reviews {
+      font-size: 13px;
+      color: #302a7a;
+      margin-top: 5px;
+    }
+    .tel {
+      margin: 15px 0 0 12px;
+      color: #302a7a;
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+  .clinic-type {
+    color: #0ea646;
+    margin-bottom: 10px;
+    width: 146px;
+    float: right;
+    img {
+      margin-right: 5px;
+    }
+  }
+  .clinic-graphic {
+    width: 146px;
+    float: right;
+    img {
+      margin-right: 5px;
+    }
+    div {
+      margin-bottom: 3px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .table {
+      th {
+        border-top: none;
+      }
+      td {
+        padding: 4px;
+      }
+      .right {
+        text-align: right;
+      }
+    }
+  }
+  .clinic-tabs {
+    margin: 20px 0;
+    .nav-tabs li {
+      a {
+        font-weight: 600;
+        font-size: 14px;
+        color: #0ea646;
+      }
+      &.active a {
+        font-weight: 600;
+        color: #302a7a;
+      }
+    }
+  }
+}
+.clinic-gallery {
+  margin: 30px 0;
+  .col-xs-2 {
+    margin-bottom: 30px;
+  }
+  img {
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid #dedede;
+    &:hover {
+      border-color: #5249c1;
+    }
+  }
+}
+#clinicGlobalMap {
+  position: relative;
+  .showMoreMap {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    text-align: center;
+    font-size: 20px;
+    color: #302a7a;
+    line-height: 50px;
+    cursor: pointer;
+  }
+  #clinicMainMap {
+    background-color: rgba(0,0,0,0.03);
+    height: 50px;
+    overflow: hidden;
+    border-radius: 3px;
+    opacity: 0.5;
+  }
+}
+
+.doc-section {
+  min-height: 115px;
+  .doc-name {
+    h3, .h3 {
+      margin-left: 90px;
+      color: #302a7a;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+    h4 {
+      margin-left: 90px;
+      color: #302a7a;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+    img {
+      float: left;
+      width: 74px;
+      max-height: 110px;
+      margin-top: 3px;
+    }
+    .specialty {
+      margin-left: 90px;
+      font-size: 13px;
+      color: #0ea646;
+      font-style: italic;
+      a {
+        color: #0ea646;
+        font-size: 13px;
+      }
+      span {
+        display: inline-block;
+        font-size: 13px;
+        border: 1px solid !important;
+        border-color: #555 !important;
+        background-color: #fff;
+        border-radius: 4px;
+        margin: 13px 0 0 0 !important;
+        padding: 1px 5px 3px;
+        font-style: normal;
+        color: #555;
+      }
+    }
+    .pac-age {
+      color: #f3a431;
+      font-size: 13px;
+      font-style: italic;
+      margin-top: 7px;
+      margin-left: 90px;
+      > span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        vertical-align: bottom;
+        &.both {
+          background: url('../img/both.png');
+        }
+        &.child {
+          background: url('../img/child.png');
+        }
+        &.adult {
+          background: url('../img/adult.png');
+        }
+      }
+    }
+  }
+}
+.readmore {
+  overflow: hidden;
+  position: relative;
+  a[href='#show'] {
+    background-image: url('../img/readmore.png');
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-left: 46px;
+    line-height: 19px;
+    color: #2a6496;
+  }
+}
+.tab-pane.clinic-page {
+  padding-top: 20px;
+  .row {
+    padding: 0;
+    .col-xs-9 {
+      padding: 0;
+    }
+    .col-xs-3 {
+      padding: 0;
+    }
+  }
+}
+.description {
+  color:#555;
+}
+#show_all_doctors {
+  margin-top: 20px;
+}
+.row-photo {
+  margin-left: -18px;
+  .galleryImg {
+    display: inline-block;
+  }
+}
+.row-photo .galleryImg:nth-child(n+7) {
+  display: none;
+}

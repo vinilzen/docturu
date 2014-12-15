@@ -31,5 +31,114 @@ html
                           .media-body
                             h4.media-heading Шеняк Татьяна Михайловна
                             p Невролог, Иглорефлексотерапевт
-
+              #doctorSort.row
+                .col-xs-4.result
+                  | Найдено 
+                  span.green 1284 
+                  |  врача
+                .col-xs-4.sort-type
+                  label for=""  Сортировать
+                  select.form-control for="searchDoctor" name="sort" 
+                    option value=""  не важно
+                    option value="rating"  по рейтингу
+                    option value="price"  по стоимости
+                    option value="experience"  по стажу
+                .col-xs-4.sort-num
+                  label for=""  Показывать по
+                  select.form-control for="searchDoctor" name="paging" 
+                    option 10
+                    option 25
+                    option 50
+              a href="/doctors-map/" class="showDoctorsOnMap spb" Показать на карте
+              section#doctorList.doc-list
+                - for item in [1,2,3]
+                  section.doctor_2_0.spec365.spec296.spec290.spec0.spec0 data-address=("Богатырский пр., д.25, корп.1 ") data-cliniclogo="https://cdn.doctu.ru/images/thumb/74x74/74x74-38f13fdbb38b57a593ac248472775dca.jpg" data-clinicphone="+7(812)424‑39‑04" data-clinicurl="spb-medongroup.doctu.ru/bogatyrskiy" data-doctor="JlJHKS7rXmAwwNIT" data-family="Ястребова" data-metro=("<span class='line5'>Комендантский проспект</span> ") data-name=("Ольга Германовна") data-photo="https://cdn.doctu.ru/images/thumb/74x110/74x110-ee0790bef36d86391e6935310e2e5afa.jpg" data-speciality=("Дерматовенеролог, Дерматолог, Венеролог")
+                    .doc-status
+                      .rating 5.0
+                      .star-rating
+                        img src="img/goldstar.png" /
+                        img src="img/goldstar.png" /
+                        img src="img/goldstar.png" /
+                        img src="img/goldstar.png" /
+                        img src="img/goldstar.png" /
+                      .reviews
+                        a.doctorReview href="doctor/jastrebova-olga-germanovna#feedback"  По 6 отзывам
+                      .price-label
+                        b
+                          | 1500
+                          span.rub ₹
+                    .doc-info
+                      .doc-avatar
+                        a href="doctor/jastrebova-olga-germanovna" target="_blank" 
+                          img.avatar alt="Дерматовенеролог, Дерматолог, Венеролог Ястребова Ольга Германовна" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-ee0790bef36d86391e6935310e2e5afa.jpg" width="74" /
+                        .experience Стаж 30 лет
+                      .doc-description
+                        .name
+                          a href="doctor/jastrebova-olga-germanovna" target="_blank" 
+                          h4.family Ястребова
+                          h4 Ольга Германовна
+                        .speciality
+                          h3: a[href="/doctors/dermatovenerolog"] Дерматовенеролог
+                          | ,
+                          h3: a[href="/doctors/dermatolog"] Дерматолог
+                          | ,
+                          h3: a[href="/doctors/venerolog"] Венеролог
+                        .pac-age
+                          span.adult
+                          | Принимает только взрослых
+                        .address
+                          .metro
+                            span.line5 Комендантский проспект
+                          a.mapModal data-mapid="map" data-mapzoom="13" data-markcontent=("Богатырский пр., д.25, корп.1 ") data-markheader=("<a href='http://spb-medongroup.doctu.ru/bogatyrskiy'>Медикал Он Груп на Богатырском</a>") data-marklat="60.002045" data-marklong="30.252590" href="#mapModal"  Показать на карте
+                        .contacts__
+                          button.btn.btn-success.showScheduleBtn Запись на прием
+                          .tel +7(812)424‑39‑04
+                    .clearfix
+              .bestClinics
+                .panel.panel-default
+                  .panel-heading
+                    h2 Лучшие клиники
+                  .panel-body
+                    - for item in [1,2,3]
+                      .col-xs-4
+                        .media
+                          .media-left
+                            img width="84" height="84" src="https://cdn.doctu.ru/images/thumb/150x150/150x150-744fbb058087dcdb7c127199737e9820.jpg"
+                          .media-body
+                            h4.media-heading Клиника стоматологии «МЕДИ на Чкаловском»
+              .clearfix.text-center
+                strong style="display:block"  Вы ищете: Врачи в Санкт-Петербурге
+                ul.pagination
+                  li: span 1
+                  li: a[href="/doctors?page=2"] 2
+                  li: a[href="/doctors?page=3"] 3
+                  li: a[href="/doctors?page=4"] 4
+                  li: a[href="/doctors?page=5"] 5
+                  li: span ...
+                  li: a[href="/doctors?page=129"] 129
+                  li.next: a[href="/doctors?page=2"] След »
+              section#linksSpec.doctors-list
+                .row
+                  .col-md-12
+                    ul
+                      li: h3: a href="/doctors/gastroehnterolog"
+                        strong Гастроэнтеролог
+                      li: h3: a href="/doctors/ginekolog"
+                        strong Гинеколог
+                      li: h3: a href="/doctors/dermatolog"
+                        strong Дерматолог
+                      li: h3: a href="/doctors/nevrolog"
+                        strong Невролог
+                      li: h3: a href="/doctors/osteopat"
+                        strong Остеопат
+                      li: h3: a href="/doctors/proktolog"
+                        strong Проктолог
+                      li: h3: a href="/doctors/urolog"
+                        strong Уролог
+                      li: h3: a href="/doctors/ehndokrinolog"
+                        strong Эндокринолог
+                      li: h3: a href=" doctors/lor-otolaringolog"
+                        strong Лор (отоларинголог)
+                      li: h3: a href=" doctors/okulist-oftalmolog"
+                        strong Окулист (офтальмолог)
     == Slim::Template.new("footer.slim").render

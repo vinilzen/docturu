@@ -1,0 +1,167 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body
+    == Slim::Template.new("navbar.slim").render
+    .container-fluid.borderbot.bordertop
+      .container.main_inner
+        .row.inner
+          .col-xs-3.left-sidebar
+            == Slim::Template.new("left_filter.slim").render
+          .col-xs-9.text.main-side
+            #clinicPage.clinic-page
+              .row
+                section.clinic data-id="F9aDYXhkv0QjkP09" data-name=("СМТ на Московском проспекте") itemscope="" itemtype="http://schema.org/LocalBusiness"
+                  .row
+                    .col-xs-9
+                      img.avatar alt=("СМТ на Московском проспекте") itemprop="image" src="https://cdn.doctu.ru/images/thumb/150x150/150x150-b46db5ad6d416fc59af1fa459d8b11a2.jpg" width="150" /
+                      .clinic-info
+                        h1 itemprop="name"  СМТ на Московском проспекте
+                        .metro
+                          span.line2 Сенная площадь
+                          span.line1 Технологический институт
+                          span.line1 Пушкинская
+                        .address
+                          img src="img/address.png" /
+                          a.mapModal data-mapid="map" data-mapzoom="15" data-markcontent=("Московский проспект, д. 22") data-markheader=("СМТ на Московском проспекте") data-marklat="59.919773" data-marklong="30.318735" href="#mapModal" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" 
+                            span itemprop="streetAddress"  Московский проспект, д. 22
+                        .buttons
+                          button.btn.btn-success.pull-left.showClinicsDoctors Запись на прием
+                          .tel.pull-left itemprop="telephone"  +7(812)425‑15‑33
+                          .clearfix
+                    .col-xs-3
+                      .clinic-request itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" 
+                        .star-rating
+                          img src="img/goldstar.png" /
+                          img src="img/goldstar.png" /
+                          img src="img/goldstar.png" /
+                          img src="img/goldstar.png" /
+                          img src="img/goldstar.png" /
+                        .rating itemprop="ratingValue"  5.0
+                        .reviews
+                          a.doctorReview href="http://clinic-complex.doctu.ru/moskovskij#feedback" 
+                            | По
+                            span itemprop="ratingCount"  2
+                            | отзывам
+                  .row
+                    .col-xs-12
+                      section#clinicGlobalMap
+                        a#showMoreMap href="" Показать на карте
+                        #clinicMainMap
+                  .row
+                    .col-xs-12
+                      section#clinicTabs.clinic-tabs
+                        ul#clTab.nav.nav-tabs
+                          li.active
+                            a data-toggle="tab" href="#profileTab"  Профиль
+                          li
+                            a data-toggle="tab" href="#reviewsTab"  Отзывы
+                        .tab-content
+                          .tab-pane.clinic-page.active
+                            .row
+                              .col-xs-9
+                                .description.readmore
+                                  div
+                                    span
+                                      strong Холдинг «Современные медицинские технологии»
+                                      |  - это новый формат медицинских клиник, сочетающий западные стандарты медицины с самым современным оборудованием, а демократичные цены – с высоким уровнем сервиса и удобством для пациента.
+                                    span
+                                      br
+                                    span
+                                      br
+                                      | Наши клиники не просто руководствуются современными медицинскими стандартами, но и внедряют новаторские идеи и концепцию персонифицированной медицины (учет индивидуальных запросов пациентов).
+                                      br
+                                    span
+                                      br
+                                      strong Клиника СМТ на Московском, 22
+                                      |  – это амбулаторно-диагностический многопрофильный центр, оказывающий первичную медицинскую помощь взрослым и детям.
+                                    span
+                                      br/
+                                      | Клиника предлагает пациентам быстрое и четкое обслуживание, полноту информации о своем здоровье, комфорт и удобство. Клиника СМТ на Московском проспекте сочетает инновации с 65-летним опытом работы.
+                                    br/
+                                    | этой странице вы можете записаться к врачу. Запись к врачу возможна на любой удобный для вас день.
+                                  a href="#show"  Показать полностью
+                              .col-xs-3
+                                .clinic-graphic
+                                  div
+                                    img src="img/clinic_time.png" /
+                                    | График работы
+                                  span itemprop="dayOfWeek" 
+                                  meta content="09:00" itemprop="opens" /
+                                  meta content="21:00" itemprop="closes" /
+                                  table.table
+                                    tbody
+                                      tr itemprop="openingHoursSpecification" itemscope="" itemtype="http://schema.org/OpeningHoursSpecification" 
+                                        td itemprop="name" Ежедн
+                                        td.right 09:00&nbsp;‑&nbsp;21:00
+                            hr.clearfix
+                            .row
+                              - for item in [1,2,3]
+                                .doc-section.col-xs-4.spec356.spec0.spec0.spec0.spec0 data-address=("Московский проспект, д. 22") data-cliniclogo="https://cdn.doctu.ru/images/thumb/74x74/74x74-b46db5ad6d416fc59af1fa459d8b11a2.jpg" data-clinicphone="+7(812)425‑15‑33" data-clinicurl="clinic-complex.doctu.ru/moskovskij" data-doctor="d72UTGT4k0AS7Za3" data-family="Бондарева" data-metro=("<span class='line1'>Технологический институт</span> <span class='line2'>Сенная площадь</span> <span class='line1'>Пушкинская</span> ") data-name=("Елена Владимировна") data-photo="https://cdn.doctu.ru/images/thumb/74x110/74x110-fe18f24948d668a9bc8bc7d133abd60e.jpg" data-speciality=("<h3><a href='/doctors/vrach-uzi'>Врач УЗИ</a></h3>") 
+                                  .doc-name
+                                    a href="http://doctu.ru/doctor/bondareva-elena-vladimirovna" 
+                                      img.avatar height="110" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-fe18f24948d668a9bc8bc7d133abd60e.jpg" width="74" /
+                                    h4.h3 Бондарева
+                                    h4 Елена Владимировна
+                                    .specialty
+                                      h3
+                                        a href="/doctors/vrach-uzi"  Врач УЗИ
+                                    .pac-age
+                                      span.adult
+                                      | Принимает только взрослых
+                            .row
+                              .col-xs-12
+                                #show_all_doctors
+                                  .btn.btn-default.btn-block.show_more.showClinicsDoctors Показать еще врачей
+                            hr.clearfix
+                            .row.row-photo
+                              .col-xs-2.galleryImg
+                                a.fancybox href="https://cdn.doctu.ru/images/e75cfcbcb11c32d9d4afce3c53a535e3.jpg" rel="gallery1" title="" 
+                                  img alt="" height="120" src="https://cdn.doctu.ru/images/thumb/120x120/120x120-e75cfcbcb11c32d9d4afce3c53a535e3.jpg" /
+                              .col-xs-2.galleryImg
+                                a.fancybox href="https://cdn.doctu.ru/images/67ac1849e33aae9b5ab7a7d3ebc0cb75.jpg" rel="gallery1" title="" 
+                                  img alt="" height="120" src="https://cdn.doctu.ru/images/thumb/120x120/120x120-67ac1849e33aae9b5ab7a7d3ebc0cb75.jpg" /
+                              .col-xs-2.galleryImg
+                                a.fancybox href="https://cdn.doctu.ru/images/94f9689d53ffea36fe58d5a9de3d058a.jpg" rel="gallery1" title="" 
+                                  img alt="" height="120" src="https://cdn.doctu.ru/images/thumb/120x120/120x120-94f9689d53ffea36fe58d5a9de3d058a.jpg" /
+                              .col-xs-2.galleryImg
+                                a.fancybox href="https://cdn.doctu.ru/images/78b50dcb4b38f89c9e9ceeeb6f46ae43.jpg" rel="gallery1" title="" 
+                                  img alt="" height="120" src="https://cdn.doctu.ru/images/thumb/120x120/120x120-78b50dcb4b38f89c9e9ceeeb6f46ae43.jpg" /
+                              .col-xs-2.galleryImg
+                                a.fancybox href="https://cdn.doctu.ru/images/9391b18d9a8e8c8334a2e519acb8522f.jpg" rel="gallery1" title="" 
+                                  img alt="" height="120" src="https://cdn.doctu.ru/images/thumb/120x120/120x120-9391b18d9a8e8c8334a2e519acb8522f.jpg" /
+                              .col-xs-2.galleryImg
+                                a.fancybox href="https://cdn.doctu.ru/images/7d903ade8277a3ff23aa9fa20f60070b.jpg" rel="gallery1" title="" 
+                                  img alt="" height="120" src="https://cdn.doctu.ru/images/thumb/120x120/120x120-7d903ade8277a3ff23aa9fa20f60070b.jpg" /
+                              .col-xs-2.galleryImg
+                                a.fancybox href="https://cdn.doctu.ru/images/4194b857d94e1a0b4b282223e8645c07.jpg" rel="gallery1" title="" 
+                                  img alt="" height="120" src="https://cdn.doctu.ru/images/thumb/120x120/120x120-4194b857d94e1a0b4b282223e8645c07.jpg" /
+                              .col-xs-2.galleryImg
+                                a.fancybox href="https://cdn.doctu.ru/images/7d9818f71b4d8427f59eb4fc3b991ee1.jpg" rel="gallery1" title="" 
+                                  img alt="" height="120" src="https://cdn.doctu.ru/images/thumb/120x120/120x120-7d9818f71b4d8427f59eb4fc3b991ee1.jpg" /
+                              .col-xs-2.galleryImg
+                                a.fancybox href="https://cdn.doctu.ru/images/64f248f80d10627de249062d4b5071d7.jpg" rel="gallery1" title="" 
+                                  img alt="" height="120" src="https://cdn.doctu.ru/images/thumb/120x120/120x120-64f248f80d10627de249062d4b5071d7.jpg" /
+                              .col-xs-2.galleryImg
+                                a.fancybox href="https://cdn.doctu.ru/images/e323ac7db7ad5b0ce1afd028473bd03d.jpg" rel="gallery1" title="" 
+                                  img alt="" height="120" src="https://cdn.doctu.ru/images/thumb/120x120/120x120-e323ac7db7ad5b0ce1afd028473bd03d.jpg" /
+
+                            .row
+                              .col-xs-12
+                                #show_all_doctors
+                                  .btn.btn-default.btn-block.show_more.showClinicsDoctors Все фото (10)
+                  section.similarClinics
+                    .bestDoctors
+                      .panel.panel-default
+                        .panel-heading
+                          h2 Похожие клиники
+                        .panel-body
+                          - for item in [1,2,3]
+                            .col-xs-4
+                              .media
+                                .media-left
+                                  img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg"
+                                .media-body
+                                  h3 Многопрофильная клиника РАМИ
+    == Slim::Template.new("footer.slim").render
