@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body#clinicSearchPage
+    == Slim::Template.new("navbar.slim").render
+    #container-clinic.container
+      .search-clinic-wrapper
+        .clf-filter
+          aside#filterAffix data-spy="affix" data-offset-top="65" class="affix-top"
+            == Slim::Template.new("left_filter.slim").render
+        .clf-list
+          #searchResults
+            .seo
+              h1 Вы искали: Клиники в Санкт-Петербурге
+              .description.readmore
+                p 
+                  strong Медицинский центр
+                  |  для детей – далеко не то же самое, что лечебное учреждение для их родителей. Во-первых, детская медицина отличается от взрослой в силу специфической анатомии малышей. Во-вторых, хороший врач должен быть для юного пациента одновременно и психологом, и аниматором, и педагогом.
+
+    #clinicMap.clf-map
+    == Slim::Template.new("script.slim").render

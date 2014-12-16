@@ -1,0 +1,37 @@
+#container-clinic {
+  width: 100% !important;
+  padding-right: 0;
+  .search-clinic-wrapper {
+    float: left;
+    width: 745px !important;
+    height: 100%;
+    .clf-filter {
+      width: 0 !important;
+      float: left;
+      margin-top: 20px;
+    }
+    .clf-list {
+      width: 500px !important;
+      margin-left: 280px;
+      padding: 0 15px 0 0 !important;
+      .result {
+        width: 55% !important;
+        padding-right: 0;
+      }
+      .sort-type {
+        width: 45% !important;
+        padding-left: 0;
+      }
+    }
+    .row {
+      &:before, &:after {
+      content: " ";
+      display: table;
+      clear: none;
+      }
+    }
+  }
+}
+#filterAffix {
+	width: 250px;
+}
