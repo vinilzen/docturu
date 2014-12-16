@@ -331,7 +331,7 @@
 
     // Outdent the form if last child to line up with content down the page
     &.navbar-right:last-child {
-      margin-right: -$navbar-padding-horizontal;
+      margin-right: 0; //-$navbar-padding-horizontal;
     }
   // Undo 100% width for pull classes
   @media (min-width: $grid-float-breakpoint) {

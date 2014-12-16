@@ -54,11 +54,11 @@ html
                       section#clinicTabs.clinic-tabs
                         ul#clTab.nav.nav-tabs
                           li.active
-                            a data-toggle="tab" href="#profileTab"  Профиль
+                            a data-toggle="tab" href="#profileTab" Профиль
                           li
-                            a data-toggle="tab" href="#reviewsTab"  Отзывы
+                            a data-toggle="tab" href="#reviewsTab" Отзывы
                         .tab-content
-                          .tab-pane.clinic-page.active
+                          .tab-pane.clinic-page.active#profileTab
                             .row
                               .col-xs-9
                                 .description.readmore
@@ -146,13 +146,247 @@ html
                               .col-xs-2.galleryImg
                                 a.fancybox href="https://cdn.doctu.ru/images/e323ac7db7ad5b0ce1afd028473bd03d.jpg" rel="gallery1" title="" 
                                   img alt="" height="120" src="https://cdn.doctu.ru/images/thumb/120x120/120x120-e323ac7db7ad5b0ce1afd028473bd03d.jpg" /
-
                             .row
                               .col-xs-12
                                 #show_all_doctors
                                   .btn.btn-default.btn-block.show_more.showClinicsDoctors Все фото (10)
+                          .tab-pane.clinic-page#reviewsTab
+                            ul.nav.nav-pills
+                              li.active
+                                a data-toggle="tab" href="#clinicRev" О клинике
+                              li
+                                a data-toggle="tab" href="#doctorsRev" О врачах
+                            .tab-content
+                              #clinicRev.tab-pane.active
+                                .reviews
+                                  .reviews_controls
+                                    button.btn.btn-rew.btn-open data-target="#clinicReviewForm" data-toggle="collapse"  Оставить отзыв
+                                    .rev-help
+                                      #revHelp.popover_click data-content="" data-original-title="" rel="popover"  Откуда берутся отзывы?
+                                  .clearfix
+                                  section#clinicReviewForm.review-form.show.in style=("overflow: hidden; margin-top: 36px; height: auto;") 
+                                    form#clinic_comment_form action="" method="post" 
+                                      input name="clinic" type="hidden" value="F9aDYXhkv0QjkP09" /
+                                      .comment-err
+                                      .comment-cfm
+                                      .row
+                                        .col-xs-3.rating-params
+                                          .form-group
+                                            label for="rateParam1"  Месторасположение:
+                                            .star-rating.ratingInput
+                                              input checked="" name="rate1" type="radio" value="" /
+                                              span.hide
+                                              input name="rate1" type="radio" value="1" /
+                                              span
+                                              input name="rate1" type="radio" value="2" /
+                                              span
+                                              input name="rate1" type="radio" value="3" /
+                                              span
+                                              input name="rate1" type="radio" value="4" /
+                                              span
+                                              input name="rate1" type="radio" value="5" /
+                                              span
+                                          .form-group
+                                            label for="rateParam1"  Персонал:
+                                            .star-rating.ratingInput
+                                              input checked="" name="rate2" type="radio" value="" /
+                                              span.hide
+                                              input name="rate2" type="radio" value="1" /
+                                              span
+                                              input name="rate2" type="radio" value="2" /
+                                              span
+                                              input name="rate2" type="radio" value="3" /
+                                              span
+                                              input name="rate2" type="radio" value="4" /
+                                              span
+                                              input name="rate2" type="radio" value="5" /
+                                              span
+                                          .form-group
+                                            label for="rateParam1"  Цена/качество:
+                                            .star-rating.ratingInput
+                                              input checked="" name="rate3" type="radio" value="" /
+                                              span.hide
+                                              input name="rate3" type="radio" value="1" /
+                                              span
+                                              input name="rate3" type="radio" value="2" /
+                                              span
+                                              input name="rate3" type="radio" value="3" /
+                                              span
+                                              input name="rate3" type="radio" value="4" /
+                                              span
+                                              input name="rate3" type="radio" value="5" /
+                                              span
+                                          .form-group
+                                            label for="rateParam1"  Комфорт пребывания:
+                                            .star-rating.ratingInput
+                                              input checked="" name="rate4" type="radio" value="" /
+                                              span.hide
+                                              input name="rate4" type="radio" value="1" /
+                                              span
+                                              input name="rate4" type="radio" value="2" /
+                                              span
+                                              input name="rate4" type="radio" value="3" /
+                                              span
+                                              input name="rate4" type="radio" value="4" /
+                                              span
+                                              input name="rate4" type="radio" value="5" /
+                                              span
+                                          .form-group
+                                            label for="rateParam1"  Посоветуете ли вы клинику?
+                                            .star-rating.ratingInput
+                                              input checked="" name="rate5" type="radio" value="" /
+                                              span.hide
+                                              input name="rate5" type="radio" value="1" /
+                                              span
+                                              input name="rate5" type="radio" value="2" /
+                                              span
+                                              input name="rate5" type="radio" value="3" /
+                                              span
+                                              input name="rate5" type="radio" value="4" /
+                                              span
+                                              input name="rate5" type="radio" value="5" /
+                                              span
+                                        .col-xs-9.rev-form
+                                          .form-group
+                                            label for="revQuality"  Достоинства
+                                            textarea#revQuality.form-control name="content" rows="3" 
+                                          .form-group
+                                            label for="revImpair"  Недостатки
+                                            textarea#revImpair.form-control name="content2" rows="3" 
+                                          .row
+                                            .form-group.col-xs-6
+                                              label for="userNs"  ФИО
+                                              input#userNs.form-control name="fio" type="text" value="" /
+                                            .form-group.col-xs-6
+                                              label for="revTel"  Телефон
+                                              input#revTel.form-control name="phone" type="text" value="" /
+                                          .help Контактные данные нужны для проверки достоверности отзыва и не передаются третьим лицам
+                                          .form-group.captcha
+                                            span#vericode style=("display: none;") 
+                                              label for="revCap"  Введите код подтверждения
+                                              input.form-control name="vericode" placeholder="" type="text" /
+                                            button.btn.btn-success.pull-right type="submit"  Отправить
+                                  section.reviews-list
+                                  a#showMoreComments.btn.btn-rew.btn-open.pull-left data-page="0" href="#" style=("display: none;")  Показать ещё
+                              #doctorsRev.tab-pane
+                                .reviews
+                                  .clearfix
+                                  section.reviews-list
+                                    .rev-item class="[+chunk.rowclass+]" 
+                                      a name="comment3242" 
+                                      .username.h4 Рената
+                                      .doc_name
+                                        | о враче 
+                                        a.doctorReview href="/doctor/turusheva-anna-vladimirovna" target="_blank" Турушева Анна Владимировна
+                                      .rating data-original-title="" rel="popover3242" title=""  Хорошо, 4.4
+                                      .rev-text.merits
+                                        | После родов очень трудно было сбросить килограммы,они возвращались все снова и снова. Я сидела на разных диетах , включая даже голодание, иглоукалывание и прочие вещи, но вес возвращался вдвое! Теперь я постоянно веду общение с Анной Владимировной, которая мне помогла сбросить уже 8 килограмм. Так постепенно я начала сбрасывать и продолжаю сбрасывать до сих пор.Спасибо Анне Владимировне за рекомендации!
+                                      .rev-text.disadvantages
+                                      hr.clearfix/
+                                    .rev-item class="[+chunk.rowclass+]" 
+                                      a name="comment3243" 
+                                      .username.h4 Алевтина Кудряшова
+                                      .doc_name
+                                        | о враче 
+                                        a.doctorReview href="/doctor/turusheva-anna-vladimirovna" target="_blank" Турушева Анна Владимировна
+                                      .rating data-original-title="" rel="popover3243" title=""  Хорошо, 4.2
+                                      .rev-text.merits
+                                        | Всю жизнь была полным ребенком в семье, часто терпела насмешки ребят и было трудно найти работу, поэтому решила пойти за помощью к Анне Владимировне. Она дала мне отличные советы по питанию и спорту, которые в ближайшее время подействовали. Никогда еще худеть не было таким легким и даже приятным занятием. Огромная благодарность врачу за ее труд и теперешнее мое состояние!
+                                      .rev-text.disadvantages
+                                      hr.clearfix/
+                                    .rev-item class="[+chunk.rowclass+]" 
+                                      a name="comment1153" 
+                                      .username.h4 Иванова Юлия
+                                      .doc_name
+                                        | о враче 
+                                        a.doctorReview href="/doctor/ivljushova-darja-vjacheslavovna" target="_blank" Ивлюшова  Дарья  Вячеславовна
+                                      .rating data-original-title="" rel="popover1153" title=""  Превосходно, 5.0
+                                      .rev-text.merits
+                                        | У меня гастрит с детства,не знаю откуда он взялся,но это факт.Семь лет назад даже попала в реанимацию,где провела трое суток.О враче Ивлюшовой Дарье Вячеславовне узнала от знакомой.Она у нее наблюдается и очень довольна.Я так же рада что доверила свое здоровье именно Дарье Вячеславовне.Она опытный,грамотный,а самое главное душевный врач и человек.Теперь со своим хроническим гастритом наблюдаюсь только у нее.
+                                      .rev-text.disadvantages
+                                      hr.clearfix/
+                                    .rev-item class="[+chunk.rowclass+]" 
+                                      a name="comment1427" 
+                                      .username.h4 Алексей
+                                      .doc_name
+                                        | о враче 
+                                        a.doctorReview href="/doctor/klubkova-elena-jurzhenvelevna" target="_blank" Клубкова Елена Юрженвельевна
+                                      .rating data-original-title="" rel="popover1427" title=""  Превосходно, 5.0
+                                      .rev-text.merits
+                                        | Хочу поблагодарить заведующую отделением восстановительной медицины  Клубкову
+                                        | Елену Юрженвельевну и весь коллектив отделения за то, что помогли мне пройти реабилитационный период после спортивной травмы в их отделение.
+                                        | Елена Юрженвельевна подбадривала меня весь период пребывания в ее отделение, не давала упасть духом и снова и снова заставляла меня делать физические упражнения.
+                                      .rev-text.disadvantages
+                                      hr.clearfix/
+                                    /! /item
+                                    .rev-item class="[+chunk.rowclass+]" 
+                                      a name="comment127" 
+                                      .username.h4 Кабаев Иван Иванович
+                                      .doc_name
+                                        | о враче 
+                                        a.doctorReview href="/doctor/antija-iraklijj-otarievich" target="_blank" Антия Ираклий Отариевич
+                                      .rating data-original-title="" rel="popover127" title=""  Очень хорошо, 4.8
+                                      .rev-text.merits
+                                        | Понравился данный специалист качественный и безболезненной работой. К Антия Ираклию Отаровичу приходил на прием два раза с  более чем наполовину разрушенными зубами, а теперь эти зубы имеют практически свой первозданный вид. Я более чем доволен  - талантливый врач, очень обходителен и внимателен к пациентам, не жалко потраченных денег за такую отличную работу.
+                                      .rev-text.disadvantages
+                                      hr.clearfix/
+                                    .rev-item class="[+chunk.rowclass+]" 
+                                      a name="comment2081" 
+                                      .username.h4 Антон
+                                      .doc_name
+                                        | о враче 
+                                        a.doctorReview href="/doctor/muchkin-aleksandr-vladimirovich" target="_blank" Мучкин Александр Владимирович
+                                      .rating data-original-title="" rel="popover2081" title=""  Превосходно, 5.0
+                                      .rev-text.merits
+                                      .rev-text.disadvantages
+                                      hr.clearfix/
+                                    .rev-item class="[+chunk.rowclass+]" 
+                                      a name="comment3241" 
+                                      .username.h4 Рябовол Ольга Николаевна
+                                      .doc_name
+                                        | о враче 
+                                        a.doctorReview href="/doctor/turusheva-anna-vladimirovna" target="_blank" Турушева Анна Владимировна
+                                      .rating data-original-title="" rel="popover3241" title=""  Превосходно, 5.0
+                                      .rev-text.merits
+                                        | Мой сын - подросток и страдает проблемами излишнего веса, что в свою очередь отразилось и на общем состоянии его здоровья. Нам нужно было срочно решать эту проблему и мы обратились за помощью к Анне Владимировне, так я много слышала о профессионализме этого врача. Мне очень понравился подход данного специалиста и к пациенту и к самой проблеме в целом. Она реально смогла нам помочь и мы продолжаем и сейчас обращаться к ней за помощью.
+                                      .rev-text.disadvantages
+                                        | нет
+                                      hr.clearfix/
+                                    .rev-item class="[+chunk.rowclass+]" 
+                                      a name="comment2082" 
+                                      .username.h4 Никита
+                                      .doc_name
+                                        | о враче 
+                                        a.doctorReview href="/doctor/muchkin-aleksandr-vladimirovich" target="_blank" Мучкин Александр Владимирович
+                                      .rating data-original-title="" rel="popover2082" title=""  Очень хорошо, 4.6
+                                      .rev-text.merits
+                                        | К доктору обращаюсь регулярно. 3 года назад получил травму спины на склоне в Яхроме, с тех пор регулярно мучают боли. Стараюсь справляться без лекарств по средствам мануальной терапии. Александр Владимирович провел полное обследование позвоночника и раз в 4-5 месяцев проводит мануальную терапию. Доволен результатом, жаль, что нет универсальной таблетки - съел и все прошло.
+                                      .rev-text.disadvantages
+                                      hr.clearfix/
+                                    .rev-item class="[+chunk.rowclass+]" 
+                                      a name="comment128" 
+                                      .username.h4 Демеуф Феликс Кашапович
+                                      .doc_name
+                                        | о враче 
+                                        a.doctorReview href="/doctor/antija-iraklijj-otarievich" target="_blank" Антия Ираклий Отариевич
+                                      .rating data-original-title="" rel="popover128" title=""  Очень хорошо, 4.8
+                                      .rev-text.merits
+                                        | Были на приеме у уролога Буту, а также лечились стационарно у Дмитрия Петровича я и мой брат. Остались довольны оба лечением у данного специалиста: деликатный, безболезненный прием, правильно устанавливает диагноз, сопровождает от начала до выздоровления своих пациентов, поддерживая и консультируя по любым вопросам. Замечательный специалист и просто человек.
+                                      .rev-text.disadvantages
+                                      hr.clearfix/
+                                    .rev-item class="[+chunk.rowclass+]" 
+                                      a name="comment1426" 
+                                      .username.h4 Сергей
+                                      .doc_name
+                                        | о враче 
+                                        a.doctorReview href="/doctor/klubkova-elena-jurzhenvelevna" target="_blank" Клубкова Елена Юрженвельевна
+                                      .rating data-original-title="" rel="popover1426" title=""  Превосходно, 5.0
+                                      .rev-text.merits
+                                      .rev-text.disadvantages
+                                      hr.clearfix
+                                  a#showMoreDocsComments.btn.btn-rew.btn-open data-page="1" href="#" style=("display: none;")  Показать ещё
+
                   section.similarClinics
-                    .bestDoctors
                       .panel.panel-default
                         .panel-heading
                           h2 Похожие клиники

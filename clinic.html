@@ -29,18 +29,17 @@
               <a href="/about.html">О проекте</a>
             </li>
           </ul>
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <select class="form-control" id="city" name="city">
-                <option value="">
-                  Санкт-Петербург
-                </option>
-                <option value="">
-                  Москва
-                </option>
-              </select>
-            </div>
-          </form>
+          <div class="city-changer">
+            <a class="showCities" href="#"> Санкт-Петербург</a>
+            <ul>
+              <li class="selected">
+                <a href="http://doctu.ru">Санкт-Петербург</a>
+              </li>
+              <li>
+                <a href="http://msk.doctu.ru">Москва</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -1405,14 +1404,14 @@
                       <section class="clinic-tabs" id="clinicTabs">
                         <ul class="nav nav-tabs" id="clTab">
                           <li class="active">
-                            <a data-toggle="tab" href="#profileTab"> Профиль</a>
+                            <a data-toggle="tab" href="#profileTab">Профиль</a>
                           </li>
                           <li>
-                            <a data-toggle="tab" href="#reviewsTab"> Отзывы</a>
+                            <a data-toggle="tab" href="#reviewsTab">Отзывы</a>
                           </li>
                         </ul>
                         <div class="tab-content">
-                          <div class="tab-pane clinic-page active">
+                          <div class="tab-pane clinic-page active" id="profileTab">
                             <div class="row">
                               <div class="col-xs-9">
                                 <div class="description readmore">
@@ -1557,53 +1556,318 @@
                               </div>
                             </div>
                           </div>
+                          <div class="tab-pane clinic-page" id="reviewsTab">
+                            <ul class="nav nav-pills">
+                              <li class="active">
+                                <a data-toggle="tab" href="#clinicRev">О клинике</a>
+                              </li>
+                              <li>
+                                <a data-toggle="tab" href="#doctorsRev">О врачах</a>
+                              </li>
+                            </ul>
+                            <div class="tab-content">
+                              <div class="tab-pane active" id="clinicRev">
+                                <div class="reviews">
+                                  <div class="reviews_controls">
+                                    <button class="btn btn-rew btn-open" data-target="#clinicReviewForm" data-toggle="collapse"> Оставить отзыв</button>
+                                    <div class="rev-help">
+                                      <div class="popover_click" data-content="" data-original-title="" id="revHelp" rel="popover">
+                                        Откуда берутся отзывы?
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                  <section class="review-form show in" id="clinicReviewForm" style="overflow: hidden; margin-top: 36px; height: auto;">
+                                    <form action="" id="clinic_comment_form" method="post">
+                                      <input name="clinic" type="hidden" value="F9aDYXhkv0QjkP09" />
+                                      <div class="comment-err"></div>
+                                      <div class="comment-cfm"></div>
+                                      <div class="row">
+                                        <div class="col-xs-3 rating-params">
+                                          <div class="form-group">
+                                            <label for="rateParam1"> Месторасположение:</label>
+                                            <div class="star-rating ratingInput">
+                                              <input checked="" name="rate1" type="radio" value="" /><span class="hide"></span><input name="rate1" type="radio" value="1" /><span></span><input name="rate1" type="radio" value="2" /><span></span><input name="rate1" type="radio" value="3" /><span></span><input name="rate1" type="radio" value="4" /><span></span><input name="rate1" type="radio" value="5" /><span></span>
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="rateParam1"> Персонал:</label>
+                                            <div class="star-rating ratingInput">
+                                              <input checked="" name="rate2" type="radio" value="" /><span class="hide"></span><input name="rate2" type="radio" value="1" /><span></span><input name="rate2" type="radio" value="2" /><span></span><input name="rate2" type="radio" value="3" /><span></span><input name="rate2" type="radio" value="4" /><span></span><input name="rate2" type="radio" value="5" /><span></span>
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="rateParam1"> Цена/качество:</label>
+                                            <div class="star-rating ratingInput">
+                                              <input checked="" name="rate3" type="radio" value="" /><span class="hide"></span><input name="rate3" type="radio" value="1" /><span></span><input name="rate3" type="radio" value="2" /><span></span><input name="rate3" type="radio" value="3" /><span></span><input name="rate3" type="radio" value="4" /><span></span><input name="rate3" type="radio" value="5" /><span></span>
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="rateParam1"> Комфорт пребывания:</label>
+                                            <div class="star-rating ratingInput">
+                                              <input checked="" name="rate4" type="radio" value="" /><span class="hide"></span><input name="rate4" type="radio" value="1" /><span></span><input name="rate4" type="radio" value="2" /><span></span><input name="rate4" type="radio" value="3" /><span></span><input name="rate4" type="radio" value="4" /><span></span><input name="rate4" type="radio" value="5" /><span></span>
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="rateParam1"> Посоветуете ли вы клинику?</label>
+                                            <div class="star-rating ratingInput">
+                                              <input checked="" name="rate5" type="radio" value="" /><span class="hide"></span><input name="rate5" type="radio" value="1" /><span></span><input name="rate5" type="radio" value="2" /><span></span><input name="rate5" type="radio" value="3" /><span></span><input name="rate5" type="radio" value="4" /><span></span><input name="rate5" type="radio" value="5" /><span></span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-xs-9 rev-form">
+                                          <div class="form-group">
+                                            <label for="revQuality"> Достоинства</label><textarea class="form-control" id="revQuality" name="content" rows="3"></textarea>
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="revImpair"> Недостатки</label><textarea class="form-control" id="revImpair" name="content2" rows="3"></textarea>
+                                          </div>
+                                          <div class="row">
+                                            <div class="form-group col-xs-6">
+                                              <label for="userNs"> ФИО</label><input class="form-control" id="userNs" name="fio" type="text" value="" />
+                                            </div>
+                                            <div class="form-group col-xs-6">
+                                              <label for="revTel"> Телефон</label><input class="form-control" id="revTel" name="phone" type="text" value="" />
+                                            </div>
+                                          </div>
+                                          <div class="help">
+                                            Контактные данные нужны для проверки достоверности отзыва и не передаются третьим лицам
+                                          </div>
+                                          <div class="form-group captcha">
+                                            <span id="vericode" style="display: none;"><label for="revCap"> Введите код подтверждения</label><input class="form-control" name="vericode" placeholder="" type="text" /></span><button class="btn btn-success pull-right" type="submit"> Отправить</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </section>
+                                  <section class="reviews-list"></section>
+                                  <a class="btn btn-rew btn-open pull-left" data-page="0" href="#" id="showMoreComments" style="display: none;"> Показать ещё</a>
+                                </div>
+                              </div>
+                              <div class="tab-pane" id="doctorsRev">
+                                <div class="reviews">
+                                  <div class="clearfix"></div>
+                                  <section class="reviews-list">
+                                    <div class="rev-item [+chunk.rowclass+]">
+                                      <a name="comment3242"></a>
+                                      <div class="username h4">
+                                        Рената
+                                      </div>
+                                      <div class="doc_name">
+                                        о враче <a class="doctorReview" href="/doctor/turusheva-anna-vladimirovna" target="_blank">Турушева Анна Владимировна</a>
+                                      </div>
+                                      <div class="rating" data-original-title="" rel="popover3242" title="">
+                                        Хорошо, 4.4
+                                      </div>
+                                      <div class="rev-text merits">
+                                        После родов очень трудно было сбросить килограммы,они возвращались все снова и снова. Я сидела на разных диетах , включая даже голодание, иглоукалывание и прочие вещи, но вес возвращался вдвое! Теперь я постоянно веду общение с Анной Владимировной, которая мне помогла сбросить уже 8 килограмм. Так постепенно я начала сбрасывать и продолжаю сбрасывать до сих пор.Спасибо Анне Владимировне за рекомендации!
+                                      </div>
+                                      <div class="rev-text disadvantages"></div>
+                                      <hr class="clearfix" />
+                                    </div>
+                                    <div class="rev-item [+chunk.rowclass+]">
+                                      <a name="comment3243"></a>
+                                      <div class="username h4">
+                                        Алевтина Кудряшова
+                                      </div>
+                                      <div class="doc_name">
+                                        о враче <a class="doctorReview" href="/doctor/turusheva-anna-vladimirovna" target="_blank">Турушева Анна Владимировна</a>
+                                      </div>
+                                      <div class="rating" data-original-title="" rel="popover3243" title="">
+                                        Хорошо, 4.2
+                                      </div>
+                                      <div class="rev-text merits">
+                                        Всю жизнь была полным ребенком в семье, часто терпела насмешки ребят и было трудно найти работу, поэтому решила пойти за помощью к Анне Владимировне. Она дала мне отличные советы по питанию и спорту, которые в ближайшее время подействовали. Никогда еще худеть не было таким легким и даже приятным занятием. Огромная благодарность врачу за ее труд и теперешнее мое состояние!
+                                      </div>
+                                      <div class="rev-text disadvantages"></div>
+                                      <hr class="clearfix" />
+                                    </div>
+                                    <div class="rev-item [+chunk.rowclass+]">
+                                      <a name="comment1153"></a>
+                                      <div class="username h4">
+                                        Иванова Юлия
+                                      </div>
+                                      <div class="doc_name">
+                                        о враче <a class="doctorReview" href="/doctor/ivljushova-darja-vjacheslavovna" target="_blank">Ивлюшова  Дарья  Вячеславовна</a>
+                                      </div>
+                                      <div class="rating" data-original-title="" rel="popover1153" title="">
+                                        Превосходно, 5.0
+                                      </div>
+                                      <div class="rev-text merits">
+                                        У меня гастрит с детства,не знаю откуда он взялся,но это факт.Семь лет назад даже попала в реанимацию,где провела трое суток.О враче Ивлюшовой Дарье Вячеславовне узнала от знакомой.Она у нее наблюдается и очень довольна.Я так же рада что доверила свое здоровье именно Дарье Вячеславовне.Она опытный,грамотный,а самое главное душевный врач и человек.Теперь со своим хроническим гастритом наблюдаюсь только у нее.
+                                      </div>
+                                      <div class="rev-text disadvantages"></div>
+                                      <hr class="clearfix" />
+                                    </div>
+                                    <div class="rev-item [+chunk.rowclass+]">
+                                      <a name="comment1427"></a>
+                                      <div class="username h4">
+                                        Алексей
+                                      </div>
+                                      <div class="doc_name">
+                                        о враче <a class="doctorReview" href="/doctor/klubkova-elena-jurzhenvelevna" target="_blank">Клубкова Елена Юрженвельевна</a>
+                                      </div>
+                                      <div class="rating" data-original-title="" rel="popover1427" title="">
+                                        Превосходно, 5.0
+                                      </div>
+                                      <div class="rev-text merits">
+                                        Хочу поблагодарить заведующую отделением восстановительной медицины  КлубковуЕлену Юрженвельевну и весь коллектив отделения за то, что помогли мне пройти реабилитационный период после спортивной травмы в их отделение.Елена Юрженвельевна подбадривала меня весь период пребывания в ее отделение, не давала упасть духом и снова и снова заставляла меня делать физические упражнения.
+                                      </div>
+                                      <div class="rev-text disadvantages"></div>
+                                      <hr class="clearfix" />
+                                    </div>
+                                    <!--/item-->
+                                    <div class="rev-item [+chunk.rowclass+]">
+                                      <a name="comment127"></a>
+                                      <div class="username h4">
+                                        Кабаев Иван Иванович
+                                      </div>
+                                      <div class="doc_name">
+                                        о враче <a class="doctorReview" href="/doctor/antija-iraklijj-otarievich" target="_blank">Антия Ираклий Отариевич</a>
+                                      </div>
+                                      <div class="rating" data-original-title="" rel="popover127" title="">
+                                        Очень хорошо, 4.8
+                                      </div>
+                                      <div class="rev-text merits">
+                                        Понравился данный специалист качественный и безболезненной работой. К Антия Ираклию Отаровичу приходил на прием два раза с  более чем наполовину разрушенными зубами, а теперь эти зубы имеют практически свой первозданный вид. Я более чем доволен  - талантливый врач, очень обходителен и внимателен к пациентам, не жалко потраченных денег за такую отличную работу.
+                                      </div>
+                                      <div class="rev-text disadvantages"></div>
+                                      <hr class="clearfix" />
+                                    </div>
+                                    <div class="rev-item [+chunk.rowclass+]">
+                                      <a name="comment2081"></a>
+                                      <div class="username h4">
+                                        Антон
+                                      </div>
+                                      <div class="doc_name">
+                                        о враче <a class="doctorReview" href="/doctor/muchkin-aleksandr-vladimirovich" target="_blank">Мучкин Александр Владимирович</a>
+                                      </div>
+                                      <div class="rating" data-original-title="" rel="popover2081" title="">
+                                        Превосходно, 5.0
+                                      </div>
+                                      <div class="rev-text merits"></div>
+                                      <div class="rev-text disadvantages"></div>
+                                      <hr class="clearfix" />
+                                    </div>
+                                    <div class="rev-item [+chunk.rowclass+]">
+                                      <a name="comment3241"></a>
+                                      <div class="username h4">
+                                        Рябовол Ольга Николаевна
+                                      </div>
+                                      <div class="doc_name">
+                                        о враче <a class="doctorReview" href="/doctor/turusheva-anna-vladimirovna" target="_blank">Турушева Анна Владимировна</a>
+                                      </div>
+                                      <div class="rating" data-original-title="" rel="popover3241" title="">
+                                        Превосходно, 5.0
+                                      </div>
+                                      <div class="rev-text merits">
+                                        Мой сын - подросток и страдает проблемами излишнего веса, что в свою очередь отразилось и на общем состоянии его здоровья. Нам нужно было срочно решать эту проблему и мы обратились за помощью к Анне Владимировне, так я много слышала о профессионализме этого врача. Мне очень понравился подход данного специалиста и к пациенту и к самой проблеме в целом. Она реально смогла нам помочь и мы продолжаем и сейчас обращаться к ней за помощью.
+                                      </div>
+                                      <div class="rev-text disadvantages">
+                                        нет
+                                      </div>
+                                      <hr class="clearfix" />
+                                    </div>
+                                    <div class="rev-item [+chunk.rowclass+]">
+                                      <a name="comment2082"></a>
+                                      <div class="username h4">
+                                        Никита
+                                      </div>
+                                      <div class="doc_name">
+                                        о враче <a class="doctorReview" href="/doctor/muchkin-aleksandr-vladimirovich" target="_blank">Мучкин Александр Владимирович</a>
+                                      </div>
+                                      <div class="rating" data-original-title="" rel="popover2082" title="">
+                                        Очень хорошо, 4.6
+                                      </div>
+                                      <div class="rev-text merits">
+                                        К доктору обращаюсь регулярно. 3 года назад получил травму спины на склоне в Яхроме, с тех пор регулярно мучают боли. Стараюсь справляться без лекарств по средствам мануальной терапии. Александр Владимирович провел полное обследование позвоночника и раз в 4-5 месяцев проводит мануальную терапию. Доволен результатом, жаль, что нет универсальной таблетки - съел и все прошло.
+                                      </div>
+                                      <div class="rev-text disadvantages"></div>
+                                      <hr class="clearfix" />
+                                    </div>
+                                    <div class="rev-item [+chunk.rowclass+]">
+                                      <a name="comment128"></a>
+                                      <div class="username h4">
+                                        Демеуф Феликс Кашапович
+                                      </div>
+                                      <div class="doc_name">
+                                        о враче <a class="doctorReview" href="/doctor/antija-iraklijj-otarievich" target="_blank">Антия Ираклий Отариевич</a>
+                                      </div>
+                                      <div class="rating" data-original-title="" rel="popover128" title="">
+                                        Очень хорошо, 4.8
+                                      </div>
+                                      <div class="rev-text merits">
+                                        Были на приеме у уролога Буту, а также лечились стационарно у Дмитрия Петровича я и мой брат. Остались довольны оба лечением у данного специалиста: деликатный, безболезненный прием, правильно устанавливает диагноз, сопровождает от начала до выздоровления своих пациентов, поддерживая и консультируя по любым вопросам. Замечательный специалист и просто человек.
+                                      </div>
+                                      <div class="rev-text disadvantages"></div>
+                                      <hr class="clearfix" />
+                                    </div>
+                                    <div class="rev-item [+chunk.rowclass+]">
+                                      <a name="comment1426"></a>
+                                      <div class="username h4">
+                                        Сергей
+                                      </div>
+                                      <div class="doc_name">
+                                        о враче <a class="doctorReview" href="/doctor/klubkova-elena-jurzhenvelevna" target="_blank">Клубкова Елена Юрженвельевна</a>
+                                      </div>
+                                      <div class="rating" data-original-title="" rel="popover1426" title="">
+                                        Превосходно, 5.0
+                                      </div>
+                                      <div class="rev-text merits"></div>
+                                      <div class="rev-text disadvantages"></div>
+                                      <hr class="clearfix" />
+                                    </div>
+                                  </section>
+                                  <a class="btn btn-rew btn-open" data-page="1" href="#" id="showMoreDocsComments" style="display: none;"> Показать ещё</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </section>
                     </div>
                   </div>
                   <section class="similarClinics">
-                    <div class="bestDoctors">
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h2>
-                            Похожие клиники
-                          </h2>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h2>
+                          Похожие клиники
+                        </h2>
+                      </div>
+                      <div class="panel-body">
+                        <div class="col-xs-4">
+                          <div class="media">
+                            <div class="media-left">
+                              <img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg" />
+                            </div>
+                            <div class="media-body">
+                              <h3>
+                                Многопрофильная клиника РАМИ
+                              </h3>
+                            </div>
+                          </div>
                         </div>
-                        <div class="panel-body">
-                          <div class="col-xs-4">
-                            <div class="media">
-                              <div class="media-left">
-                                <img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg" />
-                              </div>
-                              <div class="media-body">
-                                <h3>
-                                  Многопрофильная клиника РАМИ
-                                </h3>
-                              </div>
+                        <div class="col-xs-4">
+                          <div class="media">
+                            <div class="media-left">
+                              <img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg" />
+                            </div>
+                            <div class="media-body">
+                              <h3>
+                                Многопрофильная клиника РАМИ
+                              </h3>
                             </div>
                           </div>
-                          <div class="col-xs-4">
-                            <div class="media">
-                              <div class="media-left">
-                                <img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg" />
-                              </div>
-                              <div class="media-body">
-                                <h3>
-                                  Многопрофильная клиника РАМИ
-                                </h3>
-                              </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <div class="media">
+                            <div class="media-left">
+                              <img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg" />
                             </div>
-                          </div>
-                          <div class="col-xs-4">
-                            <div class="media">
-                              <div class="media-left">
-                                <img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg" />
-                              </div>
-                              <div class="media-body">
-                                <h3>
-                                  Многопрофильная клиника РАМИ
-                                </h3>
-                              </div>
+                            <div class="media-body">
+                              <h3>
+                                Многопрофильная клиника РАМИ
+                              </h3>
                             </div>
                           </div>
                         </div>

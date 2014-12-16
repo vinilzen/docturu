@@ -78,4 +78,25 @@ $(function(){
         search_contains: true,
         width: '100%'
     });
+
+	$(function () { 
+		$("#revHelp[rel=popover]").popover({
+			trigger: 'hover',
+			placement: 'top',
+			html: 'true',
+			content: '<img class="icon" src="img/reviews.png">'});
+	});
+
+
+	$('.clinic-request .reviews a').click(function (evt) {
+		evt.preventDefault();
+		$('#clTab a[href="#reviewsTab"]').tab('show');
+	});
+
+	$('#clTab a:first').tab('show');
+	
+	if (location.hash == "#feedback") {
+		$('#clTab a[href="#reviewsTab"]').tab('show');
+	}
+
 });

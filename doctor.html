@@ -29,18 +29,17 @@
               <a href="/about.html">О проекте</a>
             </li>
           </ul>
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <select class="form-control" id="city" name="city">
-                <option value="">
-                  Санкт-Петербург
-                </option>
-                <option value="">
-                  Москва
-                </option>
-              </select>
-            </div>
-          </form>
+          <div class="city-changer">
+            <a class="showCities" href="#"> Санкт-Петербург</a>
+            <ul>
+              <li class="selected">
+                <a href="http://doctu.ru">Санкт-Петербург</a>
+              </li>
+              <li>
+                <a href="http://msk.doctu.ru">Москва</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -1440,7 +1439,7 @@
                     </div>
                     Действующий сертификат по специальности
                   </div>
-                  <div class="col-xs-7">
+                  <div class="col-xs-7 right_review">
                     <section class="doc-address clearfix" id="">
                       <section class="doctor_2_0 compact" data-address="Коломяжский пр., 36/2" data-cliniclogo="https://cdn.doctu.ru/images/thumb/74x74/74x74-1b5989e62843a52730fceda5c8005370.jpg" data-clinicname="Первая семейная клиника Петербурга. Многопрофильная на Коломяжском" data-clinicphone="+7(812)424-39-46" data-clinicurl="1-clinic.doctu.ru/mnogoprofilnaya_kolomyazhskiy" data-doctor="YiLfWWZOhjFmJdDf" data-family="Трофимов" data-metro="&lt;span class=&#39;line2&#39;&gt;Пионерская&lt;/span&gt; &lt;span class=&#39;line2&#39;&gt;Удельная&lt;/span&gt; " data-name="Максим Валерьевич" data-photo="https://cdn.doctu.ru/images/thumb/150x225/150x225-a2268db7a498b87ac9641f8ba9723bb3.jpg" data-samozapis="" data-speciality="Невролог, Мануальный терапевт, Остеопат, Инструктор ЛФК" data-status="working">
                         <div class="doc-info">
@@ -1574,7 +1573,6 @@
                           <hr class="clearfix" />
                         </div>
                       </section>
-                      <a class="btn btn-rew btn-open" data-page="0" href="#" id="showMoreComments">Показать ещё</a>
                     </div>
                   </div>
                 </div>

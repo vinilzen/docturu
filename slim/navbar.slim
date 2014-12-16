@@ -7,8 +7,8 @@
       ul.nav.navbar-nav
         li.active: a.hand[href="/partners.html"] Партнерство для клиник
         li: a[href="/about.html"] О проекте
-      form.navbar-form.navbar-right role="form" 
-        .form-group
-          select#city.form-control name="city" 
-            option value="" Санкт-Петербург
-            option value="" Москва
+      .city-changer
+        a.showCities href="#"  Санкт-Петербург
+        ul
+          li.selected: a[href="http://doctu.ru"] Санкт-Петербург
+          li: a[href="http://msk.doctu.ru"] Москва

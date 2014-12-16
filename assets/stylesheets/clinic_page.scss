@@ -39,7 +39,7 @@
       padding: 0;
     }
     .col-xs-3 {
-      width: 180px;
+      width: 210px;
       margin: 0;
       padding: 0;
     }
@@ -161,14 +161,31 @@
     margin: 20px 0;
     .nav-tabs li {
       a {
-        font-weight: 600;
+        font-weight: 700;
         font-size: 14px;
         color: #0ea646;
+        text-transform: none;
+        padding: 10px 15px;
       }
       &.active a {
-        font-weight: 600;
         color: #302a7a;
       }
+    }
+  }
+  .clinic .col-xs-9.rev-form {
+    width: 670px;
+  }
+  #clinicTabs .nav-pills > li {
+    > a {
+      color: #0ea646;
+      background: none;
+      padding: 5px 10px;
+    }
+    &.active > a {
+      background: none;
+      border: 1px solid #dddddd;
+      color: #302a7a;
+      margin-top: -1px;
     }
   }
 }
@@ -315,8 +332,155 @@
   margin-left: -18px;
   .galleryImg {
     display: inline-block;
+    width: 120px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 32px;
+  }
+  .galleryImg:nth-child(n+7) {
+    display: none;
+  }
+  .galleryImg:nth-child(n+6) {
+    margin-right: 0;
   }
 }
-.row-photo .galleryImg:nth-child(n+7) {
-  display: none;
+
+#clinicRev {
+  .reviews {
+    position: relative;
+    .rev-help {
+      position: absolute;
+      top: 5px;
+      left: 15px;
+      .popover {
+        max-width: 530px;
+      }
+      .popover-content {
+        padding: 10px;
+      }
+      .popover_click {
+        font-size: 13px;
+        color: #0ea646;
+        border-bottom: 1px dotted #0ea646;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .rev-text {
+      padding-left: 20px;
+      margin: 10px 0;
+      img {
+        margin-left: -20px;
+        margin-right: 5px;
+      }
+    }
+    .clearfix {
+      margin: 15px 0;
+    }
+    h3, .h3 {
+      font-weight: 600;
+      color: #302a7a;
+      display: inline-block;
+      &.first {
+        margin-top: 0;
+      }
+    }
+    .btn-open {
+      float: right;
+      font-size: 13px;
+    }
+    .reviews_controls {
+      float: right;
+      margin-top: -47px;
+      position: relative;
+      width: 315px;
+    }
+  }
+  .reviews-list {
+    padding-top: 20px;
+  }
+  .help {
+    position: relative;
+    top: -13px;
+    font-size: 13px;
+  }
+  blockquote.comment_responce {
+    margin: 15px 0 0 20px;
+  }
+  .rev-form {
+    .col-xs-6:first-child {
+      padding-left: 0;
+      padding-right: 15px;
+    }
+    .col-xs-6:last-child {
+      padding-right: 0;
+      padding-left: 15px;
+    }
+  }
+}
+
+.reviews-list {
+  .rev-item {
+    position: relative;
+    h4, .h4 {
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #302a7a;
+      display: inline-block;
+    }
+    .rev-date {
+      color: #999999;
+    }
+    .rating {
+      line-height: 22px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #0ea646;
+    }
+    .rating-params {
+      padding-right: 0;
+      label {
+        font-weight: normal;
+        color: #999999;
+        line-height: 120%;
+      }
+    }
+    .doc_name {
+      margin-top: -10px;
+      font-size: 13px;
+    }
+  }
+  .btn-more {
+    color: #0ea646;
+  }
+}
+.rev-text {
+  font-size: 13px;
+  &.review {
+    background: url('../img/review16.png') left 5px no-repeat;
+  }
+  &.merits {
+    background: url('../img/thumb-up.png') left top no-repeat;
+  }
+  &.disadvantages {
+    background: url('../img/thumb-down.png') left 3px no-repeat;
+  }
+}
+.tab-pane.clinic-page .reviews .rev-text {
+  padding-left: 20px;
+  margin: 10px 0;
+  img {
+    margin-left: -20px;
+    margin-right: 5px;
+  }
+}
+#doctorsRev .reviews {
+  padding-top: 50px;
 }

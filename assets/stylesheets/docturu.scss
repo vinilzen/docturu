@@ -18,6 +18,7 @@ $color_mountain_mist_approx: #999999;
 }
 .nav.navbar-nav {
 	padding-top: 5px;
+	padding-left: 45px;
 }
 .navbar-form {
 	margin-top: 13px;
@@ -33,11 +34,15 @@ $color_mountain_mist_approx: #999999;
 		}
 	}
 }
-.navbar-nav > li > a.hand {
-	background-image: url(../img/hand.gif);
-	background-repeat: no-repeat;
-	background-position: 15px 18px;
-	padding-left: 51px;
+.navbar-nav > li > a {
+	font-size: 13px;
+	color:#999;
+	&.hand {
+		background-image: url(../img/star.png);
+		background-repeat: no-repeat;
+		background-position: 0 17px;
+		padding-left: 21px;
+	}
 }
 h2 {
 	font-weight: 300; // 300
@@ -436,12 +441,12 @@ h3 {
 	border-top: 1px solid #eaeef3;
 }
 .header, .footer {
-	width: 1180px;
-	min-width: 1180px;
+	width: 1200px;
+	min-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
 	&>.row {
 		margin-left: 0;
 		margin-right: 0;
@@ -467,7 +472,7 @@ h3 {
 	.links {
 		float: right;
 		width: 600px;
-		padding-right: 0;
+		padding-right: 20px;
 	}
 	.list-inline {
 		margin-bottom: 0;
@@ -1149,9 +1154,9 @@ h3 {
 	}
 }
 .inner {
-	width: 1160px;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	width: 1180px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	.col-xs-3.left-sidebar {
 		padding-left:15px;
 		padding-right:15px;
@@ -1159,7 +1164,8 @@ h3 {
 	}
 	.col-xs-9.main-side {
 		padding-right: 0;
-		width: 860px;
+		padding-left: 15px;
+		width: 895px;
 	}
 	.btn-group-vertical {
 		width: 100%;
@@ -1346,6 +1352,12 @@ h3 {
 		}
 	}
 }
+.seo {
+	h1 {
+		color:#555;
+		font-size: 20px;
+	}
+}
 .showDoctorsOnMap {
 	width: 100%;
 	padding: 10px;
@@ -1381,7 +1393,44 @@ h3 {
 	}
 }
 
-
+.header .city-changer {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 150px;
+  ul {
+    display: none;
+    background: white;
+    border-radius: 8px;
+    list-style: none;
+    border: 1px solid #e3e3e3;
+    padding: 5px 15px;
+    top: -40px;
+    left: -15px;
+    position: relative;
+    z-index: 100;
+    li {
+      background: white;
+      line-height: 2.5em;
+      &.selected {
+        border-bottom: 1px solid #e3e3e3;
+      }
+      a {
+        display: block;
+      }
+    }
+  }
+  > a {
+    color: gray;
+    border-bottom: 1px dashed #e3e3e3;
+    text-decoration: none;
+    display: inline;
+    &:hover {
+      border-bottom: 1px solid #e3e3e3;
+      text-decoration: none;
+    }
+  }
+}
 
 .doctor_2_0 {
   padding: 20px 0;
@@ -1833,4 +1882,139 @@ h3 {
 }
 .rev-text.merits {
   background: url('../img/thumb-up.png') left top no-repeat;
+}
+.doctorReview {
+  color: #2a6496;
+  text-decoration: none;
+  border-bottom: 1px dotted #2a6496;
+  font-size: 13px;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+.docVip {
+  border: 1px solid #0ea646;
+  margin: -1px -15px 5px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/thumb-up-invert.png') center no-repeat #0ea646;
+    z-index: -1;
+    border-radius: 0 0 6px;
+  }
+}
+.ratingStar {
+  background-image: url('../img/rating.png');
+  background-repeat: no-repeat;
+  background-size: 80px 175px;
+  height: 16px;
+  width: 80px;
+  vertical-align: middle;
+  display: inline-block;
+  &.rating-5_0 {
+    background-position: 0 0;
+  }
+  &.rating-5 {
+    background-position: 0 0;
+  }
+  &.rating-4_5 {
+    background-position: 0 -16px;
+  }
+  &.rating-4_0 {
+    background-position: 0 -32px;
+  }
+  &.rating-4 {
+    background-position: 0 -32px;
+  }
+  &.rating-3_5 {
+    background-position: 0 -48px;
+  }
+  &.rating-3_0 {
+    background-position: 0 -64px;
+  }
+  &.rating-3 {
+    background-position: 0 -64px;
+  }
+  &.rating-2_5 {
+    background-position: 0 -80px;
+  }
+  &.rating-2_0 {
+    background-position: 0 -96px;
+  }
+  &.rating-2 {
+    background-position: 0 -96px;
+  }
+  &.rating-1_5 {
+    background-position: 0 -112px;
+  }
+  &.rating-1 {
+    background-position: 0 -128px;
+  }
+  &.rating-1_0 {
+    background-position: 0 -128px;
+  }
+  &.rating-0_5 {
+    background-position: 0 -144px;
+  }
+  &.rating-0 {
+    background-position: 0 -160px;
+  }
+  &.rating-0_0 {
+    background-position: 0 -160px;
+  }
+  &.rating-_0 {
+    background-position: 0 -160px;
+  }
+}
+.ratingInput {
+  li {
+    list-style: none;
+  }
+  .hide {
+    display: none;
+  }
+  input[type="radio"] {
+    position: absolute;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    margin-top: 0;
+    &:checked + span {
+      background-position: -32px 0;
+      ~ span {
+        background-position: 0 -160px;
+      }
+    }
+  }
+  span {
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 4px;
+    padding: 0 16px 1px 0;
+    background: url('../img/rating.png') no-repeat -32px 0;
+  }
+}
+.services-list td:last-child {
+  width: 150px;
+}
+.bestDoctors,
+.similarClinics,
+.bestClinics {
+  margin: 30px 0;
+  min-height: 166px;
+  border-radius: 8px;
+  padding: 10px 10px 21px;
 }
