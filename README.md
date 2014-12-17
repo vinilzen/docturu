@@ -28,3 +28,4 @@ http://test.to4ek.net/docturu/doctor.html
 
 http://test.to4ek.net/docturu/doctors.html
 
+http://test.to4ek.net/docturu/doctor_modal.html
