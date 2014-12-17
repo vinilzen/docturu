@@ -10,6 +10,9 @@
       width: 0 !important;
       float: left;
       margin-top: 20px;
+      .affix {
+        top:20px;
+      }
     }
     .clf-list {
       width: 500px !important;
@@ -206,4 +209,11 @@
   p {
     font-size: 13px;
   }
+}
+.clinic.clinicHover,
+#clinicList .clinic:hover {
+  border: 1px solid #0ea646 !important;
+  margin: -1px -16px;
+  padding: 0px 15px;
+  border-radius: 10px;
 }

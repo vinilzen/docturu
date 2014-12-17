@@ -447,7 +447,6 @@ h3 {
 }
 .header, .footer {
 	width: 1200px;
-	min-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 0px;
@@ -461,6 +460,9 @@ h3 {
   .header {
     width: 100%;
     border-bottom: 1px solid #dedede;
+  }
+  .nav.navbar-nav {
+    padding-left: 38px;
   }
 }
 .footer {
@@ -2039,4 +2041,158 @@ h3 {
   min-height: 166px;
   border-radius: 8px;
   padding: 10px 10px 21px;
+}
+.readmore a[href='#show'] {
+  background-image: url('../img/readmore.png');
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-left: 46px;
+  line-height: 19px;
+  color: #2a6496;
+}
+.services-list {
+  margin: 20px 0;
+  h4 {
+    color: #302a7a;
+    font-weight: 700;
+  }
+  .w70 {
+    width: 70%;
+  }
+}
+#clinicList div.tel, ymaps .tel {
+  border: 1px solid #302a7a;
+  border-radius: 4px;
+  color: #302a7a;
+  display: inline-block;
+  float: right;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 5px 12px 5px;
+}
+.doc-modal .modal-dialog {
+  width: 780px !important;
+}
+.clinic-modal {
+  .modal-dialog {
+    width: 780px !important;
+  }
+  .modal-body {
+    padding-top: 0;
+  }
+  .modal-header {
+    padding: 15px;
+    .modal-title {
+      font-weight: 600;
+      color: #0ea646;
+    }
+  }
+  .clinic-title {
+    display: inline-block;
+    width: 500px;
+    .help {
+      color: #999999;
+    }
+  }
+  .doc-spec {
+    float: right;
+    width: 200px;
+    margin-right: 10px;
+    .form-control {
+      padding: 4px 8px;
+      font-size: 13px;
+      margin-top: 5px;
+    }
+  }
+  .doc-list {
+    margin-bottom: 0 !important;
+    .btn-more {
+      padding: 0 !important;
+      margin-top: 15px;
+    }
+    .doc-name {
+      width: 44% !important;
+    }
+    .doc-request .btn {
+      margin-left: 0 !important;
+      font-size: 13px;
+    }
+    .doc-options img {
+      margin-left: -20px !important;
+      margin-right: 5px;
+    }
+  }
+}
+.modal-header {
+  .close {
+    margin-top: -2px;
+  }
+  padding: 15px;
+  .modal-title {
+    font-weight: 600;
+    color: #0ea646;
+  }
+}
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+.clinic-modal .doc-spec select {
+  padding: 6px 6px;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  height: 34px;
+  line-height: 1.428571429;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.btn {
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  -webkit-transition: color .2s linear;
+  transition: color 0.2s linear, background-color 0.2s linear;
+
+}
+.btn.btn-info {
+  color: #ffffff;
+  background-color: #5249c1;
+  border-color: #5249c1;
+  margin: 0;
+  margin-right: 10px;
+  padding: 6px 12px;
+  &:hover, &:focus {
+    border-color: #645cc7;
+    background-color: #423aa8;
+  }
+}
+.clinics_contacts .btn-success {
+  color: #ffffff;
+  background-color: #0da646;
+  border-color: #0da646;
+  &:hover {
+    background-color: #0a8036;
+    border-color: #096d2e;
+  }
 }

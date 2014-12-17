@@ -2,7 +2,7 @@ doctype html
 html
   head
     == Slim::Template.new("head.slim").render
-  body#clinicSearchPage
+  body#clinicSearchPage.modal-open.page-overflow
     == Slim::Template.new("navbar.slim").render
     #container-clinic.container
       .search-clinic-wrapper
@@ -61,42 +61,6 @@ html
                   .row
                     .col-xs-12.clinics_contacts
                       button.btn.btn-success.showClinicsDoctors.pull-left Запись на прием
-                      .tel itemprop="telephone" +7(812)425‑15‑33
-                  #ajaxClinicPriceReq.services-list
-                  hr.clearfix/
-            
-              - for i in [1,2]
-                section#clinic002.clinic data-cid="4" data-id="Bkzss8qd89Vls45k" data-name=("Клиническая больница №122 им. Л.Г.Соколова") itemscope="" itemtype="http://schema.org/LocalBusiness" 
-                  .row
-                    .col-xs-8
-                      .clinic-name
-                        a href="http://med122.doctu.ru/" target="_blank"
-                          h3 itemprop="name" Клиническая больница №122 им. Л.Г.Соколова
-                    .col-xs-4
-                      .clinic-request itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" 
-                        .star-rating
-                          img src="img/goldstar.png" /
-                          img src="img/goldstar.png" /
-                          img src="img/goldstar.png" /
-                          img src="img/goldstar.png" /
-                          img src="img/goldstar.png" /
-                        .rating itemprop="ratingValue"  4.8
-                        .reviews
-                          a.doctorReview href="http://med122.doctu.ru/#feedback" target="_blank"  По 652 отзывам
-                  .row itemprop="address" itemref="_addressLocality7" itemscope="" itemtype="http://schema.org/PostalAddress" 
-                    .col-xs-12
-                      .metro
-                        span.line2 Проспект Просвещения
-                        span.line2 Озерки
-                        span.line1 Гражданский проспект
-                      .address itemprop="streetAddress" 
-                        img src="img/address.png" /
-                        | пр. Культуры, д. 4
-                  meta#_addressLocality7 content="Санкт-Петербург" itemprop="addressLocality" /
-                  .row
-                    .col-xs-12.clinics_contacts
-                      button.btn.btn-info.showClinicsDoctors.pull-left Запись по ОМС
-                      .tel itemprop="telephone" +7(812)425‑15‑33
                   #ajaxClinicPriceReq.services-list
                   hr.clearfix/
             .text-center
@@ -123,3 +87,70 @@ html
               .modal-body
                 section#doctorList.doc-list
     == Slim::Template.new("script.slim").render
+    .modal-scrollable style="z-index: 1050;"
+      .modal.fade.clinic-modal.in#clinicModal tabindex="-1" role="dialog" aria-labelledby="clinicModalLabel" aria-hidden="true" style="display: block; margin-top: -0.5px;"
+        .modal-dialog
+          .modal-content
+            .modal-header
+              .clinic-title
+                h3#myModalLabel.modal-title СПб ГБУЗ Городская поликлиника №4 Поликлиническое отделение №53
+                .help Выберите необходимого врача из списка
+              button.close aria-hidden="true" data-dismiss="modal" type="button"  ×
+              .doc-spec
+                select
+                  option selected="" value="all"  Специализация врача
+                  option sort="Ин" value="spec299"  Инфекционист
+                  option sort="Ка" value="spec300"  Кардиолог
+                  option sort="Ло" value="spec303"  Лор (отоларинголог)
+                  option sort="Ок" value="spec310"  Окулист (офтальмолог)
+                  option sort="Ре" value="spec320"  Ревматолог
+                  option sort="Ре" value="spec379"  Рентгенолог
+                  option sort="Те" value="spec324"  Терапевт
+                  option sort="Те" value="spec389"  Терапевт участковый
+                  option sort="Ур" value="spec327"  Уролог
+                  option sort="Фи" value="spec405"  Физиотерапевт
+                  option sort="Фу" value="spec395"  Фунциональный диагност
+                  option sort="Хи" value="spec329"  Хирург
+            .modal-body
+              .section id="doctorList" class="doc-list" style="overflow: hidden;"
+                hidden
+                  - for i in [1,2,3,4,5,6,7,8,9,10]
+                    section.doctor_2_0.spec299.spec0.spec0.spec0.spec0 data-address=("Наличная ул.37") data-cliniclogo="https://cdn.doctu.ru/images/thumb/74x74/74x74-no-logo-big.jpg" data-clinicphone="" data-clinicurl="p4.doctu.ru/vzroslaya_53" data-doctor="vNaQHv5VqyDj2ZA7" data-family="Александров" data-metro=("<span class='line3'>Приморская</span> <span class='line3'>Василеостровская</span> <span class='line5'>Спортивная</span> ") data-name=("Павел Андреевич") data-photo="https://cdn.doctu.ru/images/thumb/74x110/74x110-22bd6ba4dd35098e0298acc9d2a62926.jpg" data-speciality="Инфекционист" 
+                      .doc-status
+                        .rating 0.0
+                        .star-rating
+                          img src="img/nostar2.png"
+                          img src="img/nostar2.png"
+                          img src="img/nostar2.png"
+                          img src="img/nostar2.png"
+                          img src="img/nostar2.png"
+                        .reviews
+                          a.doctorReview href="doctor/aleksandrov-pavel-andreevich#feedback"  Нет отзывов
+                        .price-label
+                          b бесплатно
+                      .doc-info
+                        .doc-avatar
+                          a href="doctor/aleksandrov-pavel-andreevich" target="_blank" 
+                            img.avatar alt="[+photoAlt+]" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-22bd6ba4dd35098e0298acc9d2a62926.jpg" width="74" /
+                          .experience Стаж не&nbsp;задан
+                        .doc-description
+                          .name
+                            a href="doctor/aleksandrov-pavel-andreevich" target="_blank" 
+                              h4.family Александров
+                              h4 Павел Андреевич
+                          .speciality
+                            h3
+                              a href="/doctors/infekcionist"  Инфекционист
+                          .pac-age
+                            span.both
+                            | Принимает взрослых и детей
+                          .address
+                            .metro
+                              span.line3 Приморская
+                              span.line3 Василеостровская
+                              span.line5 Спортивная
+                          .contacts__
+                            button.btn.btn-info.showGorzdravScheduleBtn Запись по ОМС
+                            .tel
+                      .clearfix
+    .modal-backdrop.fade.in style="z-index:1040;"

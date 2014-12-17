@@ -1,0 +1,120 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body#clinicSearchPage
+    == Slim::Template.new("navbar.slim").render
+    #container-clinic.container
+      .search-clinic-wrapper
+        .clf-filter
+          aside#filterAffix data-spy="affix" class="affix-top" data-offset-top="65"
+            == Slim::Template.new("left_filter.slim").render
+        .clf-list
+          #searchResults
+            .seo
+              h1 Вы искали: Диагностические центры в Санкт-Петербурге
+              .description.readmore style="height:55px;"
+                p 
+                  | Неважно себя чувствуете? Врачи участковой поликлиники не могут поставить точный диагноз в связи с отсутствием необходимого оборудования? Вам стоит выбрать современный 
+                  strong диагностический центр 
+                  | и записаться на прием к врачу, квалификация которого вас устраивает.
+                p
+                  strong Возможности пациентов:
+                p 
+                  | Пользуясь сайтом doctu.ru, вы можете за считанные минуты найти 
+                  strong консультативно-диагностический центр
+                  | подходящего вам профиля. В базе данных ресурса имеется информация о заведениях вашего города: контакты, анкеты специалистов, отзывы реально существующих клиентов. Здесь же можно записаться на прием, выбирая удобный день и час.
+                p 
+                  | Любой представленный в списке 
+                  strong лечебно-диагностический центр 
+                  |  работает легально. Вы ни за что не станете жертвой мошенников. Все, что нужно для того, чтобы выбрать 
+                  strong платный диагностический центр 
+                  |  (в том числе, специализированный 
+                  strong детский диагностический центр
+                  | ), – зайти на указанный сайт. Теперь быть здоровым стало проще!
+                a href="#show" Показать полностью
+            #clinicSort
+              .col-xs-7.result
+                | Найдены 
+                span.green 120
+                |  клиник
+              .col-xs-5.sort-type.text-right
+                label for=""  Сортировать
+                select.form-control for="searchClinic" name="sort" 
+                  option value=""  не важно
+                  option value="rating"  по рейтингу
+                  option value="alpha"  по алфавиту
+              .border
+            #clinicList.clinic-list
+              - for i in [1,2,3,4,5,6]
+                section#clinic002.clinic.clinicHover data-cid="100" data-id="bdbf95ae6265a17d" data-name="СМ-Клиника" 
+                  .row
+                    .col-xs-8
+                      .clinic-name
+                        a href="http://smclinic-spb.doctu.ru/" target="_blank"
+                        h3 СМ-Клиника
+                    .col-xs-4
+                      .clinic-request
+                        .star-rating
+                          img src="img/goldstar.png"
+                          img src="img/goldstar.png"
+                          img src="img/goldstar.png"
+                          img src="img/goldstar.png"
+                          img src="img/goldstar.png"
+                        .rating 4.9
+                        .reviews
+                          a.doctorReview href="http://smclinic-spb.doctu.ru/#feedback" target="_blank" 
+                            | По
+                            span itemprop="ratingCount"  95
+                            | отзывам
+                  .row.diagnostics_contacts_row
+                    .col-xs-7
+                      .metro
+                        span.line4 Ладожская
+                      .address
+                        img src="img/address.png" /
+                        | пр. Ударников, д. 19, корп. 1
+                    .col-xs-5.diagnostics_contacts
+                      .tel +7(812)425‑18‑77
+                  #ajaxClinicPriceReq.services-list
+                    table.table.table-bordered
+                      tbody
+                        tr
+                          td.col-xs-10 Функциональная диагностика Суточное мониторирование АД
+                          td.col-xs-2
+                            | 3000 руб.
+                        tr
+                          td.col-xs-10 Эндоскопические методы исследования Колоноскопия
+                          td.col-xs-2
+                            | 3600 руб.
+                        tr
+                          td.col-xs-10 Эндоскопические методы исследования Кольпоскопия
+                          td.col-xs-2
+                            | 3800 руб.
+                    .text-center
+                      a.doctorReview href="http://smclinic-spb.doctu.ru/#diagnosticTab" target="_blank"  Посмотреть полный прайс-лист
+                  hr.clearfix
+            .text-center
+              ul.pagination
+                li: span 1
+                li: a[href="/doctors?page=2"] 2
+                li: a[href="/doctors?page=3"] 3
+                li: a[href="/doctors?page=4"] 4
+                li: a[href="/doctors?page=5"] 5
+                li: span ...
+                li: a[href="/doctors?page=129"] 129
+                li.next: a[href="/doctors?page=2"] След »      
+      #clinicMap.clf-map
+        #mapAffix.clinic-map.affix-top data-spy="affix" data-offset-top="65" style=("width: auto; height: 800px;")
+        #clinicModal.modal.fade.clinic-modal aria-hidden="true" aria-labelledby="clinicModalLabel" role="dialog" tabindex="-1" 
+          .modal-dialog
+            .modal-content
+              .modal-header
+                .clinic-title
+                  h3#myModalLabel.modal-title Запись на прием в клинику
+                  .help Выберите необходимого врача из списка
+                button.close aria-hidden="true" data-dismiss="modal" type="button"  ×
+                .doc-spec
+              .modal-body
+                section#doctorList.doc-list
+    == Slim::Template.new("script.slim").render
