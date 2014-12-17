@@ -88,7 +88,7 @@ h3 {
 	background-image: url(../img/bgr.jpg);
 	background-size: cover;
 	padding-top: 200px;
-	min-width: 760px;
+	min-width: 1200px;
 	@media (max-width: 1280px) {
 		padding-top: 100px;
 	}
@@ -165,7 +165,7 @@ h3 {
 		}
 	}
 	.container {
-		min-width: 730px;
+		min-width: 1200px;
 	}
 	.tab-pane .form-inline {
 		padding: 0 20px;
@@ -175,6 +175,7 @@ h3 {
 	}
 }
 .container {
+  min-width: 1200px;
 	&.borderbot {
 		width: 100%;
 		@media (min-width: 992px){
@@ -1422,8 +1423,8 @@ h3 {
     list-style: none;
     border: 1px solid #e3e3e3;
     padding: 5px 15px;
-    top: -40px;
-    left: -15px;
+    top: -31px;
+    left: -16px;
     position: relative;
     z-index: 100;
     li {
@@ -1434,6 +1435,11 @@ h3 {
       }
       a {
         display: block;
+        color:#999;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

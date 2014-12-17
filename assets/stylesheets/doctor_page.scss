@@ -665,7 +665,8 @@ a.mapModal {
   .modal-header {
     padding: 15px;
     .modal-title {
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 700;
       color: #0ea646;
     }
   }
@@ -687,21 +688,20 @@ a.mapModal {
   .doc-name {
     min-height: 110px;
     margin-bottom: 10px;
-    h3 {
+    h3, .h3 {
+      font-size: 18px;
       margin-left: 90px;
       color: #302a7a;
       font-weight: 700;
-      margin-top: 5px;
-    }
-    .h3 {
-      margin-left: 90px;
-      color: #302a7a;
-      font-weight: 700;
+      margin-bottom: 10px;
       margin-top: 5px;
     }
     h4 {
       margin-left: 90px;
       color: #302a7a;
+      font-size: 14px;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
     img {
       float: left;
@@ -785,4 +785,44 @@ a.mapModal {
 }
 label {
   color:#555;
+}
+
+#gorzdravModal {
+  iframe {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    overflow: hidden;
+  }
+  input.valid {
+    background-image: url(/assets/images/button_ok.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+  label .error {
+    color: red;
+    display: none;
+  }
+}
+.zapisLink {
+  background-color: #0ea646;
+  margin-left: 10px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  padding-top: 1px;
+  padding-bottom: 2px;
+  border-radius: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  a {
+    text-decoration: none;
+    color: white !important;
+    font-weight: bold;
+  }
+}
+.step {
+  display:none;
+  &.active {
+    display: block;
+  }
 }

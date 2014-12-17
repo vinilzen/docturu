@@ -1,7 +1,7 @@
 .header
   .navbar role="navigation" 
     .navbar-header
-      span.navbar-brand title="Doctu.ru" 
+      a.navbar-brand href="/123" title="Doctu.ru" 
         img alt="doctu.ru" src="img/logo_doctu.png"
     div
       ul.nav.navbar-nav
@@ -9,6 +9,6 @@
         li: a[href="/about.html"] О проекте
       .city-changer
         a.showCities href="#"  Санкт-Петербург
-        ul
+        ul style="overflow: hidden; display: block;"
           li.selected: a[href="http://doctu.ru"] Санкт-Петербург
           li: a[href="http://msk.doctu.ru"] Москва

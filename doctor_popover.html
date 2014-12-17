@@ -14,7 +14,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
   </head>
-  <body id="clinicSearchPage">
+  <body>
     <div class="header">
       <div class="navbar" role="navigation">
         <div class="navbar-header">
@@ -43,10 +43,10 @@
         </div>
       </div>
     </div>
-    <div class="container" id="container-clinic">
-      <div class="search-clinic-wrapper">
-        <div class="clf-filter">
-          <aside class="affix-top" data-offset-top="65" data-spy="affix" id="filterAffix">
+    <div class="container-fluid borderbot bordertop">
+      <div class="container main_inner">
+        <div class="row inner">
+          <div class="col-xs-3 left-sidebar">
             <aside>
               <div id="leftFilter">
                 <div class="panel-group" id="accordion">
@@ -1350,470 +1350,336 @@
                 </div>
               </div>
             </aside>
-          </aside>
-        </div>
-        <div class="clf-list">
-          <div id="searchResults">
-            <div class="seo">
-              <h1>
-                Вы искали: Клиники в Санкт-Петербурге
-              </h1>
-              <div class="description readmore">
-                <p>
-                  <strong>Медицинский центр</strong> для детей – далеко не то же самое, что лечебное учреждение для их родителей. Во-первых, детская медицина отличается от взрослой в силу специфической анатомии малышей. Во-вторых, хороший врач должен быть для юного пациента одновременно и психологом, и аниматором, и педагогом.
-                </p>
+          </div>
+          <div class="col-xs-9 text main-side">
+            <section class="doc-page" id="doctorPage">
+              <div class="doc-info">
+                <img alt="Невролог, Мануальный терапевт, Остеопат, Инструктор ЛФК Трофимов Максим Валерьевич" class="avatar" src="https://cdn.doctu.ru/images/thumb/150x225/150x225-a2268db7a498b87ac9641f8ba9723bb3.jpg" width="170" />
+                <div class="doc-rating">
+                  <div class="rating">
+                    5.0
+                  </div>
+                  <div class="star-rating">
+                    <img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" />
+                  </div>
+                  <div class="reviews">
+                    <a class="doctorReview" href="/doctor/trofimov-maksim-valerevich#feedback"> По 1 отзыву</a>
+                  </div>
+                </div>
+                <div class="doc-name">
+                  <h1>
+                    Трофимов
+                  </h1>
+                  <h2>
+                    Максим Валерьевич
+                  </h2>
+                  <div class="specialty">
+                    <h3>
+                      <a href="/doctors/nevrolog"> Невролог</a>
+                    </h3>
+                    ,
+                    <h3>
+                      <a href="/doctors/manualnyjj-terapevt"> Мануальный терапевт</a>
+                    </h3>
+                    ,
+                    <h3>
+                      <a href="/doctors/osteopat">Остеопат</a>
+                    </h3>
+                    ,
+                    <h3>
+                      <a href="/doctors/instruktor-lfk">Инструктор ЛФК</a>
+                    </h3>
+                  </div>
+                  <div class="expage">
+                    <div class="experience pull-right">
+                      <img src="img/experience.png" /> Стаж — 12 лет
+                    </div>
+                    <div class="pac-age">
+                      <span class="both"></span>Принимает взрослых и детей
+                    </div>
+                  </div>
+                </div>
+                <div class="doc-desc readmore" style="height: 92px">
+                  <div>
+                    Работает с детьми от 5 лет<br /><br />На этой странице вы можете записаться к врачу. Запись к врачу возможна на любой удобный для вас день.
+                  </div>
+                </div>
               </div>
-            </div>
-            <div id="clinicSort">
-              <div class="col-xs-7 result">
-                Найдены <span class="green">496</span> клиник
+              <hr class="clearfix" />
+              <section id="doctorGlobalMap">
+                <a id="showMoreMap">Показать на карте</a>
+                <div id="doctorMainMap"></div>
+              </section>
+              <section id="docRevEdu">
+                <div class="row">
+                  <div class="col-xs-5 education">
+                    <div class="first h3">
+                      Образование
+                    </div>
+                    <div class="school">
+                      <p>
+                        Санкт-Петербургский государственный педиатрический медицинский университет (СПбГПМУ, СПбГПУ, СПбГПМА, ЛПМИ), Санкт-Петербург
+                      </p>
+                      <p class="fac">
+                        ординатура
+                      </p>
+                    </div>
+                    <div class="school">
+                      <p>
+                        Кафедра мануальной терапии, ЛФК, <span class="year">2003</span>
+                      </p>
+                    </div>
+                    <div class="school">
+                      <p>
+                        Специализация по Неврологии, <span class="year">2006</span>
+                      </p>
+                    </div>
+                    <div class="h3">
+                      Курсы и сертификаты
+                    </div>
+                    Действующий сертификат по специальности
+                  </div>
+                  <div class="col-xs-7 right_review">
+                    <section class="doc-address clearfix" id="">
+                      <section class="doctor_2_0 compact" data-address="Коломяжский пр., 36/2" data-cliniclogo="https://cdn.doctu.ru/images/thumb/74x74/74x74-1b5989e62843a52730fceda5c8005370.jpg" data-clinicname="Первая семейная клиника Петербурга. Многопрофильная на Коломяжском" data-clinicphone="+7(812)424-39-46" data-clinicurl="1-clinic.doctu.ru/mnogoprofilnaya_kolomyazhskiy" data-doctor="YiLfWWZOhjFmJdDf" data-family="Трофимов" data-metro="&lt;span class=&#39;line2&#39;&gt;Пионерская&lt;/span&gt; &lt;span class=&#39;line2&#39;&gt;Удельная&lt;/span&gt; " data-name="Максим Валерьевич" data-photo="https://cdn.doctu.ru/images/thumb/150x225/150x225-a2268db7a498b87ac9641f8ba9723bb3.jpg" data-samozapis="" data-speciality="Невролог, Мануальный терапевт, Остеопат, Инструктор ЛФК" data-status="working">
+                        <div class="doc-info">
+                          <div class="address">
+                            <div class="metro">
+                              <span class="line2">Пионерская</span><span class="line2">Удельная</span>
+                            </div>
+                            <div>
+                              <a class="mapModal" data-mapid="map" data-mapzoom="14" data-markcontent="Коломяжский пр., 36/2" data-markheader="&lt;a href=&amp;quot;http://1-clinic.doctu.ru/mnogoprofilnaya_kolomyazhskiy&amp;quot;&gt;Первая семейная клиника Петербурга. Многопрофильная на Коломяжском&lt;/a&gt;" data-marklat="60.014629" data-marklong="30.292772" href="#mapModal"><img src="img/address.png" /><span>Коломяжский пр., 36/2</span></a>
+                            </div>
+                          </div>
+                          <div class="contacts__">
+                            <button class="btn btn-success showScheduleBtn">Запись на прием</button>
+                            <div class="tel">
+                              +7(812)424-39-46
+                            </div>
+                            <div class="price-label">
+                              <strong>от 750<span class="rub">₹</span></strong>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <section class="doctor_2_0 compact" data-address="Каменноостровский пр., 16" data-cliniclogo="https://cdn.doctu.ru/images/thumb/74x74/74x74-1ee51b7c965d0f4b2bc69aca17e50287.jpg" data-clinicname="Первая семейная клиника Петербурга на Австрийской площади" data-clinicphone="+7(812)424-39-46" data-clinicurl="1-clinic.doctu.ru/mnogoprofilnaya_kamennoostrovskiy" data-doctor="Q5zuzeUjeMYE6pJc" data-family="Трофимов" data-metro="&lt;span class=&#39;line2&#39;&gt;Горьковская&lt;/span&gt; &lt;span class=&#39;line2&#39;&gt;Петроградская&lt;/span&gt; " data-name="Максим Валерьевич" data-photo="https://cdn.doctu.ru/images/thumb/150x225/150x225-a2268db7a498b87ac9641f8ba9723bb3.jpg" data-samozapis="" data-speciality="Невролог, Мануальный терапевт, Остеопат, Инструктор ЛФК" data-status="working">
+                        <div class="doc-info">
+                          <div class="address">
+                            <div class="metro">
+                              <span class="line2">Горьковская</span><span class="line2">Петроградская</span>
+                            </div>
+                            <div>
+                              <a class="mapModal" data-mapid="map" data-mapzoom="16" data-markcontent="Каменноостровский пр., 16" data-markheader="&lt;a href=&amp;quot;http://1-clinic.doctu.ru/mnogoprofilnaya_kamennoostrovskiy&amp;quot;&gt;Первая семейная клиника Петербурга на Австрийской площади&lt;/a&gt;" data-marklat="59.959301" data-marklong="30.317404" href="#mapModal"><img src="img/address.png" /><span>Каменноостровский пр., 16</span></a>
+                            </div>
+                          </div>
+                          <div class="contacts__">
+                            <button class="btn btn-success showScheduleBtn">Запись на прием</button>
+                            <div class="tel">
+                              +7(812)424-39-46
+                            </div>
+                            <div class="price-label">
+                              <strong>от 750<span class="rub">₹</span></strong>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </section>
+                    <div class="reviews">
+                      <a name="feedback"></a>
+                      <h3 class="first">
+                        Отзывы
+                      </h3>
+                      <div class="rev-help">
+                        <div class="popover_click" data-content="" data-original-title="" id="revHelp" rel="popover">
+                          Откуда берутся отзывы?
+                        </div>
+                      </div>
+                      <button class="btn btn-rew btn-open" data-target="#docReviewForm" data-toggle="collapse"> Оставить отзыв</button>
+                      <div class="clearfix"></div>
+                      <section class="collapse review-form" id="docReviewForm" style="overflow: hidden">
+                        <form action="" id="comment_form" method="post">
+                          <input name="doctor" type="hidden" value="trofimov-maksim-valerevich" />
+                          <div class="comment-err"></div>
+                          <div class="comment-cfm"></div>
+                          <div class="row">
+                            <div class="col-xs-5 rating-params">
+                              <div class="form-group">
+                                <label for="rateParam1">Тщательность обследования:</label>
+                                <div class="star-rating ratingInput">
+                                  <input checked="" name="rate1" type="radio" value="" /><span class="hide"></span><input name="rate1" type="radio" value="1" /><span></span><input name="rate1" type="radio" value="2" /><span></span><input name="rate1" type="radio" value="3" /><span></span><input name="rate1" type="radio" value="4" /><span></span><input name="rate1" type="radio" value="5" /><span></span>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="rateParam1">Эффективность лечения:</label>
+                                <div class="star-rating ratingInput">
+                                  <input checked="" name="rate2" type="radio" value="" /><span class="hide"></span><input name="rate2" type="radio" value="1" /><span></span><input name="rate2" type="radio" value="2" /><span></span><input name="rate2" type="radio" value="3" /><span></span><input name="rate2" type="radio" value="4" /><span></span><input name="rate2" type="radio" value="5" /><span></span>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="rateParam1"> Отношение к пациенту:</label>
+                                <div class="star-rating ratingInput">
+                                  <input checked="" name="rate3" type="radio" value="" /><span class="hide"></span><input name="rate3" type="radio" value="1" /><span></span><input name="rate3" type="radio" value="2" /><span></span><input name="rate3" type="radio" value="3" /><span></span><input name="rate3" type="radio" value="4" /><span></span><input name="rate3" type="radio" value="5" /><span></span>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="rateParam1"> Информирование пациента:</label>
+                                <div class="star-rating ratingInput">
+                                  <input checked="" name="rate4" type="radio" value="" /><span class="hide"></span><input name="rate4" type="radio" value="1" /><span></span><input name="rate4" type="radio" value="2" /><span></span><input name="rate4" type="radio" value="3" /><span></span><input name="rate4" type="radio" value="4" /><span></span><input name="rate4" type="radio" value="5" /><span></span>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="rateParam1"> Посоветуете ли вы врача?</label>
+                                <div class="star-rating ratingInput">
+                                  <input checked="" name="rate5" type="radio" value="" /><span class="hide"></span><input name="rate5" type="radio" value="1" /><span></span><input name="rate5" type="radio" value="2" /><span></span><input name="rate5" type="radio" value="3" /><span></span><input name="rate5" type="radio" value="4" /><span></span><input name="rate5" type="radio" value="5" /><span></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-7 rev-form">
+                              <div class="form-group">
+                                <label for="revQuality"> Достоинства</label><textarea class="form-control" id="revQuality" name="content" rows="3"></textarea>
+                              </div>
+                              <div class="form-group">
+                                <label for="revImpair"> Недостатки</label><textarea class="form-control" id="revImpair" name="content2" rows="3"></textarea>
+                              </div>
+                              <div class="form-group">
+                                <label for="userNs"> ФИО</label><input class="form-control" id="userNs" name="fio" type="text" value="" />
+                              </div>
+                              <div class="form-group">
+                                <label for="revTel"> Телефон</label><input class="form-control" id="revTel" name="phone" type="text" value="" />
+                                <div class="help">
+                                  На него придет код подтверждения
+                                </div>
+                              </div>
+                              <div class="form-group captcha">
+                                <span id="vericode"><label for="revCap"> Введите код подтверждения</label><input class="form-control" name="vericode" placeholder="" type="text" /></span><button class="btn btn-success pull-right" type="submit"> Отправить</button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </section>
+                      <section class="reviews-list">
+                        <div class="rev-item [+chunk.rowclass+]">
+                          <a name="comment3218"></a>
+                          <div class="username h4">
+                            Чубукин Николай
+                          </div>
+                          <div class="rating" data-original-title="" rel="popover3218" title="">
+                            Превосходно, 5.0
+                          </div>
+                          <div class="popover fade top in" style="top: -310px; left: 350px; display: block;">
+                            <div class="arrow" style="left: 69%;"></div>
+                            <h3 class="popover-title" style="display: none;"></h3>
+                            <div class="popover-content">
+                              <div class="rating-params">
+                                <div class="form-group">
+                                  <label for="rateParam1"> Тщательность обследования:</label><span class="ratingStar rating-5_0"></span>
+                                </div>
+                                <div class="form-group">
+                                  <label for="rateParam1"> Эффективность лечения:</label><span class="ratingStar rating-5_0"></span>
+                                </div>
+                                <div class="form-group">
+                                  <label for="rateParam1"> Отношение к пациенту:</label><span class="ratingStar rating-5_0"></span>
+                                </div>
+                                <div class="form-group">
+                                  <label for="rateParam1"> Информирование пациента:</label><span class="ratingStar rating-5_0"></span>
+                                </div>
+                                <div class="form-group">
+                                  <label for="rateParam1"> Посоветуете ли вы врача?</label><span class="ratingStar rating-5_0"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="rev-text merits">
+                            Мануальный терапевт Трофимов Максим Валерьевич отличный специалист, благодаря его советам и профессионализму я был вылечен в кратчайшие сроки.
+                          </div>
+                          <div class="rev-text disadvantages"></div>
+                          <hr class="clearfix" />
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </section>
+            <div class="bestDoctors">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h2>
+                    Похожие врачи
+                  </h2>
+                </div>
+                <div class="panel-body">
+                  <div class="col-xs-4">
+                    <div class="media">
+                      <div class="media-left">
+                        <img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg" />
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">
+                          Шеняк Татьяна Михайловна
+                        </h4>
+                        <p>
+                          Невролог, Иглорефлексотерапевт
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="media">
+                      <div class="media-left">
+                        <img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg" />
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">
+                          Шеняк Татьяна Михайловна
+                        </h4>
+                        <p>
+                          Невролог, Иглорефлексотерапевт
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="media">
+                      <div class="media-left">
+                        <img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg" />
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">
+                          Шеняк Татьяна Михайловна
+                        </h4>
+                        <p>
+                          Невролог, Иглорефлексотерапевт
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-xs-5 sort-type text-right">
-                <label for=""> Сортировать</label><select class="form-control" for="searchClinic" name="sort">
-                  <option value="">
-                    не важно
-                  </option>
-                  <option value="rating">
-                    по рейтингу
-                  </option>
-                  <option value="alpha">
-                    по алфавиту
-                  </option>
-                </select>
-              </div>
-              <div class="border"></div>
-            </div>
-            <div class="clinic-list" id="clinicList">
-              <section class="clinic" data-cid="4" data-id="Bkzss8qd89Vls45k" data-name="Клиническая больница №122 им. Л.Г.Соколова" id="clinic002" itemscope="" itemtype="http://schema.org/LocalBusiness">
-                <div class="row">
-                  <div class="col-xs-8">
-                    <div class="clinic-name">
-                      <a href="http://med122.doctu.ru/" target="_blank">
-                        <h3 itemprop="name">
-                          Клиническая больница №122 им. Л.Г.Соколова
-                        </h3>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-xs-4">
-                    <div class="clinic-request" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-                      <div class="star-rating">
-                        <img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" />
-                      </div>
-                      <div class="rating" itemprop="ratingValue">
-                        4.8
-                      </div>
-                      <div class="reviews">
-                        <a class="doctorReview" href="http://med122.doctu.ru/#feedback" target="_blank"> По 652 отзывам</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row" itemprop="address" itemref="_addressLocality7" itemscope="" itemtype="http://schema.org/PostalAddress">
-                  <div class="col-xs-12">
-                    <div class="metro">
-                      <span class="line2">Проспект Просвещения</span><span class="line2">Озерки</span><span class="line1">Гражданский проспект</span>
-                    </div>
-                    <div class="address" itemprop="streetAddress">
-                      <img src="img/address.png" />пр. Культуры, д. 4
-                    </div>
-                  </div>
-                </div>
-                <meta content="Санкт-Петербург" id="_addressLocality7" itemprop="addressLocality" />
-                <div class="row">
-                  <div class="col-xs-12 clinics_contacts">
-                    <button class="btn btn-success showClinicsDoctors pull-left">Запись на прием</button>
-                    <div class="tel" itemprop="telephone">
-                      +7(812)425‑15‑33
-                    </div>
-                  </div>
-                </div>
-                <div class="services-list" id="ajaxClinicPriceReq"></div>
-                <hr class="clearfix" />
-              </section>
-              <section class="clinic" data-cid="4" data-id="Bkzss8qd89Vls45k" data-name="Клиническая больница №122 им. Л.Г.Соколова" id="clinic002" itemscope="" itemtype="http://schema.org/LocalBusiness">
-                <div class="row">
-                  <div class="col-xs-8">
-                    <div class="clinic-name">
-                      <a href="http://med122.doctu.ru/" target="_blank">
-                        <h3 itemprop="name">
-                          Клиническая больница №122 им. Л.Г.Соколова
-                        </h3>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-xs-4">
-                    <div class="clinic-request" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-                      <div class="star-rating">
-                        <img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" />
-                      </div>
-                      <div class="rating" itemprop="ratingValue">
-                        4.8
-                      </div>
-                      <div class="reviews">
-                        <a class="doctorReview" href="http://med122.doctu.ru/#feedback" target="_blank"> По 652 отзывам</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row" itemprop="address" itemref="_addressLocality7" itemscope="" itemtype="http://schema.org/PostalAddress">
-                  <div class="col-xs-12">
-                    <div class="metro">
-                      <span class="line2">Проспект Просвещения</span><span class="line2">Озерки</span><span class="line1">Гражданский проспект</span>
-                    </div>
-                    <div class="address" itemprop="streetAddress">
-                      <img src="img/address.png" />пр. Культуры, д. 4
-                    </div>
-                  </div>
-                </div>
-                <meta content="Санкт-Петербург" id="_addressLocality7" itemprop="addressLocality" />
-                <div class="row">
-                  <div class="col-xs-12 clinics_contacts">
-                    <button class="btn btn-success showClinicsDoctors pull-left">Запись на прием</button>
-                    <div class="tel" itemprop="telephone">
-                      +7(812)425‑15‑33
-                    </div>
-                  </div>
-                </div>
-                <div class="services-list" id="ajaxClinicPriceReq"></div>
-                <hr class="clearfix" />
-              </section>
-              <section class="clinic" data-cid="4" data-id="Bkzss8qd89Vls45k" data-name="Клиническая больница №122 им. Л.Г.Соколова" id="clinic002" itemscope="" itemtype="http://schema.org/LocalBusiness">
-                <div class="row">
-                  <div class="col-xs-8">
-                    <div class="clinic-name">
-                      <a href="http://med122.doctu.ru/" target="_blank">
-                        <h3 itemprop="name">
-                          Клиническая больница №122 им. Л.Г.Соколова
-                        </h3>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-xs-4">
-                    <div class="clinic-request" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-                      <div class="star-rating">
-                        <img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" />
-                      </div>
-                      <div class="rating" itemprop="ratingValue">
-                        4.8
-                      </div>
-                      <div class="reviews">
-                        <a class="doctorReview" href="http://med122.doctu.ru/#feedback" target="_blank"> По 652 отзывам</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row" itemprop="address" itemref="_addressLocality7" itemscope="" itemtype="http://schema.org/PostalAddress">
-                  <div class="col-xs-12">
-                    <div class="metro">
-                      <span class="line2">Проспект Просвещения</span><span class="line2">Озерки</span><span class="line1">Гражданский проспект</span>
-                    </div>
-                    <div class="address" itemprop="streetAddress">
-                      <img src="img/address.png" />пр. Культуры, д. 4
-                    </div>
-                  </div>
-                </div>
-                <meta content="Санкт-Петербург" id="_addressLocality7" itemprop="addressLocality" />
-                <div class="row">
-                  <div class="col-xs-12 clinics_contacts">
-                    <button class="btn btn-success showClinicsDoctors pull-left">Запись на прием</button>
-                    <div class="tel" itemprop="telephone">
-                      +7(812)425‑15‑33
-                    </div>
-                  </div>
-                </div>
-                <div class="services-list" id="ajaxClinicPriceReq"></div>
-                <hr class="clearfix" />
-              </section>
-              <section class="clinic" data-cid="4" data-id="Bkzss8qd89Vls45k" data-name="Клиническая больница №122 им. Л.Г.Соколова" id="clinic002" itemscope="" itemtype="http://schema.org/LocalBusiness">
-                <div class="row">
-                  <div class="col-xs-8">
-                    <div class="clinic-name">
-                      <a href="http://med122.doctu.ru/" target="_blank">
-                        <h3 itemprop="name">
-                          Клиническая больница №122 им. Л.Г.Соколова
-                        </h3>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-xs-4">
-                    <div class="clinic-request" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-                      <div class="star-rating">
-                        <img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" />
-                      </div>
-                      <div class="rating" itemprop="ratingValue">
-                        4.8
-                      </div>
-                      <div class="reviews">
-                        <a class="doctorReview" href="http://med122.doctu.ru/#feedback" target="_blank"> По 652 отзывам</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row" itemprop="address" itemref="_addressLocality7" itemscope="" itemtype="http://schema.org/PostalAddress">
-                  <div class="col-xs-12">
-                    <div class="metro">
-                      <span class="line2">Проспект Просвещения</span><span class="line2">Озерки</span><span class="line1">Гражданский проспект</span>
-                    </div>
-                    <div class="address" itemprop="streetAddress">
-                      <img src="img/address.png" />пр. Культуры, д. 4
-                    </div>
-                  </div>
-                </div>
-                <meta content="Санкт-Петербург" id="_addressLocality7" itemprop="addressLocality" />
-                <div class="row">
-                  <div class="col-xs-12 clinics_contacts">
-                    <button class="btn btn-success showClinicsDoctors pull-left">Запись на прием</button>
-                    <div class="tel" itemprop="telephone">
-                      +7(812)425‑15‑33
-                    </div>
-                  </div>
-                </div>
-                <div class="services-list" id="ajaxClinicPriceReq"></div>
-                <hr class="clearfix" />
-              </section>
-              <section class="clinic" data-cid="4" data-id="Bkzss8qd89Vls45k" data-name="Клиническая больница №122 им. Л.Г.Соколова" id="clinic002" itemscope="" itemtype="http://schema.org/LocalBusiness">
-                <div class="row">
-                  <div class="col-xs-8">
-                    <div class="clinic-name">
-                      <a href="http://med122.doctu.ru/" target="_blank">
-                        <h3 itemprop="name">
-                          Клиническая больница №122 им. Л.Г.Соколова
-                        </h3>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-xs-4">
-                    <div class="clinic-request" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-                      <div class="star-rating">
-                        <img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" />
-                      </div>
-                      <div class="rating" itemprop="ratingValue">
-                        4.8
-                      </div>
-                      <div class="reviews">
-                        <a class="doctorReview" href="http://med122.doctu.ru/#feedback" target="_blank"> По 652 отзывам</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row" itemprop="address" itemref="_addressLocality7" itemscope="" itemtype="http://schema.org/PostalAddress">
-                  <div class="col-xs-12">
-                    <div class="metro">
-                      <span class="line2">Проспект Просвещения</span><span class="line2">Озерки</span><span class="line1">Гражданский проспект</span>
-                    </div>
-                    <div class="address" itemprop="streetAddress">
-                      <img src="img/address.png" />пр. Культуры, д. 4
-                    </div>
-                  </div>
-                </div>
-                <meta content="Санкт-Петербург" id="_addressLocality7" itemprop="addressLocality" />
-                <div class="row">
-                  <div class="col-xs-12 clinics_contacts">
-                    <button class="btn btn-success showClinicsDoctors pull-left">Запись на прием</button>
-                    <div class="tel" itemprop="telephone">
-                      +7(812)425‑15‑33
-                    </div>
-                  </div>
-                </div>
-                <div class="services-list" id="ajaxClinicPriceReq"></div>
-                <hr class="clearfix" />
-              </section>
-              <section class="clinic" data-cid="4" data-id="Bkzss8qd89Vls45k" data-name="Клиническая больница №122 им. Л.Г.Соколова" id="clinic002" itemscope="" itemtype="http://schema.org/LocalBusiness">
-                <div class="row">
-                  <div class="col-xs-8">
-                    <div class="clinic-name">
-                      <a href="http://med122.doctu.ru/" target="_blank">
-                        <h3 itemprop="name">
-                          Клиническая больница №122 им. Л.Г.Соколова
-                        </h3>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-xs-4">
-                    <div class="clinic-request" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-                      <div class="star-rating">
-                        <img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" />
-                      </div>
-                      <div class="rating" itemprop="ratingValue">
-                        4.8
-                      </div>
-                      <div class="reviews">
-                        <a class="doctorReview" href="http://med122.doctu.ru/#feedback" target="_blank"> По 652 отзывам</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row" itemprop="address" itemref="_addressLocality7" itemscope="" itemtype="http://schema.org/PostalAddress">
-                  <div class="col-xs-12">
-                    <div class="metro">
-                      <span class="line2">Проспект Просвещения</span><span class="line2">Озерки</span><span class="line1">Гражданский проспект</span>
-                    </div>
-                    <div class="address" itemprop="streetAddress">
-                      <img src="img/address.png" />пр. Культуры, д. 4
-                    </div>
-                  </div>
-                </div>
-                <meta content="Санкт-Петербург" id="_addressLocality7" itemprop="addressLocality" />
-                <div class="row">
-                  <div class="col-xs-12 clinics_contacts">
-                    <button class="btn btn-success showClinicsDoctors pull-left">Запись на прием</button>
-                    <div class="tel" itemprop="telephone">
-                      +7(812)425‑15‑33
-                    </div>
-                  </div>
-                </div>
-                <div class="services-list" id="ajaxClinicPriceReq"></div>
-                <hr class="clearfix" />
-              </section>
-              <section class="clinic" data-cid="4" data-id="Bkzss8qd89Vls45k" data-name="Клиническая больница №122 им. Л.Г.Соколова" id="clinic002" itemscope="" itemtype="http://schema.org/LocalBusiness">
-                <div class="row">
-                  <div class="col-xs-8">
-                    <div class="clinic-name">
-                      <a href="http://med122.doctu.ru/" target="_blank">
-                        <h3 itemprop="name">
-                          Клиническая больница №122 им. Л.Г.Соколова
-                        </h3>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-xs-4">
-                    <div class="clinic-request" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-                      <div class="star-rating">
-                        <img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" />
-                      </div>
-                      <div class="rating" itemprop="ratingValue">
-                        4.8
-                      </div>
-                      <div class="reviews">
-                        <a class="doctorReview" href="http://med122.doctu.ru/#feedback" target="_blank"> По 652 отзывам</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row" itemprop="address" itemref="_addressLocality7" itemscope="" itemtype="http://schema.org/PostalAddress">
-                  <div class="col-xs-12">
-                    <div class="metro">
-                      <span class="line2">Проспект Просвещения</span><span class="line2">Озерки</span><span class="line1">Гражданский проспект</span>
-                    </div>
-                    <div class="address" itemprop="streetAddress">
-                      <img src="img/address.png" />пр. Культуры, д. 4
-                    </div>
-                  </div>
-                </div>
-                <meta content="Санкт-Петербург" id="_addressLocality7" itemprop="addressLocality" />
-                <div class="row">
-                  <div class="col-xs-12 clinics_contacts">
-                    <button class="btn btn-info showClinicsDoctors pull-left">Запись по ОМС</button>
-                    <div class="tel" itemprop="telephone">
-                      +7(812)425‑15‑33
-                    </div>
-                  </div>
-                </div>
-                <div class="services-list" id="ajaxClinicPriceReq"></div>
-                <hr class="clearfix" />
-              </section>
-              <section class="clinic" data-cid="4" data-id="Bkzss8qd89Vls45k" data-name="Клиническая больница №122 им. Л.Г.Соколова" id="clinic002" itemscope="" itemtype="http://schema.org/LocalBusiness">
-                <div class="row">
-                  <div class="col-xs-8">
-                    <div class="clinic-name">
-                      <a href="http://med122.doctu.ru/" target="_blank">
-                        <h3 itemprop="name">
-                          Клиническая больница №122 им. Л.Г.Соколова
-                        </h3>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-xs-4">
-                    <div class="clinic-request" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-                      <div class="star-rating">
-                        <img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" /><img src="img/goldstar.png" />
-                      </div>
-                      <div class="rating" itemprop="ratingValue">
-                        4.8
-                      </div>
-                      <div class="reviews">
-                        <a class="doctorReview" href="http://med122.doctu.ru/#feedback" target="_blank"> По 652 отзывам</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row" itemprop="address" itemref="_addressLocality7" itemscope="" itemtype="http://schema.org/PostalAddress">
-                  <div class="col-xs-12">
-                    <div class="metro">
-                      <span class="line2">Проспект Просвещения</span><span class="line2">Озерки</span><span class="line1">Гражданский проспект</span>
-                    </div>
-                    <div class="address" itemprop="streetAddress">
-                      <img src="img/address.png" />пр. Культуры, д. 4
-                    </div>
-                  </div>
-                </div>
-                <meta content="Санкт-Петербург" id="_addressLocality7" itemprop="addressLocality" />
-                <div class="row">
-                  <div class="col-xs-12 clinics_contacts">
-                    <button class="btn btn-info showClinicsDoctors pull-left">Запись по ОМС</button>
-                    <div class="tel" itemprop="telephone">
-                      +7(812)425‑15‑33
-                    </div>
-                  </div>
-                </div>
-                <div class="services-list" id="ajaxClinicPriceReq"></div>
-                <hr class="clearfix" />
-              </section>
-            </div>
-            <div class="text-center">
-              <ul class="pagination">
-                <li>
-                  <span>1</span>
-                </li>
-                <li>
-                  <a href="/doctors?page=2">2</a>
-                </li>
-                <li>
-                  <a href="/doctors?page=3">3</a>
-                </li>
-                <li>
-                  <a href="/doctors?page=4">4</a>
-                </li>
-                <li>
-                  <a href="/doctors?page=5">5</a>
-                </li>
-                <li>
-                  <span>...</span>
-                </li>
-                <li>
-                  <a href="/doctors?page=129">129</a>
-                </li>
-                <li class="next">
-                  <a href="/doctors?page=2">След »      </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="clf-map" id="clinicMap">
-        <div class="clinic-map affix-top" data-offset-top="65" data-spy="affix" id="mapAffix" style="width: auto; height: 800px;"></div>
-        <div aria-hidden="true" aria-labelledby="clinicModalLabel" class="modal fade clinic-modal" id="clinicModal" role="dialog" tabindex="-1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="clinic-title">
-                  <h3 class="modal-title" id="myModalLabel">
-                    Запись на прием в клинику
-                  </h3>
-                  <div class="help">
-                    Выберите необходимого врача из списка
-                  </div>
-                </div>
-                <button aria-hidden="true" class="close" data-dismiss="modal" type="button"> ×</button>
-                <div class="doc-spec"></div>
-              </div>
-              <div class="modal-body">
-                <section class="doc-list" id="doctorList"></section>
-              </div>
-            </div>
-          </div>
+    </div>
+    <div class="footer">
+      <div class="row">
+        <div class="copy">
+          <p>
+            &copy; 2012-2014 Doctu.ru &mdash; запись к врачу в <a href="http://msk.doctu.ru">Москве</a>, <a href="http://doctu.ru">Санкт-Петербурге</a>
+          </p>
+        </div>
+        <div class="text-right links">
+          <ul class="list-inline">
+            <li>
+              <a href="library">Справочник пациента</a>
+            </li>
+            <li>
+              <a href="terms">Пользовательское соглашение</a>
+            </li>
+            <li>
+              <a href="contacts">Контакты</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
