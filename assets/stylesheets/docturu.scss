@@ -1356,7 +1356,8 @@ h3 {
 			vertical-align: middle;
 			font-size: 13px;
 			font-weight: normal;
-			margin-bottom: 0px;
+			margin-bottom: 2px;
+      margin-right: 2px;
 		}
 		.form-control {
 			margin-left: 5px;
@@ -1920,6 +1921,7 @@ h3 {
   position: relative;
   &:hover, &:focus {
     text-decoration: none;
+    border-bottom:1px solid #fff;
   }
 }
 .docVip {
@@ -2043,10 +2045,13 @@ h3 {
 .bestDoctors,
 .similarClinics,
 .bestClinics {
-  margin: 30px 0;
+  margin: 10px 0 0 0;
   min-height: 166px;
   border-radius: 8px;
   padding: 10px 10px 21px;
+  .panel {
+    margin-bottom: 10px;
+  }
 }
 .readmore a[href='#show'] {
   background-image: url('../img/readmore.png');
@@ -2092,6 +2097,7 @@ h3 {
     .modal-title {
       font-weight: 600;
       color: #0ea646;
+      font-size: 18px;
     }
   }
   .clinic-title {
@@ -2200,5 +2206,21 @@ h3 {
   &:hover {
     background-color: #0a8036;
     border-color: #096d2e;
+  }
+}
+.doctor_2_0 .price-label{
+  color: #211b70;
+  position: absolute;
+  bottom: 0;
+  height: 34px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 34px;
+  strong, b {
+    color: #211b70;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
   }
 }
