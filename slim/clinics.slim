@@ -7,7 +7,7 @@ html
     #container-clinic.container
       .search-clinic-wrapper
         .clf-filter
-          aside#filterAffix data-spy="affix" data-offset-top="65" class="affix-top"
+          aside#filterAffix data-spy="affix" class="affix-top"
             == Slim::Template.new("left_filter.slim").render
         .clf-list
           #searchResults
@@ -17,6 +17,73 @@ html
                 p 
                   strong Медицинский центр
                   |  для детей – далеко не то же самое, что лечебное учреждение для их родителей. Во-первых, детская медицина отличается от взрослой в силу специфической анатомии малышей. Во-вторых, хороший врач должен быть для юного пациента одновременно и психологом, и аниматором, и педагогом.
-
-    #clinicMap.clf-map
+            #clinicSort
+              .col-xs-7.result
+                | Найдены 
+                span.green 496
+                |  клиник
+              .col-xs-5.sort-type.text-right
+                label for=""  Сортировать
+                select.form-control for="searchClinic" name="sort" 
+                  option value=""  не важно
+                  option value="rating"  по рейтингу
+                  option value="alpha"  по алфавиту
+              .border
+            #clinicList.clinic-list
+              - for i in [1,2,3,4,5,6]
+                section#clinic002.clinic data-cid="4" data-id="Bkzss8qd89Vls45k" data-name=("Клиническая больница №122 им. Л.Г.Соколова") itemscope="" itemtype="http://schema.org/LocalBusiness" 
+                  .row
+                    .col-xs-8
+                      .clinic-name
+                        a href="http://med122.doctu.ru/" target="_blank"
+                          h3 itemprop="name" Клиническая больница №122 им. Л.Г.Соколова
+                    .col-xs-4
+                      .clinic-request itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" 
+                        .star-rating
+                          img src="img/goldstar.png" /
+                          img src="img/goldstar.png" /
+                          img src="img/goldstar.png" /
+                          img src="img/goldstar.png" /
+                          img src="img/goldstar.png" /
+                        .rating itemprop="ratingValue"  4.8
+                        .reviews
+                          a.doctorReview href="http://med122.doctu.ru/#feedback" target="_blank"  По 652 отзывам
+                  .row itemprop="address" itemref="_addressLocality7" itemscope="" itemtype="http://schema.org/PostalAddress" 
+                    .col-xs-12
+                      .metro
+                        span.line2 Проспект Просвещения
+                        span.line2 Озерки
+                        span.line1 Гражданский проспект
+                      .address itemprop="streetAddress" 
+                        img src="img/address.png" /
+                        | пр. Культуры, д. 4
+                  meta#_addressLocality7 content="Санкт-Петербург" itemprop="addressLocality" /
+                  .row
+                    .col-xs-12.clinics_contacts
+                      button.btn.btn-success.showClinicsDoctors.pull-left Запись на прием
+                  #ajaxClinicPriceReq.services-list
+                  hr.clearfix/
+            .text-center
+              ul.pagination
+                li: span 1
+                li: a[href="/doctors?page=2"] 2
+                li: a[href="/doctors?page=3"] 3
+                li: a[href="/doctors?page=4"] 4
+                li: a[href="/doctors?page=5"] 5
+                li: span ...
+                li: a[href="/doctors?page=129"] 129
+                li.next: a[href="/doctors?page=2"] След »      
+      #clinicMap.clf-map
+        #mapAffix.clinic-map.affix-top data-spy="affix" data-offset-top="65" style=("width: auto; height: 800px;")
+        #clinicModal.modal.fade.clinic-modal aria-hidden="true" aria-labelledby="clinicModalLabel" role="dialog" tabindex="-1" 
+          .modal-dialog
+            .modal-content
+              .modal-header
+                .clinic-title
+                  h3#myModalLabel.modal-title Запись на прием в клинику
+                  .help Выберите необходимого врача из списка
+                button.close aria-hidden="true" data-dismiss="modal" type="button"  ×
+                .doc-spec
+              .modal-body
+                section#doctorList.doc-list
     == Slim::Template.new("script.slim").render

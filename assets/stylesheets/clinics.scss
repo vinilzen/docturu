@@ -1,9 +1,10 @@
 #container-clinic {
   width: 100% !important;
   padding-right: 0;
+  padding-left: 15px;
   .search-clinic-wrapper {
     float: left;
-    width: 745px !important;
+    width: 790px !important;
     height: 100%;
     .clf-filter {
       width: 0 !important;
@@ -12,7 +13,7 @@
     }
     .clf-list {
       width: 500px !important;
-      margin-left: 280px;
+      margin-left: 270px;
       padding: 0 15px 0 0 !important;
       .result {
         width: 55% !important;
@@ -31,7 +32,178 @@
       }
     }
   }
+  .clf-map {
+    margin-left: 790px;
+    height: 100%;
+    background-color: gray;
+  }
 }
 #filterAffix {
 	width: 250px;
+}
+#clinicSort {
+  margin: 10px -15px 0;
+  padding: 15px 0 10px;
+  .result {
+    font-size: 22px;
+    margin-top: -2px;
+    color: #302a7a;
+    .green {
+      color: #0ea646;
+      font-weight: 700;
+    }
+  }
+  .sort-type {
+    padding-left: 0;
+    label {
+      vertical-align: middle;
+      font-size: 13px;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+    .form-control {
+      margin-left: 5px;
+      display: inline-block;
+      font-size: 13px;
+      width: auto;
+      height: 30px;
+      padding: 4px;
+    }
+  }
+  .sort-num {
+    padding-left: 0;
+    label {
+      vertical-align: middle;
+      font-size: 13px;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+    .form-control {
+      margin-left: 5px;
+      display: inline-block;
+      font-size: 13px;
+      width: auto;
+      height: 30px;
+      padding: 4px;
+    }
+  }
+  .border {
+    border-bottom: 1px solid #e3e3e3;
+    margin: 44px 15px 0 15px;
+  }
+}
+#clinicList {
+  margin-bottom: 0px;
+  .clinics_contacts {
+    height: 66px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .clinic {
+    border: 1px solid #dedede;
+    border-width: 1px 0 1px 0;
+    margin-top: -1px;
+    border-top-color: transparent;
+    hr {
+      display: none;
+    }
+  }
+  .row {
+    margin: 15px -15px;
+  }
+  hr {
+    margin: 0;
+  }
+  .clinic-name {
+    h3 {
+      color: #302a7a;
+      font-weight: 700;
+      margin-top: 0;
+      font-size: 18px;
+    }
+    h4 {
+      color: #302a7a;
+    }
+    .specialty {
+      font-size: 13px;
+      color: #0ea646;
+      font-style: italic;
+      a {
+        color: #0ea646;
+      }
+      span {
+        display: inline-block;
+        font-size: 13px;
+        border: 1px solid !important;
+        border-color: #555 !important;
+        background-color: $white;
+        //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+        border-radius: 4px;
+        margin: 13px 0 0 0 !important;
+        padding: 1px 5px 3px;
+        font-style: normal;
+        color: #555;
+      }
+    }
+    div {
+      margin-bottom: 10px;
+    }
+  }
+  .clinic-request {
+    float: right;
+    width: 146px;
+    div {
+      display: inline-block;
+    }
+    .btn {
+      margin-top: 35px;
+      font-size: 13px;
+    }
+    .rating {
+      line-height: 22px;
+      font-size: 18px;
+      font-weight: bold;
+      //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+      border-radius: 60px;
+      float: right;
+      text-align: center;
+      width: 20%;
+      padding: 0 0 10px 0;
+      color: #0ea646;
+      margin-left: 0 !important;
+    }
+    .star-rating {
+      float: left;
+      img {
+        margin-right: 3px;
+        width: 16px;
+      }
+    }
+    .reviews {
+      font-size: 13px;
+      color: #302a7a;
+      margin-top: 5px;
+    }
+    .tel {
+      margin: 15px 0 0 12px;
+      color: #302a7a;
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+  .btn-more {
+    color: #0ea646;
+    font-size: 16px;
+    display: block;
+    padding: 20px 0;
+    .caret {
+      color: #0ea646;
+    }
+  }
+}
+.description.readmore {
+  font-size: 13px;
+  p {
+    font-size: 13px;
+  }
 }
