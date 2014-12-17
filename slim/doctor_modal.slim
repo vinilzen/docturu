@@ -1,0 +1,322 @@
+doctype html
+html
+  head
+    == Slim::Template.new("head.slim").render
+  body.modal-open.page-overflow
+    == Slim::Template.new("navbar.slim").render
+    .container-fluid.borderbot.bordertop
+      .container.main_inner
+        .row.inner
+          .col-xs-3.left-sidebar
+            == Slim::Template.new("left_filter.slim").render
+          .col-xs-9.text.main-side
+            section#doctorPage.doc-page
+              .doc-info
+                img.avatar alt="Невролог, Мануальный терапевт, Остеопат, Инструктор ЛФК Трофимов Максим Валерьевич" src="https://cdn.doctu.ru/images/thumb/150x225/150x225-a2268db7a498b87ac9641f8ba9723bb3.jpg" width="170" /
+                .doc-rating
+                  .rating 5.0
+                  .star-rating
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                    img src="img/goldstar.png" /
+                  .reviews
+                    a.doctorReview href="/doctor/trofimov-maksim-valerevich#feedback"  По 1 отзыву
+                .doc-name
+                  h1 Трофимов
+                  h2 Максим Валерьевич
+                  .specialty
+                    h3: a[href="/doctors/nevrolog"]  Невролог
+                    | ,
+                    h3: a[href="/doctors/manualnyjj-terapevt"]  Мануальный терапевт
+                    | ,
+                    h3: a[href="/doctors/osteopat"] Остеопат
+                    | ,
+                    h3: a[href="/doctors/instruktor-lfk"] Инструктор ЛФК
+                  .expage
+                    .experience.pull-right
+                      img src="img/experience.png" /
+                      |  Стаж — 12 лет
+                    .pac-age
+                      span.both
+                      | Принимает взрослых и детей
+                .doc-desc.readmore style=("height: 92px") 
+                  div
+                    | Работает с детьми от 5 лет
+                    br/
+                    br/
+                    | На этой странице вы можете записаться к врачу. Запись к врачу возможна на любой удобный для вас день.
+              hr.clearfix
+              section#doctorGlobalMap
+                a#showMoreMap Показать на карте
+                #doctorMainMap
+              section#docRevEdu
+                .row
+                  .col-xs-5.education
+                    .first.h3 Образование
+                    .school
+                      p Санкт-Петербургский государственный педиатрический медицинский университет (СПбГПМУ, СПбГПУ, СПбГПМА, ЛПМИ), Санкт-Петербург
+                      p.fac ординатура
+                    .school
+                      p
+                        | Кафедра мануальной терапии, ЛФК, 
+                        span.year 2003
+                    .school
+                      p
+                        | Специализация по Неврологии, 
+                        span.year 2006
+                    .h3 Курсы и сертификаты
+                    | Действующий сертификат по специальности
+                  .col-xs-7.right_review
+                    section.doc-address.clearfix id="" 
+                      section.doctor_2_0.compact data-address=("Коломяжский пр., 36/2") data-cliniclogo="https://cdn.doctu.ru/images/thumb/74x74/74x74-1b5989e62843a52730fceda5c8005370.jpg" data-clinicname=("Первая семейная клиника Петербурга. Многопрофильная на Коломяжском") data-clinicphone="+7(812)424-39-46" data-clinicurl="1-clinic.doctu.ru/mnogoprofilnaya_kolomyazhskiy" data-doctor="YiLfWWZOhjFmJdDf" data-family="Трофимов" data-metro=("<span class='line2'>Пионерская</span> <span class='line2'>Удельная</span> ") data-name=("Максим Валерьевич") data-photo="https://cdn.doctu.ru/images/thumb/150x225/150x225-a2268db7a498b87ac9641f8ba9723bb3.jpg" data-samozapis="" data-speciality="Невролог, Мануальный терапевт, Остеопат, Инструктор ЛФК" data-status="working" 
+                        .doc-info
+                          .address
+                            .metro
+                              span.line2 Пионерская
+                              span.line2 Удельная
+                            div
+                              a.mapModal data-mapid="map" data-mapzoom="14" data-markcontent=("Коломяжский пр., 36/2") data-markheader=("<a href=&quot;http://1-clinic.doctu.ru/mnogoprofilnaya_kolomyazhskiy&quot;>Первая семейная клиника Петербурга. Многопрофильная на Коломяжском</a>") data-marklat="60.014629" data-marklong="30.292772" href="#mapModal" 
+                                img src="img/address.png" /
+                                span Коломяжский пр., 36/2
+                          .contacts__
+                            button.btn.btn-success.showScheduleBtn Запись на прием
+                            .tel +7(812)424-39-46
+                            .price-label
+                              strong
+                                | от 750
+                                span.rub ₹
+                      section.doctor_2_0.compact data-address=("Каменноостровский пр., 16") data-cliniclogo="https://cdn.doctu.ru/images/thumb/74x74/74x74-1ee51b7c965d0f4b2bc69aca17e50287.jpg" data-clinicname=("Первая семейная клиника Петербурга на Австрийской площади") data-clinicphone="+7(812)424-39-46" data-clinicurl="1-clinic.doctu.ru/mnogoprofilnaya_kamennoostrovskiy" data-doctor="Q5zuzeUjeMYE6pJc" data-family="Трофимов" data-metro=("<span class='line2'>Горьковская</span> <span class='line2'>Петроградская</span> ") data-name=("Максим Валерьевич") data-photo="https://cdn.doctu.ru/images/thumb/150x225/150x225-a2268db7a498b87ac9641f8ba9723bb3.jpg" data-samozapis="" data-speciality="Невролог, Мануальный терапевт, Остеопат, Инструктор ЛФК" data-status="working" 
+                        .doc-info
+                          .address
+                            .metro
+                              span.line2 Горьковская
+                              span.line2 Петроградская
+                            div
+                              a.mapModal data-mapid="map" data-mapzoom="16" data-markcontent=("Каменноостровский пр., 16") data-markheader=("<a href=&quot;http://1-clinic.doctu.ru/mnogoprofilnaya_kamennoostrovskiy&quot;>Первая семейная клиника Петербурга на Австрийской площади</a>") data-marklat="59.959301" data-marklong="30.317404" href="#mapModal" 
+                                img src="img/address.png" /
+                                span Каменноостровский пр., 16
+                          .contacts__
+                            button.btn.btn-success.showScheduleBtn Запись на прием
+                            .tel +7(812)424-39-46
+                            .price-label
+                              strong
+                                | от 750
+                                span.rub ₹
+                    .reviews
+                      a name="feedback" 
+                      h3.first Отзывы
+                      .rev-help
+                        #revHelp.popover_click data-content="" data-original-title="" rel="popover" Откуда берутся отзывы?
+                      button.btn.btn-rew.btn-open data-target="#docReviewForm" data-toggle="collapse"  Оставить отзыв
+                      .clearfix
+                      section#docReviewForm.collapse.review-form style=("overflow: hidden") 
+                        form#comment_form action="" method="post" 
+                          input name="doctor" type="hidden" value="trofimov-maksim-valerevich" /
+                          .comment-err
+                          .comment-cfm
+                          .row
+                            .col-xs-5.rating-params
+                              .form-group
+                                label for="rateParam1" Тщательность обследования:
+                                .star-rating.ratingInput
+                                  input name="rate1" type="radio" value="" /
+                                  span.hide
+                                  input name="rate1" type="radio" value="1" /
+                                  span
+                                  input name="rate1" type="radio" value="2" /
+                                  span
+                                  input name="rate1" type="radio" value="3" /
+                                  span
+                                  input name="rate1" type="radio" value="4" /
+                                  span
+                                  input name="rate1" type="radio" value="5" /
+                                  span
+                              .form-group
+                                label for="rateParam1" Эффективность лечения:
+                                .star-rating.ratingInput
+                                  input checked="" name="rate2" type="radio" value="" /
+                                  span.hide
+                                  input name="rate2" type="radio" value="1" /
+                                  span
+                                  input name="rate2" type="radio" value="2" /
+                                  span
+                                  input name="rate2" type="radio" value="3" /
+                                  span
+                                  input name="rate2" type="radio" value="4" /
+                                  span
+                                  input name="rate2" type="radio" value="5" /
+                                  span
+                              .form-group
+                                label for="rateParam1"  Отношение к пациенту:
+                                .star-rating.ratingInput
+                                  input checked="" name="rate3" type="radio" value="" /
+                                  span.hide
+                                  input name="rate3" type="radio" value="1" /
+                                  span
+                                  input name="rate3" type="radio" value="2" /
+                                  span
+                                  input name="rate3" type="radio" value="3" /
+                                  span
+                                  input name="rate3" type="radio" value="4" /
+                                  span
+                                  input name="rate3" type="radio" value="5" /
+                                  span
+                              .form-group
+                                label for="rateParam1"  Информирование пациента:
+                                .star-rating.ratingInput
+                                  input checked="" name="rate4" type="radio" value="" /
+                                  span.hide
+                                  input name="rate4" type="radio" value="1" /
+                                  span
+                                  input name="rate4" type="radio" value="2" /
+                                  span
+                                  input name="rate4" type="radio" value="3" /
+                                  span
+                                  input name="rate4" type="radio" value="4" /
+                                  span
+                                  input name="rate4" type="radio" value="5" /
+                                  span
+                              .form-group
+                                label for="rateParam1"  Посоветуете ли вы врача?
+                                .star-rating.ratingInput
+                                  input checked="" name="rate5" type="radio" value="" /
+                                  span.hide
+                                  input name="rate5" type="radio" value="1" /
+                                  span
+                                  input name="rate5" type="radio" value="2" /
+                                  span
+                                  input name="rate5" type="radio" value="3" /
+                                  span
+                                  input name="rate5" type="radio" value="4" /
+                                  span
+                                  input name="rate5" type="radio" value="5" /
+                                  span
+                            .col-xs-7.rev-form
+                              .form-group
+                                label for="revQuality"  Достоинства
+                                textarea#revQuality.form-control name="content" rows="3" 
+                              .form-group
+                                label for="revImpair"  Недостатки
+                                textarea#revImpair.form-control name="content2" rows="3" 
+                              .form-group
+                                label for="userNs"  ФИО
+                                input#userNs.form-control name="fio" type="text" value="" /
+                              .form-group
+                                label for="revTel"  Телефон
+                                input#revTel.form-control name="phone" type="text" value="" /
+                                .help На него придет код подтверждения
+                              .form-group.captcha
+                                span#vericode 
+                                  label for="revCap"  Введите код подтверждения
+                                  input.form-control name="vericode" placeholder="" type="text"  /
+                                button.btn.btn-success.pull-right type="submit"  Отправить
+                      section.reviews-list
+                        .rev-item class="[+chunk.rowclass+]" 
+                          a name="comment3218" 
+                          .username.h4 Чубукин Николай
+                          .rating data-original-title="" rel="popover3218" title=""  Превосходно, 5.0
+                          .rev-text.merits
+                            | Мануальный терапевт Трофимов Максим Валерьевич отличный специалист, благодаря его советам и профессионализму я был вылечен в кратчайшие сроки.
+                          .rev-text.disadvantages
+                          hr.clearfix
+            .bestDoctors
+              .panel.panel-default
+                .panel-heading
+                  h2 Похожие врачи
+                .panel-body
+                  - for item in [1,2,3]
+                    .col-xs-4
+                      .media
+                        .media-left
+                          img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg"
+                        .media-body
+                          h4.media-heading Шеняк Татьяна Михайловна
+                          p Невролог, Иглорефлексотерапевт
+    == Slim::Template.new("footer.slim").render
+    .modal-scrollable style=("z-index: 1050;") 
+      #docModal.modal.fade.doc-modal.in aria-hidden="false" aria-labelledby="docModalLabel" role="dialog" style=("display: block; margin-top: -0.5px;") tabindex="-1" 
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close aria-hidden="true" data-dismiss="modal" type="button"  ×
+              h3#myModalLabel.modal-title Запись на прием к врачу онлайн
+              .bookByPhone style=("display: none;") 
+                | Или по телефону
+                b
+            .modal-body
+              .row
+                .col-xs-6
+                  .doc-datetime style=("display: none;") 
+                    .doc-date
+                      img src="/assets/templates/design/less/img/date.png" /
+                      span
+                    .doc-time
+                      img src="/assets/templates/design/less/img/time.png" /
+                      span
+                  .doc-name
+                    img.avatar src="https://cdn.doctu.ru/images/thumb/150x225/150x225-ff08e137c44e1168ade2e242c7dffb5a.jpg" /
+                    h3 Верцинский
+                    h4 Евгений Константинович
+                    .specialty Анестезиолог, Реаниматолог
+                  .clearfix
+                  .doc-address
+                    img.map height="74" src="https://cdn.doctu.ru/images/thumb/74x74/74x74-b3694f19f314af0d3070c79313fcea20.jpg" width="74" /
+                    .metro
+                      span.line2 Проспект Просвещения
+                      span.line2 Озерки
+                      span.line1 Гражданский проспект
+                    .address
+                      img src="img/address.png" /
+                      span пр. Культуры, д. 4
+                  .clearfix
+                  .doc-promo
+                    h3 Запись абсолютно бесплатна!
+                    p Администратор клиники свяжется с вами для подтверждения даты и времени приема выбранного специалиста. Контактные данные не передаются третьим лицам.
+                .col-xs-6
+                  form role="form" 
+                    .doc-form
+                      h4.first Введите ваши контактные данные
+                      #orderScheld.form-group
+                        input name="workerId" type="hidden" value="esOu4WOYpkrhntrs" /
+                        input#orderTime name="orderTime" type="hidden" value="" /
+                        input#orderDate name="orderDate" type="hidden" value="" /
+                        label for="orderDateTime"  Выберите желаемые дату и время визита
+                        input#orderDateTime.form-control name="orderDateTime" placeholder=("Дата и время не выбраны") readonly="" type="text" value="" /
+                        img#openOrderTime.form-control src="img/calendar.png"
+                        .clearfix
+                      .form-group
+                        label for="userName" 
+                          | ФИО
+                          span.error Неполные данные
+                        input#userName.form-control name="fio" placeholder="" type="text" /
+                      .form-group
+                        label for="userInputEmail1"  Эл. почта
+                        input#userInputEmail1.form-control name="email" placeholder="" type="email" /
+                      .form-group
+                        a.addComment href="#"  Добавить комментарий
+                        label.checkbox style=("float: right; margin-top: 0;") 
+                          input#ageChild name="isChild" type="checkbox" value="1"
+                          | Для ребенка
+                      #patientComment.form-group style=("display: none;") 
+                        div
+                          textarea.form-control name="commentOrder" row="2" 
+                      .form-group
+                        label for="userTel" 
+                          | Телефон
+                          span.error Неправильно заполнено поле
+                        input#userTel.form-control name="phone" placeholder="" type="text" /
+                        .help На него придет код подтверждения
+                    .ajax-sms.continueBlock
+                      .info.smsCodeBlock style=("display: none;") 
+                        | На ваш номер было выслано SMS с кодом. Если код не пришел в течение 2-х минут, вы можете
+                      .form-group
+                        label.smsCodeBlock for="userSms" style=("display: none;")  Введите код смс
+                        br/
+                        input#userSms.form-control.codeInput name="code" placeholder="" style=("opacity: 0;") type="text" value="" /
+                        button.btn.btn-success name="continueBookingBtn"  Продолжить
+                    .ajax-final.successBlock style=("display: none;") 
+                      p.infoMsg
+                      p.noteMsg Мы знаем, что у вас есть выбор. Спасибо, что выбрали нас! Команда Doctu.ru
+    .modal-backdrop.fade.in style="z-index:1040;"

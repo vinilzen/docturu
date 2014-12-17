@@ -1910,7 +1910,7 @@ h3 {
   text-decoration: none;
   border-bottom: 1px dotted #2a6496;
   font-size: 13px;
-  top: -4px;
+  top: 0;
   position: relative;
   &:hover, &:focus {
     text-decoration: none;
@@ -2187,7 +2187,7 @@ h3 {
     background-color: #423aa8;
   }
 }
-.clinics_contacts .btn-success {
+.btn-success {
   color: #ffffff;
   background-color: #0da646;
   border-color: #0da646;

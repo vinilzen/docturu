@@ -121,7 +121,7 @@ $font_1: sans-serif;
     .reviews {
       font-size: 13px;
       color: $color_meteorite_approx;
-      margin-top: 5px;
+      margin-top: 0px;
     }
     .experience {
       margin-top: 16px;
@@ -654,4 +654,135 @@ a.mapModal {
   .btn-more {
     color: #0ea646;
   }
+}
+.doc-modal {
+  .modal-dialog {
+    width: 780px !important;
+  }
+  .modal-body {
+    padding-top: 15px;
+  }
+  .modal-header {
+    padding: 15px;
+    .modal-title {
+      font-weight: 600;
+      color: #0ea646;
+    }
+  }
+  .doc-datetime {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dedede;
+    font-size: 18px;
+    .doc-date {
+      display: inline-block;
+      margin-bottom: 15px;
+      width: 65%;
+    }
+    .doc-time {
+      display: inline-block;
+      margin-bottom: 15px;
+      width: 33%;
+    }
+  }
+  .doc-name {
+    min-height: 110px;
+    margin-bottom: 10px;
+    h3 {
+      margin-left: 90px;
+      color: #302a7a;
+      font-weight: 700;
+      margin-top: 5px;
+    }
+    .h3 {
+      margin-left: 90px;
+      color: #302a7a;
+      font-weight: 700;
+      margin-top: 5px;
+    }
+    h4 {
+      margin-left: 90px;
+      color: #302a7a;
+    }
+    img {
+      float: left;
+      width: 74px;
+      max-height: 110px;
+    }
+    .specialty {
+      margin-left: 90px;
+      font-size: 13px;
+      color: #0ea646;
+      font-style: italic;
+      a {
+        color: #0ea646;
+      }
+      span {
+        display: inline-block;
+        font-size: 13px;
+        border: 1px solid !important;
+        border-color: #555 !important;
+        background-color: #fff;
+        //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+        border-radius: 4px;
+        margin: 13px 0 0 0 !important;
+        padding: 1px 5px 3px;
+        font-style: normal;
+        color: #555;
+      }
+    }
+  }
+  .first {
+    color: #0ea646;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .doc-promo {
+    padding: 10px 10px 0 10px;
+    margin: 10px 0;
+    //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+    border-radius: 6px;
+    border: 1px solid #dedede;
+    h3, .h3 {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+      color: #0ea646;
+      font-weight: 400;
+    }
+    p {
+      color:#555;
+    }
+  }
+  .doc-address {
+    margin: 10px 0;
+    min-height: 75px;
+    div {
+      padding-bottom: 10px;
+      &.metro {
+        padding-top: 10px;
+      }
+    }
+    .map {
+      float: left;
+      width: 74px;
+      margin-right: 15px;
+    }
+  }
+  .ajax-final {
+    //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+    border-radius: 6px;
+    border: 1px solid #dedede;
+    padding: 10px 10px 0 10px;
+  }
+  .ajax-sms .form-control {
+    width: 210px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+}
+#docModal label .error {
+  color: red;
+  display: none;
+}
+label {
+  color:#555;
 }
