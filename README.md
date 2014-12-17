@@ -33,5 +33,3 @@ http://test.to4ek.net/docturu/doctor_modal.html
 http://test.to4ek.net/docturu/doctor_modal2.html
 
 http://test.to4ek.net/docturu/doctor_popover.html
-
-http://test.to4ek.net/docturu/navbar_link.html
