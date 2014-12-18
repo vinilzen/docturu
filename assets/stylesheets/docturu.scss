@@ -12,7 +12,10 @@ $white_50: rgba(255, 255, 255, 0.5);
 $color_alto_approx: #dddddd;
 $color_mountain_mist_approx: #999999;
 
-
+.container-fluid {
+	min-width: 1200px;
+	overflow: hidden;
+}
 strong {
   color:#555;
   font-size: 13px;
@@ -658,7 +661,7 @@ h3 {
 #mymap {
 	width: 100%;
 	position: absolute;
-	min-width: 760px;
+	min-width: 1200px;
 }
 .above_map, #mymap {
 	min-height: 520px;
@@ -925,13 +928,13 @@ h3 {
 	.lead {
 		line-height: 1.7;
 	}
-	.col-md-offset-2 {
+	.col-xs-offset-2 {
 		margin-left: 0px;
 	}
-	.col-sm-3:not(.col-md-offset-2) {
+	.col-xs-3:not(.col-xs-offset-2) {
 		margin-left: 20px;
 	}
-	.col-sm-3 {
+	.col-xs-3 {
 		border:2px solid #505152;
 		margin-right: 20px;
 		margin-top: 67px;

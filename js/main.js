@@ -48,7 +48,7 @@ $(function(){
 	function set_map_height(){
 		var wh = $( window ).height(),
 			nav_h = $( '.navbar' ).height(),
-			footer_h = $( 'footer .row' ).height();
+			footer_h = $( '.footer' ).height();
 
 		$('#mymap, .above_map').height(wh - nav_h - footer_h - 2);
 	}
