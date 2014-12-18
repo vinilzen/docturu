@@ -461,12 +461,15 @@ h3 {
 	}
 }
 #clinicSearchPage {
-  .header {
-    border-bottom: 1px solid #dedede;
-  }
+	.header {
+		width: 100%;
+	}
   .nav.navbar-nav {
     padding-left: 38px;
   }
+}
+#container-clinic {
+    border-top: 1px solid #dedede;
 }
 .footer {
 	height: 60px;
@@ -2246,12 +2249,12 @@ h3 {
 }
 .form-control::-webkit-input-placeholder {
 	color: #999999;
-	font-size: 14px;
+	font-size: 13px;
 	top:-1px;
 }
 .form-control  {
 	height: 34px;
-	font-size: 14px;
+	font-size: 13px;
 }
 .clinic-request .doctorReview {
 	top:-3px;
