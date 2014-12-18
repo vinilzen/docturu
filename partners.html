@@ -157,42 +157,43 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid drk-blue" id="form"></div>
-  </body>
-  <div class="row">
-    <div class="container">
-      <div class="col-sm-12 text-center">
-        <h2 class="text-center">
-          Присоединяйтесь к нам прямо сейчас
-        </h2>
-        <p class="text-center lead">
-          Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
-        </p>
-        <div class="col-xs-6 col-xs-offset-3">
-          <form action="partners" method="POST" role="form">
-            <input name="formid" type="hidden" value="partner-form" />
-            <div class="form-group">
-              <input class="form-control" name="clName" placeholder="Название клиники*" type="text" />
+    <div class="container-fluid drk-blue" id="form">
+      <div class="row">
+        <div class="container">
+          <div class="col-sm-12 text-center">
+            <h2 class="text-center">
+              Присоединяйтесь к нам прямо сейчас
+            </h2>
+            <p class="text-center lead">
+              Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+            </p>
+            <div class="col-xs-6 col-xs-offset-3">
+              <form action="partners" method="POST" role="form">
+                <input name="formid" type="hidden" value="partner-form" />
+                <div class="form-group">
+                  <input class="form-control" name="clName" placeholder="Название клиники*" type="text" />
+                </div>
+                <div class="form-group">
+                  <input class="form-control" name="clSpec" placeholder="Сайт" type="text" />
+                </div>
+                <div class="form-group">
+                  <input class="form-control" name="clCity" placeholder="Город*" type="text" />
+                </div>
+                <div class="form-group">
+                  <input class="form-control" name="userNs" placeholder="Ваше имя*" type="text" />
+                </div>
+                <div class="form-group">
+                  <input class="form-control" name="userTel" placeholder="Телефон*" type="text" />
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="userCom" placeholder="Комментарий" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-success" type="submit"> Отправить заявку</button>
+                </div>
+              </form>
             </div>
-            <div class="form-group">
-              <input class="form-control" name="clSpec" placeholder="Сайт" type="text" />
-            </div>
-            <div class="form-group">
-              <input class="form-control" name="clCity" placeholder="Город*" type="text" />
-            </div>
-            <div class="form-group">
-              <input class="form-control" name="userNs" placeholder="Ваше имя*" type="text" />
-            </div>
-            <div class="form-group">
-              <input class="form-control" name="userTel" placeholder="Телефон*" type="text" />
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="userCom" placeholder="Комментарий" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-              <button class="btn btn-success" type="submit"> Отправить заявку</button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -224,5 +225,5 @@
     <script src="js/chosen.jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-  </div>
+  </body>
 </html>

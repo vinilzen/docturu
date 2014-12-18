@@ -58,26 +58,26 @@ html
           h3 Большая аудитория
           p Пациенты ищут врачей и клиники у нас на сайте, с целью записаться на прием или почитать подтвержденные отзывы.
     #form.container-fluid.drk-blue
-  .row
-    .container
-      .col-sm-12.text-center
-        h2.text-center Присоединяйтесь к нам прямо сейчас
-        p.text-center.lead Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
-        .col-xs-6.col-xs-offset-3
-          form action="partners" method="POST" role="form" 
-            input name="formid" type="hidden" value="partner-form" /
-            .form-group
-              input.form-control name="clName" placeholder=("Название клиники*") type="text" /
-            .form-group
-              input.form-control name="clSpec" placeholder="Сайт" type="text" /
-            .form-group
-              input.form-control name="clCity" placeholder="Город*" type="text" /
-            .form-group
-              input.form-control name="userNs" placeholder=("Ваше имя*") type="text" /
-            .form-group
-              input.form-control name="userTel" placeholder="Телефон*" type="text" /
-            .form-group
-              textarea.form-control name="userCom" placeholder="Комментарий" rows="3" 
-            .form-group
-              button.btn.btn-success type="submit"  Отправить заявку
+      .row
+        .container
+          .col-sm-12.text-center
+            h2.text-center Присоединяйтесь к нам прямо сейчас
+            p.text-center.lead Для пользователей работа с сайтом абсолютно бесплатна. Все расходы берут на себя наши клиники-партнеры.
+            .col-xs-6.col-xs-offset-3
+              form action="partners" method="POST" role="form" 
+                input name="formid" type="hidden" value="partner-form" /
+                .form-group
+                  input.form-control name="clName" placeholder=("Название клиники*") type="text" /
+                .form-group
+                  input.form-control name="clSpec" placeholder="Сайт" type="text" /
+                .form-group
+                  input.form-control name="clCity" placeholder="Город*" type="text" /
+                .form-group
+                  input.form-control name="userNs" placeholder=("Ваше имя*") type="text" /
+                .form-group
+                  input.form-control name="userTel" placeholder="Телефон*" type="text" /
+                .form-group
+                  textarea.form-control name="userCom" placeholder="Комментарий" rows="3" 
+                .form-group
+                  button.btn.btn-success type="submit"  Отправить заявку
     == Slim::Template.new("footer.slim").render
