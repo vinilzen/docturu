@@ -693,14 +693,14 @@ a.mapModal {
       margin-left: 90px;
       color: #302a7a;
       font-weight: 700;
-      margin-bottom: 10px;
+      margin-bottom: 0;
       margin-top: 5px;
     }
     h4 {
       margin-left: 90px;
       color: #302a7a;
       font-size: 14px;
-      margin-top: 10px;
+      margin-top: 5px; 
       margin-bottom: 10px;
     }
     img {
@@ -775,7 +775,7 @@ a.mapModal {
   }
   .ajax-sms .form-control {
     width: 210px;
-    margin-right: 10px;
+    margin-right: 9px;
     display: inline-block;
   }
 }
