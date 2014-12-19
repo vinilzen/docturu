@@ -455,23 +455,4 @@ html
                                   tr
                                     td Эзофагогастродуоденоскопия (ЭФГДС)
                                     td 2400
-
-                  section.similarClinics
-                      .panel.panel-default
-                        .panel-heading
-                          .h2 Похожие клиники
-                        .panel-body
-                          - for item in [1,2,3]
-                            .col-xs-4
-                              .media
-                                .media-left
-                                  .clinic-avatar
-                                    a href="doctor/jastrebova-olga-germanovna" target="_blank" 
-                                      img.avatar alt="q" src="https://cdn.doctu.ru/images/thumb/150x150/150x150-b46db5ad6d416fc59af1fa459d8b11a2.jpg" width="74" 
-                                .media-body
-                                  a href="#"
-                                    h4.h3 Многопрофильная клиника РАМИ
-                                  .doc-rating
-                                    a.reviews href="123" 1
-                                    .rating 5.0
     == Slim::Template.new("footer.slim").render

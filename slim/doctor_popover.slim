@@ -80,7 +80,7 @@ html
                               a.mapModal data-mapid="map" data-mapzoom="14" data-markcontent=("Коломяжский пр., 36/2") data-markheader=("<a href=&quot;http://1-clinic.doctu.ru/mnogoprofilnaya_kolomyazhskiy&quot;>Первая семейная клиника Петербурга. Многопрофильная на Коломяжском</a>") data-marklat="60.014629" data-marklong="30.292772" href="#mapModal" 
                                 img src="img/address.png" /
                                 span Коломяжский пр., 36/2
-                          .contacts__
+                          .contact_information
                             button.btn.btn-success.showScheduleBtn Запись на прием
                             .tel +7(812)424-39-46
                             .price-label
@@ -97,7 +97,7 @@ html
                               a.mapModal data-mapid="map" data-mapzoom="16" data-markcontent=("Каменноостровский пр., 16") data-markheader=("<a href=&quot;http://1-clinic.doctu.ru/mnogoprofilnaya_kamennoostrovskiy&quot;>Первая семейная клиника Петербурга на Австрийской площади</a>") data-marklat="59.959301" data-marklong="30.317404" href="#mapModal" 
                                 img src="img/address.png" /
                                 span Каменноостровский пр., 16
-                          .contacts__
+                          .contact_information
                             button.btn.btn-success.showScheduleBtn Запись на прием
                             .tel +7(812)424-39-46
                             .price-label
@@ -242,17 +242,32 @@ html
                             | Мануальный терапевт Трофимов Максим Валерьевич отличный специалист, благодаря его советам и профессионализму я был вылечен в кратчайшие сроки.
                           .rev-text.disadvantages
                           hr.clearfix
-            .bestDoctors
+            .similarDoctors
               .panel.panel-default
                 .panel-heading
-                  h2 Похожие врачи
+                  .h2 Похожие врачи
                 .panel-body
                   - for item in [1,2,3]
                     .col-xs-4
                       .media
                         .media-left
-                          img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg"
+                          .doc-avatar
+                            a href="doctor/jastrebova-olga-germanovna" target="_blank" 
+                              img.avatar alt="Дерматовенеролог, Дерматолог, Венеролог Ястребова Ольга Германовна" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-ee0790bef36d86391e6935310e2e5afa.jpg" width="74" /
+                            .experience
+                              | Стаж 30 лет
                         .media-body
-                          h4.media-heading Шеняк Татьяна Михайловна
-                          p Невролог, Иглорефлексотерапевт
+                          a href="#"
+                            h4.h3 Шеняк 
+                            h4 Татьяна Михайловна
+                          .specialty
+                            h3: a[href="/doctors/nevrolog"] Невролог
+                            | ,
+                            h3: a[href="/doctors/osteopat"] Остеопат
+                            | ,
+                            h3: a[href="/doctors/instruktor-lfk"] Инструктор ЛФК
+
+                          .doc-rating
+                            a.reviews href="123" 1
+                            .rating 5.0
     == Slim::Template.new("footer.slim").render

@@ -7321,10 +7321,10 @@ h3.darkBlueTitle {
   margin: 0;
   padding: 0;
 }
-.doctor_2_0 .doc-info .contacts__ {
+.doctor_2_0 .doc-info .contact_information {
   padding-top: 20px;
 }
-.doctor_2_0 .doc-info .contacts__ .tel {
+.doctor_2_0 .doc-info .contact_information .tel {
   margin-right: 10px;
   border: 1px solid #302a7a;
   border-radius: 4px;
@@ -7336,10 +7336,10 @@ h3.darkBlueTitle {
   width: 152px;
   text-align: center;
 }
-.doctor_2_0 .doc-info .contacts__ .tel:empty {
+.doctor_2_0 .doc-info .contact_information .tel:empty {
   display: none;
 }
-.doctor_2_0 .doc-info .contacts__ .btn {
+.doctor_2_0 .doc-info .contact_information .btn {
   margin: 0;
   margin-right: 10px;
   vertical-align: baseline;
@@ -8269,10 +8269,10 @@ h3.darkBlueTitle {
 #doctorPage .doctor_2_0.docVip:after {
   z-index: 1;
 }
-#doctorPage .doc-info .contacts__ {
+#doctorPage .doc-info .contact_information {
   padding-top: 20px;
 }
-#doctorPage .doc-info .contacts__ .btn {
+#doctorPage .doc-info .contact_information .btn {
   margin: 0;
   margin-right: 10px;
   vertical-align: baseline;
@@ -8775,8 +8775,8 @@ label {
 .similarClinics .h2,
 .similarDoctors .h2,
 .bestClinics .h2 {
-  font-size: 36px;
-  font-weight: 300;
+  font-size: 24px;
+  font-weight: 500;
 }
 .bestDoctors .col-xs-4,
 .similarClinics .col-xs-4,
@@ -8834,6 +8834,12 @@ label {
   float: left;
   width: 76px;
 }
+.bestDoctors .media-body,
+.similarClinics .media-body,
+.similarDoctors .media-body,
+.bestClinics .media-body {
+  position: relative;
+}
 .bestDoctors .doc-avatar,
 .similarClinics .doc-avatar,
 .similarDoctors .doc-avatar,
@@ -8888,6 +8894,13 @@ label {
 .bestClinics .specialty a {
   color: #0ea646;
   font-size: 13px;
+}
+.bestDoctors .doc-rating,
+.similarClinics .doc-rating,
+.similarDoctors .doc-rating,
+.bestClinics .doc-rating {
+  position: absolute;
+  bottom: 0;
 }
 .bestDoctors .doc-rating div, .bestDoctors .doc-rating a,
 .similarClinics .doc-rating div,
@@ -9622,5 +9635,3 @@ label {
   padding: 0px 15px;
   border-radius: 10px;
 }
-
-/*# sourceMappingURL=bootstrap.css.map */

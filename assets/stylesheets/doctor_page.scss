@@ -320,7 +320,7 @@ $font_1: sans-serif;
       }
     }
   } 
-  .doc-info .contacts__ {
+  .doc-info .contact_information {
     padding-top: 20px;
     .btn {
       margin: 0;
@@ -833,8 +833,8 @@ label {
   margin: 10px 0 0 0;
   min-height: 166px;
   .h2 {
-    font-size: 36px;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 500;
   }
   .col-xs-4 {
     width: 280px;
@@ -867,6 +867,9 @@ label {
   .clinic-avatar {
     float: left;
     width: 76px;
+  }
+  .media-body {
+    position: relative;
   }
   .doc-avatar {
     width: 76px;
@@ -904,6 +907,8 @@ label {
   }
   
   .doc-rating {
+    position: absolute;
+    bottom: 0;
     div, a {
       display: inline-block;
       background-image: url(../img/star_comment.gif);
