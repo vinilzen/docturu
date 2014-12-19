@@ -2,7 +2,7 @@ doctype html
 html
   head
     == Slim::Template.new("head.slim").render
-  body
+  body.modal-open.page-overflow
     == Slim::Template.new("navbar.slim").render
     .container-fluid.borderbot.bordertop
       .container.main_inner
@@ -68,8 +68,6 @@ html
                         span.year 2006
                     .h3 Курсы и сертификаты
                     | Действующий сертификат по специальности
-                    .h3 Ассоциации
-                    .association Член ESC - Европейского общества кардиологов; Член РКО - Российского кардиологического общества;
                   .col-xs-7.right_review
                     section.doc-address.clearfix id="" 
                       section.doctor_2_0.compact data-address=("Коломяжский пр., 36/2") data-cliniclogo="https://cdn.doctu.ru/images/thumb/74x74/74x74-1b5989e62843a52730fceda5c8005370.jpg" data-clinicname=("Первая семейная клиника Петербурга. Многопрофильная на Коломяжском") data-clinicphone="+7(812)424-39-46" data-clinicurl="1-clinic.doctu.ru/mnogoprofilnaya_kolomyazhskiy" data-doctor="YiLfWWZOhjFmJdDf" data-family="Трофимов" data-metro=("<span class='line2'>Пионерская</span> <span class='line2'>Удельная</span> ") data-name=("Максим Валерьевич") data-photo="https://cdn.doctu.ru/images/thumb/150x225/150x225-a2268db7a498b87ac9641f8ba9723bb3.jpg" data-samozapis="" data-speciality="Невролог, Мануальный терапевт, Остеопат, Инструктор ЛФК" data-status="working" 
@@ -123,7 +121,7 @@ html
                               .form-group
                                 label for="rateParam1" Тщательность обследования:
                                 .star-rating.ratingInput
-                                  input checked="" name="rate1" type="radio" value="" /
+                                  input name="rate1" type="radio" value="" /
                                   span.hide
                                   input name="rate1" type="radio" value="1" /
                                   span
@@ -219,38 +217,59 @@ html
                           a name="comment3218" 
                           .username.h4 Чубукин Николай
                           .rating data-original-title="" rel="popover3218" title=""  Превосходно, 5.0
-
                           .rev-text.merits
                             | Мануальный терапевт Трофимов Максим Валерьевич отличный специалист, благодаря его советам и профессионализму я был вылечен в кратчайшие сроки.
                           .rev-text.disadvantages
                           hr.clearfix
-            .similarDoctors
+            .bestDoctors
               .panel.panel-default
                 .panel-heading
-                  .h2 Похожие врачи
+                  h2 Похожие врачи
                 .panel-body
                   - for item in [1,2,3]
                     .col-xs-4
                       .media
                         .media-left
-                          .doc-avatar
-                            a href="doctor/jastrebova-olga-germanovna" target="_blank" 
-                              img.avatar alt="Дерматовенеролог, Дерматолог, Венеролог Ястребова Ольга Германовна" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-ee0790bef36d86391e6935310e2e5afa.jpg" width="74" /
-                            .experience
-                              | Стаж 30 лет
+                          img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg"
                         .media-body
-                          a href="#"
-                            h4.h3 Шеняк 
-                            h4 Татьяна Михайловна
-                          .specialty
-                            h3: a[href="/doctors/nevrolog"] Невролог
-                            | ,
-                            h3: a[href="/doctors/osteopat"] Остеопат
-                            | ,
-                            h3: a[href="/doctors/instruktor-lfk"] Инструктор ЛФК
-
-                          .doc-rating
-                            a.reviews href="123" 1
-                            .rating 5.0
-
+                          h4.media-heading Шеняк Татьяна Михайловна
+                          p Невролог, Иглорефлексотерапевт
     == Slim::Template.new("footer.slim").render
+    .modal-scrollable style=("z-index: 1050;") 
+      #docModal.modal.fade.doc-modal.in aria-hidden="false" aria-labelledby="docModalLabel" role="dialog" style=("display: block; margin-top: -0.5px;") tabindex="-1" 
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close aria-hidden="true" data-dismiss="modal" type="button"  ×
+              h3#myModalLabel.modal-title Запись на прием к врачу онлайн
+              .bookByPhone Или по телефону
+            .modal-body
+              .row
+                .col-xs-6
+                  .doc-name
+                    img.avatar src="https://cdn.doctu.ru/images/thumb/150x225/150x225-ff08e137c44e1168ade2e242c7dffb5a.jpg" /
+                    h3 Верцинский
+                    h4 Евгений Константинович
+                    .specialty Анестезиолог, Реаниматолог
+                  .clearfix
+                .col-xs-6
+                  .doc-address
+                    img.map height="74" src="https://cdn.doctu.ru/images/thumb/74x74/74x74-b3694f19f314af0d3070c79313fcea20.jpg" width="74" /
+                    .metro
+                      span.line2 Проспект Просвещения
+                      span.line2 Озерки
+                      span.line1 Гражданский проспект
+                    .address
+                      img src="img/address.png" /
+                      span пр. Культуры, д. 4
+                  .clearfix
+              .row
+                .col-xs-12
+                  .doc-promo.text-center
+                    p.phone_invite
+                      | Запись к данному специалисту возможна по телефону 
+                      span.tel
+                        span.bookByPhone
+                          b +7(495)223-70-56
+                  
+    .modal-backdrop.fade.in style="z-index:1040;"

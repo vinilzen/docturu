@@ -24,16 +24,31 @@ html
               .bestDoctors
                 .panel.panel-default
                   .panel-heading
-                    h2 Лучшие врачи
+                    .h2 Похожие врачи
                   .panel-body
                     - for item in [1,2,3]
                       .col-xs-4
                         .media
                           .media-left
-                            img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg"
+                            .doc-avatar
+                              a href="doctor/jastrebova-olga-germanovna" target="_blank" 
+                                img.avatar alt="Дерматовенеролог, Дерматолог, Венеролог Ястребова Ольга Германовна" src="https://cdn.doctu.ru/images/thumb/74x110/74x110-ee0790bef36d86391e6935310e2e5afa.jpg" width="74" /
+                              .experience
+                                | Стаж 30 лет
                           .media-body
-                            h4.media-heading Шеняк Татьяна Михайловна
-                            p Невролог, Иглорефлексотерапевт
+                            a href="#"
+                              h4.h3 Шеняк 
+                              h4 Татьяна Михайловна
+                            .specialty
+                              h3: a[href="/doctors/nevrolog"] Невролог
+                              | ,
+                              h3: a[href="/doctors/osteopat"] Остеопат
+                              | ,
+                              h3: a[href="/doctors/instruktor-lfk"] Инструктор ЛФК
+
+                            .doc-rating
+                              a.reviews href="123" 1
+                              .rating 5.0
               #doctorSort.row
                 .col-xs-4.result
                   | Найдено 

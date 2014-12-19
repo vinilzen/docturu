@@ -28,6 +28,7 @@ html
                             span itemprop="streetAddress"  Московский проспект, д. 22
                         .buttons
                           button.btn.btn-success.pull-left.showClinicsDoctors Запись на прием
+                          button class="btn btn-rew pull-left noClinicsDoctors" Запись недоступна
                           .tel.pull-left itemprop="telephone"  +7(812)425‑15‑33
                           .clearfix
                     .col-xs-3
@@ -53,12 +54,14 @@ html
                     .col-xs-12
                       section#clinicTabs.clinic-tabs
                         ul#clTab.nav.nav-tabs
-                          li.active
+                          li
                             a data-toggle="tab" href="#profileTab" Профиль
                           li
                             a data-toggle="tab" href="#reviewsTab" Отзывы
+                          li.active
+                            a data-toggle="tab" href="#diagnosticTab" Диагностические процедуры
                         .tab-content
-                          .tab-pane.clinic-page.active#profileTab
+                          .tab-pane.clinic-page#profileTab
                             .row
                               .col-xs-9
                                 .description.readmore style="height:37px;"
@@ -385,17 +388,90 @@ html
                                       .rev-text.disadvantages
                                       hr.clearfix
                                   a#showMoreDocsComments.btn.btn-rew.btn-open data-page="1" href="#" style=("display: none;")  Показать ещё
+                          .tab-pane.clinic-page.active#diagnosticTab
+                            section.services-list
+                              table.table
+                                thead
+                                  tr
+                                    th
+                                      h4 МРТ (магнитно-резонансная томография)
+                                    th Цена в рублях
+                                tbody
+                                  tr
+                                    td голеностопного сустава
+                                    td 7200
+                                  tr
+                                    td головного мозга
+                                    td 5760
+                                  tr
+                                    td коленного сустава
+                                    td 6480
+                                  tr
+                                    td локтевого сустава
+                                    td 7200
+                                  tr
+                                    td органов брюшной полости и забрюшинного пространства
+                                    td 7200
+                                  tr
+                                    td органов малого таза
+                                    td 6480
+                                  tr
+                                    td отдела позвоночника
+                                    td 5760
+                                  tr
+                                    td печени и желчевыводящих путей
+                                    td 5760
+                                  tr
+                                    td плечевого сустава
+                                    td 7200
+                                  tr
+                                    td придаточных пазух носа
+                                    td 5040
+                                  tr
+                                    td сосудов головного мозга
+                                    td 4320
+                                  tr
+                                    td сосудов шеи
+                                    td 4320
+                                  tr
+                                    td тазобедренного сустава
+                                    td 6480
+                                  tr
+                                    td гипофиза
+                                    td 5040
+                              table.table
+                                thead
+                                  tr
+                                    th
+                                      h4 Эндоскопические методы исследования
+                                    th
+                                tbody
+                                  tr
+                                    td Колоноскопия
+                                    td 4080
+                                  tr
+                                    td Ректороманоскопия
+                                    td 2160
+                                  tr
+                                    td Эзофагогастродуоденоскопия (ЭФГДС)
+                                    td 2400
 
                   section.similarClinics
                       .panel.panel-default
                         .panel-heading
-                          h2 Похожие клиники
+                          .h2 Похожие клиники
                         .panel-body
                           - for item in [1,2,3]
                             .col-xs-4
                               .media
                                 .media-left
-                                  img src="https://cdn.doctu.ru/images/thumb/74x110/74x110-0338a936114b1d5941aaff6c9a40cdbe.jpg"
+                                  .clinic-avatar
+                                    a href="doctor/jastrebova-olga-germanovna" target="_blank" 
+                                      img.avatar alt="q" src="https://cdn.doctu.ru/images/thumb/150x150/150x150-b46db5ad6d416fc59af1fa459d8b11a2.jpg" width="74" 
                                 .media-body
-                                  h3 Многопрофильная клиника РАМИ
+                                  a href="#"
+                                    h4.h3 Многопрофильная клиника РАМИ
+                                  .doc-rating
+                                    a.reviews href="123" 1
+                                    .rating 5.0
     == Slim::Template.new("footer.slim").render

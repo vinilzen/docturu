@@ -7599,13 +7599,11 @@ h3.darkBlueTitle {
 .btn-rew {
   font-weight: normal;
   position: relative;
-  top: -1px;
+  top: 0;
   border-color: #423aa8;
   background-color: transparent;
   color: #423aa8;
   font-weight: bold;
-  transition: background-color 0.2s linear;
-  transition: color 0.2s linear, background-color 0.2s linear;
 }
 .btn-rew:hover {
   border-color: #423aa8;
@@ -7626,6 +7624,7 @@ h3.darkBlueTitle {
   position: relative;
 }
 .doctorReview:hover, .doctorReview:focus {
+  color: #2a6496;
   text-decoration: none;
   border-bottom: 1px solid #fff;
 }
@@ -7748,20 +7747,6 @@ h3.darkBlueTitle {
 
 .services-list td:last-child {
   width: 150px;
-}
-
-.bestDoctors,
-.similarClinics,
-.bestClinics {
-  margin: 10px 0 0 0;
-  min-height: 166px;
-  border-radius: 8px;
-  padding: 10px 10px 21px;
-}
-.bestDoctors .panel,
-.similarClinics .panel,
-.bestClinics .panel {
-  margin-bottom: 10px;
 }
 
 .readmore a[href='#show'] {
@@ -7973,6 +7958,13 @@ h3.darkBlueTitle {
 
 .clinic-request .doctorReview {
   top: -3px;
+}
+
+.phone_invite {
+  font-size: 18px;
+}
+.phone_invite .tel {
+  color: #302a7a;
 }
 
 #doctorPage {
@@ -8772,6 +8764,169 @@ label {
   display: block;
 }
 
+.bestDoctors,
+.similarClinics,
+.similarDoctors,
+.bestClinics {
+  margin: 10px 0 0 0;
+  min-height: 166px;
+}
+.bestDoctors .h2,
+.similarClinics .h2,
+.similarDoctors .h2,
+.bestClinics .h2 {
+  font-size: 36px;
+  font-weight: 300;
+}
+.bestDoctors .col-xs-4,
+.similarClinics .col-xs-4,
+.similarDoctors .col-xs-4,
+.bestClinics .col-xs-4 {
+  width: 280px;
+  padding: 0;
+  margin-right: 20px;
+}
+.bestDoctors .col-xs-4:last-child,
+.similarClinics .col-xs-4:last-child,
+.similarDoctors .col-xs-4:last-child,
+.bestClinics .col-xs-4:last-child {
+  margin-right: 0;
+}
+.bestDoctors .panel,
+.similarClinics .panel,
+.similarDoctors .panel,
+.bestClinics .panel {
+  box-shadow: none;
+  margin-bottom: 14px;
+}
+.bestDoctors .panel-body,
+.similarClinics .panel-body,
+.similarDoctors .panel-body,
+.bestClinics .panel-body {
+  padding: 15px 0;
+}
+.bestDoctors .media,
+.similarClinics .media,
+.similarDoctors .media,
+.bestClinics .media {
+  margin: 7px 0;
+}
+.bestDoctors .panel-default,
+.similarClinics .panel-default,
+.similarDoctors .panel-default,
+.bestClinics .panel-default {
+  border-top: 0;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+.bestDoctors .panel-default > .panel-heading,
+.similarClinics .panel-default > .panel-heading,
+.similarDoctors .panel-default > .panel-heading,
+.bestClinics .panel-default > .panel-heading {
+  background-color: transparent;
+  padding-left: 0;
+}
+.bestDoctors .clinic-avatar,
+.similarClinics .clinic-avatar,
+.similarDoctors .clinic-avatar,
+.bestClinics .clinic-avatar {
+  float: left;
+  width: 76px;
+}
+.bestDoctors .doc-avatar,
+.similarClinics .doc-avatar,
+.similarDoctors .doc-avatar,
+.bestClinics .doc-avatar {
+  width: 76px;
+  height: 155px;
+  border: 1px solid #e8e8f0;
+  float: left;
+}
+.bestDoctors .doc-avatar .experience,
+.similarClinics .doc-avatar .experience,
+.similarDoctors .doc-avatar .experience,
+.bestClinics .doc-avatar .experience {
+  padding: 0 6px;
+  width: 60px;
+  margin: 5px auto 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  color: #302a7a;
+}
+.bestDoctors .h3, .bestDoctors h4,
+.similarClinics .h3,
+.similarClinics h4,
+.similarDoctors .h3,
+.similarDoctors h4,
+.bestClinics .h3,
+.bestClinics h4 {
+  font-size: 18px;
+  color: #302a7a;
+  font-weight: 700;
+  margin: 0;
+}
+.bestDoctors h4,
+.similarClinics h4,
+.similarDoctors h4,
+.bestClinics h4 {
+  font-weight: normal;
+}
+.bestDoctors .specialty,
+.similarClinics .specialty,
+.similarDoctors .specialty,
+.bestClinics .specialty {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #0ea646;
+  font-style: italic;
+}
+.bestDoctors .specialty a,
+.similarClinics .specialty a,
+.similarDoctors .specialty a,
+.bestClinics .specialty a {
+  color: #0ea646;
+  font-size: 13px;
+}
+.bestDoctors .doc-rating div, .bestDoctors .doc-rating a,
+.similarClinics .doc-rating div,
+.similarClinics .doc-rating a,
+.similarDoctors .doc-rating div,
+.similarDoctors .doc-rating a,
+.bestClinics .doc-rating div,
+.bestClinics .doc-rating a {
+  display: inline-block;
+  background-image: url(../img/star_comment.gif);
+  background-repeat: no-repeat;
+  background-position: 0 6px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 36px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.bestDoctors .doc-rating div.reviews, .bestDoctors .doc-rating a.reviews,
+.similarClinics .doc-rating div.reviews,
+.similarClinics .doc-rating a.reviews,
+.similarDoctors .doc-rating div.reviews,
+.similarDoctors .doc-rating a.reviews,
+.bestClinics .doc-rating div.reviews,
+.bestClinics .doc-rating a.reviews {
+  color: #343f4b;
+}
+.bestDoctors .doc-rating div.rating, .bestDoctors .doc-rating a.rating,
+.similarClinics .doc-rating div.rating,
+.similarClinics .doc-rating a.rating,
+.similarDoctors .doc-rating div.rating,
+.similarDoctors .doc-rating a.rating,
+.bestClinics .doc-rating div.rating,
+.bestClinics .doc-rating a.rating {
+  color: #0ea646;
+  background-position: 0 -24px;
+  margin-left: 12px;
+}
+
 #clinicPage {
   margin: 0 0 20px 0;
 }
@@ -9467,3 +9622,5 @@ label {
   padding: 0px 15px;
   border-radius: 10px;
 }
+
+/*# sourceMappingURL=bootstrap.css.map */
