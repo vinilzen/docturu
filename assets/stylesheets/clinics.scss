@@ -114,6 +114,7 @@
   }
   .row {
     margin: 15px -15px;
+    clear:both;
   }
   hr {
     margin: 0;
@@ -141,7 +142,6 @@
         border: 1px solid !important;
         border-color: #555 !important;
         background-color: $white;
-        //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
         border-radius: 4px;
         margin: 13px 0 0 0 !important;
         padding: 1px 5px 3px;
@@ -217,4 +217,30 @@
   margin: -1px -16px;
   padding: 0px 15px;
   border-radius: 10px;
+}
+#doctorSearchPage {
+  .map
+    opacity: 0.85;
+    position: absolute;
+    z-index: 100;
+    top: 75px;
+    &.left{ 
+      left: 15px;    
+    }
+    &.right {
+      right: 0;
+    }
+  }
+  #showDoctorsInList {
+    background-color: #ffffff;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #e3e3e3;
+    color: #302a7a !important;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 15px;
+    margin-top: 20px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  }
 }
