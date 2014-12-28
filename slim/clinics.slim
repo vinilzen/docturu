@@ -3,11 +3,12 @@ html
   head
     == Slim::Template.new("head.slim").render
   body#clinicSearchPage
+    a.switchToMobile href="http://doctu.ru/m/" Перейти на мобильную версию сайта
     == Slim::Template.new("navbar.slim").render
     #container-clinic.container
       .search-clinic-wrapper
         .clf-filter
-          aside#filterAffix data-spy="affix" class="affix-top" data-offset-top="65"
+          aside#filterAffix.affix-top data-spy="affix" data-offset-top="65"
             == Slim::Template.new("left_filter.slim").render
         .clf-list
           #searchResults
@@ -30,7 +31,41 @@ html
                   option value="alpha"  по алфавиту
               .border
             #clinicList.clinic-list
-              - for i in [1,2,3,4,5,6]
+              section#clinic002.clinic data-cid="4" data-id="Bkzss8qd89Vls45k" data-name=("Клиническая больница №122 им. Л.Г.Соколова") itemscope="" itemtype="http://schema.org/LocalBusiness" 
+                .row
+                  .col-xs-8
+                    .clinic-name
+                      a href="http://med122.doctu.ru/" target="_blank"
+                        h3 itemprop="name" СПб ГБУЗ Городская поликлиника №51 Поликлиническое отделение №51
+                  .col-xs-4
+                    .clinic-request itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" 
+                      .star-rating
+                        img src="img/goldstar.png" /
+                        img src="img/goldstar.png" /
+                        img src="img/goldstar.png" /
+                        img src="img/goldstar.png" /
+                        img src="img/goldstar.png" /
+                      .rating itemprop="ratingValue" 4.8
+                      .reviews
+                        a.doctorReview href="http://med122.doctu.ru/#feedback" target="_blank"  По 652 отзывам
+                .row itemprop="address" itemref="_addressLocality7" itemscope="" itemtype="http://schema.org/PostalAddress" 
+                  .col-xs-12
+                    .metro
+                      span.line2 Проспект Просвещения
+                      span.line2 Озерки
+                      span.line1 Гражданский проспект
+                    .address itemprop="streetAddress" 
+                      img src="img/address.png" /
+                      | пр. Культуры, д. 4
+                meta#_addressLocality7 content="Санкт-Петербург" itemprop="addressLocality" /
+                .row
+                  .col-xs-12.clinics_contacts
+                    button.btn.btn-success.showClinicsDoctors.pull-left Запись на прием
+                    .tel itemprop="telephone" +7(812)425‑15‑33
+                #ajaxClinicPriceReq.services-list
+                hr.clearfix/
+
+              - for i in [1,2,3]
                 section#clinic002.clinic data-cid="4" data-id="Bkzss8qd89Vls45k" data-name=("Клиническая больница №122 им. Л.Г.Соколова") itemscope="" itemtype="http://schema.org/LocalBusiness" 
                   .row
                     .col-xs-8
@@ -110,7 +145,8 @@ html
                 li: a[href="/doctors?page=129"] 129
                 li.next: a[href="/doctors?page=2"] След »      
       #clinicMap.clf-map
-        #mapAffix.clinic-map.affix-top data-spy="affix" data-offset-top="65" style=("width: auto; height: 800px;")
+        #mapAffix.clinic-map.affix-top data-spy="affix" data-offset-top="65" style="width: auto; height: 800px; min-width:100px; background-color: gray;"
+          ymaps style="width: 515px; height: 800px;"
         #clinicModal.modal.fade.clinic-modal aria-hidden="true" aria-labelledby="clinicModalLabel" role="dialog" tabindex="-1" 
           .modal-dialog
             .modal-content

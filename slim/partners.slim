@@ -78,6 +78,10 @@ html
                   input.form-control name="userTel" placeholder="Телефон*" type="text" /
                 .form-group
                   textarea.form-control name="userCom" placeholder="Комментарий" rows="3" 
+                .form-group.for_captcha
+                  img src="img/securimage_show_math.png" width="99" height="40"
+                  input.form-control name="code" placeholder="Код*" type="text" /
+                  .clearfix
                 .form-group
                   button.btn.btn-success type="submit"  Отправить заявку
     == Slim::Template.new("footer.slim").render
