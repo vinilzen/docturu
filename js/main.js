@@ -6,7 +6,7 @@ $(function(){
 		return false;
 	}
 	function b(){
-		$('.fixh').css('max-height',187);
+		$('.fixh').css('max-height',130);
 		$('.all_inf').html('Показать полностью')
 		return false;
 	};

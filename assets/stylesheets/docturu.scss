@@ -72,6 +72,18 @@ h3 {
 		color:#211b70;
 	}
 }
+.tel {
+  border: 1px solid #302a7a;
+  border-radius: 4px;
+  color: #302a7a;
+  display: inline-block;
+  padding: 6px 12px;
+  font-weight: 700;
+  top: 2px;
+  margin-left: 10px;
+  position: relative;
+  font-size: 14px;
+}
 .mb30 {
 	h3 {
 		font-size: 22px;
@@ -184,9 +196,12 @@ h3 {
 				font-weight: 300;
 			}
 			&.mdl {
-				font-size: 14px;
+				font-size: 13px;
+				a {
+					font-size: 13px;
+				}
 				strong {
-					font-size: 14px;
+					font-size: 13px;
 					margin-right: 5px;
 					margin-left: 5px;
 				}
@@ -195,8 +210,8 @@ h3 {
 	}
 	p.itl {
 		font-style: italic;
-		font-size: 14px;
-		font-weight: normal; // 300
+		font-size: 13px;
+		font-weight: normal;
 	}
 }
 #mainSearch {
@@ -510,23 +525,23 @@ h3 {
 	}
 }
 .fixh {
+	padding: 0 35px;
+	max-height: 130px;
+	overflow: hidden;
+	transition: max-height 0.15s ease-out;
+
 	.col-sm-4 {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	/* 
-		@media (min-width: $screen-md) {
-			max-height: 187px;
-			overflow: hidden;
-			transition: max-height 0.15s ease-out;
-		}
-	*/
+
+
 }
 
 .all_inf {
 	text-decoration: underline;
 	color:#737373;
-	font-size: 14px;
+	font-size: 13px;
 	margin-top: 20px;
 	display: inline-block;
 	margin-bottom: 20px;
@@ -587,6 +602,14 @@ h3 {
 }
 .mb30 {
 	margin-bottom: 30px;
+	h3 {
+		font-size: 22px;
+	}
+}
+.caption {
+	h3, h3 a {
+		font-size: 22px;
+	}
 }
 .arrow-left, .arrow-right {
 	display: block;
@@ -843,8 +866,15 @@ h3 {
 		color:#555555;
 	}
 }
-
-
+.container {
+	&.media_about_us, &.advantages {
+		width: 1200px;
+	}
+}
+.comments_about_us, .container.comments_about_us {
+	width: 980px;
+	min-width: 980px;
+}
 
 // about Page 
 .jumbotron.about {
@@ -1127,7 +1157,7 @@ h3 {
 	.col-xs-9.main-side {
 		padding-right: 0;
 		padding-left: 15px;
-		width: 895px;
+		width: 880px;
 	}
 	.btn-group-vertical {
 		width: 100%;
@@ -1275,8 +1305,8 @@ h3 {
 	}
 }
 .container.borderbot.main_inner {
-	width: 1180px;
-	min-width: 1180px;
+	width: 1200px;
+	min-width: 1200px;
 }
 #doctorSort {
 	margin: 0 0 14px 0;
@@ -2238,3 +2268,136 @@ h3 {
 	}
 }
 
+.modal-open .doc-modal, #doctorSearchPage.modal-open .doc-modal {
+  .modal-dialog {
+    width: 780px !important;
+  }
+  .modal-body {
+    padding-top: 15px;
+  }
+  .modal-header {
+    padding: 15px;
+    .modal-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0ea646;
+    }
+  }
+  .doc-datetime {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dedede;
+    font-size: 18px;
+    .doc-date {
+      display: inline-block;
+      margin-bottom: 15px;
+      width: 65%;
+    }
+    .doc-time {
+      display: inline-block;
+      margin-bottom: 15px;
+      width: 33%;
+    }
+  }
+  .doc-name {
+    min-height: 110px;
+    margin-bottom: 10px;
+    h3, .h3 {
+      font-size: 18px;
+      margin-left: 90px;
+      color: #302a7a;
+      font-weight: 700;
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
+    h4 {
+      margin-left: 90px;
+      color: #302a7a;
+      font-size: 14px;
+      margin-top: 5px; 
+      margin-bottom: 10px;
+    }
+    img {
+      float: left;
+      width: 74px;
+      max-height: 110px;
+    }
+    .specialty {
+      margin-left: 90px;
+      font-size: 13px;
+      color: #0ea646;
+      font-style: italic;
+      a {
+        color: #0ea646;
+      }
+      span {
+        display: inline-block;
+        font-size: 13px;
+        border: 1px solid !important;
+        border-color: #555 !important;
+        background-color: #fff;
+        //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+        border-radius: 4px;
+        margin: 13px 0 0 0 !important;
+        padding: 1px 5px 3px;
+        font-style: normal;
+        color: #555;
+      }
+    }
+  }
+  .first {
+    color: #0ea646;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .doc-promo {
+    padding: 10px 10px 0 10px;
+    margin: 10px 0;
+    //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+    border-radius: 6px;
+    border: 1px solid #dedede;
+    h3, .h3 {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+      color: #0ea646;
+      font-weight: 400;
+    }
+    p {
+      color:#555;
+    }
+  }
+  .doc-address, {
+    margin: 10px 0;
+    min-height: 75px;
+    div {
+      padding-bottom: 10px;
+      &.metro {
+        padding-top: 10px;
+      }
+    }
+    .map {
+      float: left;
+      width: 74px;
+      position: static;
+      opacity: 1;
+      margin-right: 15px;
+      z-index: auto;
+      top: 0;
+    }
+  }
+  .ajax-final {
+    border-radius: 6px;
+    border: 1px solid #dedede;
+    padding: 10px 10px 0 10px;
+  }
+  .ajax-sms .form-control {
+    width: 210px;
+    margin-right: 9px;
+    display: inline-block;
+  }
+}
+.modal-scrollable .modal {
+  z-index: 1063;
+}
+#ymapModal .modal-body {
+  padding: 0;
+}

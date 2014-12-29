@@ -403,3 +403,11 @@ ymaps .tel {
 #searchResults {
   min-width: 1200px;
 }
+.search-clinic-wrapper, .inner {
+  #searchResults {
+    min-width: 0;
+  }
+}
+
+
+

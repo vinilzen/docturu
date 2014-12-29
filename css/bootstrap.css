@@ -3970,7 +3970,7 @@ a.label:hover, a.label:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1050;
+  z-index: 1051;
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
@@ -5799,6 +5799,19 @@ h3.darkBlueTitle {
   color: #211b70;
 }
 
+.tel {
+  border: 1px solid #302a7a;
+  border-radius: 4px;
+  color: #302a7a;
+  display: inline-block;
+  padding: 6px 12px;
+  font-weight: 700;
+  top: 2px;
+  margin-left: 10px;
+  position: relative;
+  font-size: 14px;
+}
+
 .mb30 h3 {
   font-size: 22px;
 }
@@ -5908,16 +5921,19 @@ h3.darkBlueTitle {
   font-weight: 300;
 }
 .container.drk p.mdl {
-  font-size: 14px;
+  font-size: 13px;
+}
+.container.drk p.mdl a {
+  font-size: 13px;
 }
 .container.drk p.mdl strong {
-  font-size: 14px;
+  font-size: 13px;
   margin-right: 5px;
   margin-left: 5px;
 }
 .container p.itl {
   font-style: italic;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: normal;
 }
 
@@ -6211,13 +6227,10 @@ h3.darkBlueTitle {
 }
 
 .fixh {
-  /* 
-  	@media (min-width: $screen-md) {
-  		max-height: 187px;
-  		overflow: hidden;
-  		transition: max-height 0.15s ease-out;
-  	}
-  */
+  padding: 0 35px;
+  max-height: 130px;
+  overflow: hidden;
+  transition: max-height 0.15s ease-out;
 }
 .fixh .col-sm-4 {
   padding-left: 20px;
@@ -6227,7 +6240,7 @@ h3.darkBlueTitle {
 .all_inf, .directory .all_inf_link {
   text-decoration: underline;
   color: #737373;
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 20px;
   display: inline-block;
   margin-bottom: 20px;
@@ -6296,6 +6309,13 @@ h3.darkBlueTitle {
 
 .mb30 {
   margin-bottom: 30px;
+}
+.mb30 h3 {
+  font-size: 22px;
+}
+
+.caption h3, .caption h3 a {
+  font-size: 22px;
 }
 
 .arrow-left, .arrow-right {
@@ -6545,6 +6565,15 @@ h3.darkBlueTitle {
   line-height: 23px;
   font-size: 14px;
   color: #555555;
+}
+
+.container.media_about_us, .container.advantages {
+  width: 1200px;
+}
+
+.comments_about_us, .container.comments_about_us {
+  width: 980px;
+  min-width: 980px;
 }
 
 .jumbotron.about {
@@ -6827,7 +6856,7 @@ h3.darkBlueTitle {
 .inner .col-xs-9.main-side {
   padding-right: 0;
   padding-left: 15px;
-  width: 895px;
+  width: 880px;
 }
 .inner .btn-group-vertical {
   width: 100%;
@@ -6968,8 +6997,8 @@ h3.darkBlueTitle {
 }
 
 .container.borderbot.main_inner {
-  width: 1180px;
-  min-width: 1180px;
+  width: 1200px;
+  min-width: 1200px;
 }
 
 #doctorSort {
@@ -7934,6 +7963,138 @@ h3.darkBlueTitle {
   width: 400px;
 }
 
+.modal-open .doc-modal .modal-dialog, #doctorSearchPage.modal-open .doc-modal .modal-dialog {
+  width: 780px !important;
+}
+.modal-open .doc-modal .modal-body, #doctorSearchPage.modal-open .doc-modal .modal-body {
+  padding-top: 15px;
+}
+.modal-open .doc-modal .modal-header, #doctorSearchPage.modal-open .doc-modal .modal-header {
+  padding: 15px;
+}
+.modal-open .doc-modal .modal-header .modal-title, #doctorSearchPage.modal-open .doc-modal .modal-header .modal-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0ea646;
+}
+.modal-open .doc-modal .doc-datetime, #doctorSearchPage.modal-open .doc-modal .doc-datetime {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #dedede;
+  font-size: 18px;
+}
+.modal-open .doc-modal .doc-datetime .doc-date, #doctorSearchPage.modal-open .doc-modal .doc-datetime .doc-date {
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 65%;
+}
+.modal-open .doc-modal .doc-datetime .doc-time, #doctorSearchPage.modal-open .doc-modal .doc-datetime .doc-time {
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 33%;
+}
+.modal-open .doc-modal .doc-name, #doctorSearchPage.modal-open .doc-modal .doc-name {
+  min-height: 110px;
+  margin-bottom: 10px;
+}
+.modal-open .doc-modal .doc-name h3, .modal-open .doc-modal .doc-name .h3, #doctorSearchPage.modal-open .doc-modal .doc-name h3, #doctorSearchPage.modal-open .doc-modal .doc-name .h3 {
+  font-size: 18px;
+  margin-left: 90px;
+  color: #302a7a;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.modal-open .doc-modal .doc-name h4, #doctorSearchPage.modal-open .doc-modal .doc-name h4 {
+  margin-left: 90px;
+  color: #302a7a;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.modal-open .doc-modal .doc-name img, #doctorSearchPage.modal-open .doc-modal .doc-name img {
+  float: left;
+  width: 74px;
+  max-height: 110px;
+}
+.modal-open .doc-modal .doc-name .specialty, #doctorSearchPage.modal-open .doc-modal .doc-name .specialty {
+  margin-left: 90px;
+  font-size: 13px;
+  color: #0ea646;
+  font-style: italic;
+}
+.modal-open .doc-modal .doc-name .specialty a, #doctorSearchPage.modal-open .doc-modal .doc-name .specialty a {
+  color: #0ea646;
+}
+.modal-open .doc-modal .doc-name .specialty span, #doctorSearchPage.modal-open .doc-modal .doc-name .specialty span {
+  display: inline-block;
+  font-size: 13px;
+  border: 1px solid !important;
+  border-color: #555 !important;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 13px 0 0 0 !important;
+  padding: 1px 5px 3px;
+  font-style: normal;
+  color: #555;
+}
+.modal-open .doc-modal .first, #doctorSearchPage.modal-open .doc-modal .first {
+  color: #0ea646;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.modal-open .doc-modal .doc-promo, #doctorSearchPage.modal-open .doc-modal .doc-promo {
+  padding: 10px 10px 0 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #dedede;
+}
+.modal-open .doc-modal .doc-promo h3, .modal-open .doc-modal .doc-promo .h3, #doctorSearchPage.modal-open .doc-modal .doc-promo h3, #doctorSearchPage.modal-open .doc-modal .doc-promo .h3 {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  color: #0ea646;
+  font-weight: 400;
+}
+.modal-open .doc-modal .doc-promo p, #doctorSearchPage.modal-open .doc-modal .doc-promo p {
+  color: #555;
+}
+.modal-open .doc-modal .doc-address, #doctorSearchPage.modal-open .doc-modal .doc-address {
+  margin: 10px 0;
+  min-height: 75px;
+}
+.modal-open .doc-modal .doc-address div, #doctorSearchPage.modal-open .doc-modal .doc-address div {
+  padding-bottom: 10px;
+}
+.modal-open .doc-modal .doc-address div.metro, #doctorSearchPage.modal-open .doc-modal .doc-address div.metro {
+  padding-top: 10px;
+}
+.modal-open .doc-modal .doc-address .map, #doctorSearchPage.modal-open .doc-modal .doc-address .map {
+  float: left;
+  width: 74px;
+  position: static;
+  opacity: 1;
+  margin-right: 15px;
+  z-index: auto;
+  top: 0;
+}
+.modal-open .doc-modal .ajax-final, #doctorSearchPage.modal-open .doc-modal .ajax-final {
+  border-radius: 6px;
+  border: 1px solid #dedede;
+  padding: 10px 10px 0 10px;
+}
+.modal-open .doc-modal .ajax-sms .form-control, #doctorSearchPage.modal-open .doc-modal .ajax-sms .form-control {
+  width: 210px;
+  margin-right: 9px;
+  display: inline-block;
+}
+
+.modal-scrollable .modal {
+  z-index: 1063;
+}
+
+#ymapModal .modal-body {
+  padding: 0;
+}
+
 #doctorPage {
   margin: 0 0 20px 0;
 }
@@ -7998,6 +8159,8 @@ h3.darkBlueTitle {
   font-size: 13px;
   color: #0ea646;
   font-style: italic;
+  position: relative;
+  left: -2px;
 }
 #doctorPage .doc-name .specialty a {
   font-size: 13px;
@@ -8068,7 +8231,7 @@ h3.darkBlueTitle {
   width: 550px;
 }
 #doctorPage .doc-address .rub {
-  font-family: pt_sansregular, sans-serif;
+  font-family: 'pt_sansregular', sans-serif;
 }
 @font-face {
   #doctorPage .doc-address {
@@ -8183,6 +8346,8 @@ h3.darkBlueTitle {
   font-size: 13px;
   font-style: italic;
   margin-top: 7px;
+  position: relative;
+  left: -5px;
 }
 #doctorPage .pac-age > span {
   display: inline-block;
@@ -8560,126 +8725,6 @@ a.mapModal:hover span {
 }
 .reviews-list .btn-more {
   color: #0ea646;
-}
-
-.doc-modal .modal-dialog {
-  width: 780px !important;
-}
-.doc-modal .modal-body {
-  padding-top: 15px;
-}
-.doc-modal .modal-header {
-  padding: 15px;
-}
-.doc-modal .modal-header .modal-title {
-  font-size: 18px;
-  font-weight: 700;
-  color: #0ea646;
-}
-.doc-modal .doc-datetime {
-  margin-bottom: 15px;
-  border-bottom: 1px solid #dedede;
-  font-size: 18px;
-}
-.doc-modal .doc-datetime .doc-date {
-  display: inline-block;
-  margin-bottom: 15px;
-  width: 65%;
-}
-.doc-modal .doc-datetime .doc-time {
-  display: inline-block;
-  margin-bottom: 15px;
-  width: 33%;
-}
-.doc-modal .doc-name {
-  min-height: 110px;
-  margin-bottom: 10px;
-}
-.doc-modal .doc-name h3, .doc-modal .doc-name .h3 {
-  font-size: 18px;
-  margin-left: 90px;
-  color: #302a7a;
-  font-weight: 700;
-  margin-bottom: 0;
-  margin-top: 5px;
-}
-.doc-modal .doc-name h4 {
-  margin-left: 90px;
-  color: #302a7a;
-  font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-.doc-modal .doc-name img {
-  float: left;
-  width: 74px;
-  max-height: 110px;
-}
-.doc-modal .doc-name .specialty {
-  margin-left: 90px;
-  font-size: 13px;
-  color: #0ea646;
-  font-style: italic;
-}
-.doc-modal .doc-name .specialty a {
-  color: #0ea646;
-}
-.doc-modal .doc-name .specialty span {
-  display: inline-block;
-  font-size: 13px;
-  border: 1px solid !important;
-  border-color: #555 !important;
-  background-color: #fff;
-  border-radius: 4px;
-  margin: 13px 0 0 0 !important;
-  padding: 1px 5px 3px;
-  font-style: normal;
-  color: #555;
-}
-.doc-modal .first {
-  color: #0ea646;
-  font-size: 16px;
-  margin-top: 5px;
-}
-.doc-modal .doc-promo {
-  padding: 10px 10px 0 10px;
-  margin: 10px 0;
-  border-radius: 6px;
-  border: 1px solid #dedede;
-}
-.doc-modal .doc-promo h3, .doc-modal .doc-promo .h3 {
-  font-size: 18px;
-  margin: 0 0 10px 0;
-  color: #0ea646;
-  font-weight: 400;
-}
-.doc-modal .doc-promo p {
-  color: #555;
-}
-.doc-modal .doc-address {
-  margin: 10px 0;
-  min-height: 75px;
-}
-.doc-modal .doc-address div {
-  padding-bottom: 10px;
-}
-.doc-modal .doc-address div.metro {
-  padding-top: 10px;
-}
-.doc-modal .doc-address .map {
-  float: left;
-  width: 74px;
-  margin-right: 15px;
-}
-.doc-modal .ajax-final {
-  border-radius: 6px;
-  border: 1px solid #dedede;
-  padding: 10px 10px 0 10px;
-}
-.doc-modal .ajax-sms .form-control {
-  width: 210px;
-  margin-right: 9px;
-  display: inline-block;
 }
 
 #docModal label .error {
@@ -9785,6 +9830,10 @@ ymaps .tel {
 
 #searchResults {
   min-width: 1200px;
+}
+
+.search-clinic-wrapper #searchResults, .inner #searchResults {
+  min-width: 0;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
