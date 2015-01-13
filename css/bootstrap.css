@@ -2289,15 +2289,11 @@ select[multiple].input-fr {
   font-size: 14px;
   line-height: 18px;
   border-radius: 3px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
   font-weight: bold;
   border-radius: 5px;
-}
-@media (min-width: 992px) {
-  .btn-fr {
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 100%;
-  }
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -2892,12 +2888,7 @@ tbody.collapse.in {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
-  padding-top: 12px;
-}
-@media (min-width: 992px) {
-  .nav-tabs > li > a {
-    padding: 10px 56px;
-  }
+  padding: 10px 56px;
 }
 .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
   text-decoration: none;
@@ -5561,7 +5552,7 @@ select.form-control + .chosen-container .chosen-results li.group-result.group-op
 }
 
 #mainSearch .chosen-container-single .chosen-single div b {
-  background: url("chosen-sprite.png") no-repeat 2px 10px;
+  background: url("../img/chosen-sprite.png") no-repeat 2px 10px;
 }
 
 #mainSearch .chosen-container-single .chosen-single span {
@@ -5811,6 +5802,9 @@ h3.darkBlueTitle {
   position: relative;
   font-size: 14px;
 }
+.tel:empty {
+  display: none;
+}
 
 .mb30 h3 {
   font-size: 22px;
@@ -5820,7 +5814,7 @@ h3.darkBlueTitle {
   color: #737373;
   max-width: 720px;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 18px;
   margin: 0 auto 45px;
 }
 
@@ -5886,7 +5880,7 @@ h3.darkBlueTitle {
   transition: background-color .2s linear;
 }
 .jumbotron .container {
-  width: 100%;
+  width: 1200px;
   min-width: 0;
 }
 .jumbotron .tab-pane .form-inline, .jumbotron .tab-pane .navbar-form {
@@ -5913,7 +5907,7 @@ h3.darkBlueTitle {
 .container.drk p {
   color: #555555;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
 }
 .container.drk p.lead {
   color: #737373;
@@ -5935,6 +5929,13 @@ h3.darkBlueTitle {
   font-style: italic;
   font-size: 13px;
   font-weight: normal;
+}
+
+.container-fluid .container1200 {
+  width: 1160px;
+  min-width: 1160px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #mainSearch {
@@ -5963,9 +5964,8 @@ h3.darkBlueTitle {
   font-weight: bold;
   font-size: 14px;
   padding: 10px 26px;
-  transition: background-color .2s linear;
-  transition: color .2s linear;
 }
+§
 .container.map .btn:hover {
   background-color: #fff;
   color: #636057;
@@ -5984,8 +5984,6 @@ h3.darkBlueTitle {
   font-weight: bold;
   font-size: 14px;
   padding: 10px 26px;
-  transition: background-color .2s linear;
-  transition: color .2s linear;
 }
 .container.green .btn:hover {
   background-color: #ffffff;
@@ -6007,6 +6005,9 @@ h3.darkBlueTitle {
 }
 .specialists .dl-horizontal dt {
   height: 22px;
+}
+.specialists .dl-horizontal dd:after {
+  display: inline;
 }
 .specialists .label {
   margin: 0;
@@ -6224,6 +6225,7 @@ h3.darkBlueTitle {
 
 .carousel-inner .blockquote {
   display: inline-block;
+  font-size: 13px;
 }
 
 .fixh {
@@ -6272,7 +6274,7 @@ h3.darkBlueTitle {
   color: #42ac48;
   font-style: italic;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .media {
@@ -6894,7 +6896,7 @@ h3.darkBlueTitle {
 .inner h1 {
   margin-top: 0;
   font-weight: 300;
-  margin-left: -3px;
+  margin-left: 0;
   padding-top: 0;
   margin-bottom: 20px;
 }
@@ -7286,6 +7288,8 @@ h3.darkBlueTitle {
   padding: 6px;
   width: 152px;
   text-align: center;
+  top: 0px;
+  margin-left: -2px;
 }
 .doctor_2_0 .doc-info .contact_information .tel:empty {
   display: none;
@@ -7331,6 +7335,10 @@ h3.darkBlueTitle {
 }
 .doctor_2_0.docVip:after {
   z-index: 1;
+}
+
+.modal-body .doctor_2_0 .doc-info .address {
+  margin-bottom: 20px;
 }
 
 .address {
@@ -7531,8 +7539,12 @@ h3.darkBlueTitle {
 #linksSpec.doctors-list {
   margin-top: 0;
 }
+#linksSpec.doctors-list .row {
+  margin-left: 0;
+  margin-right: 0;
+}
 #linksSpec.doctors-list ul {
-  padding: 0 0 14px 0;
+  padding: 30px 0 14px 0;
 }
 #linksSpec.doctors-list ul li {
   padding-left: 0;
@@ -7913,9 +7925,15 @@ h3.darkBlueTitle {
 
 .phone_invite {
   font-size: 18px;
+  margin-bottom: 5px;
 }
 .phone_invite .tel {
   color: #302a7a;
+  border: none;
+  font-size: 18px;
+  padding-left: 0;
+  margin-left: 0;
+  top: 1px;
 }
 
 .switchToMobile {
@@ -8043,7 +8061,7 @@ h3.darkBlueTitle {
   margin-top: 5px;
 }
 .modal-open .doc-modal .doc-promo, #doctorSearchPage.modal-open .doc-modal .doc-promo {
-  padding: 10px 10px 0 10px;
+  padding: 5px 10px 0 10px;
   margin: 10px 0;
   border-radius: 6px;
   border: 1px solid #dedede;
@@ -8082,7 +8100,7 @@ h3.darkBlueTitle {
   padding: 10px 10px 0 10px;
 }
 .modal-open .doc-modal .ajax-sms .form-control, #doctorSearchPage.modal-open .doc-modal .ajax-sms .form-control {
-  width: 210px;
+  width: 207px;
   margin-right: 9px;
   display: inline-block;
 }
@@ -8092,7 +8110,10 @@ h3.darkBlueTitle {
 }
 
 #ymapModal .modal-body {
-  padding: 0;
+  padding: 20px;
+}
+#ymapModal .modal-body .modal-map {
+  overflow: hidden;
 }
 
 #doctorPage {
@@ -8646,7 +8667,7 @@ a.mapModal:hover span {
 }
 
 .right_review {
-  width: 607px;
+  width: 592px;
 }
 
 .education {
@@ -8794,7 +8815,7 @@ label {
 .similarClinics .col-xs-4,
 .similarDoctors .col-xs-4,
 .bestClinics .col-xs-4 {
-  width: 280px;
+  width: 275px;
   padding: 0;
   margin-right: 20px;
 }
@@ -8977,6 +8998,7 @@ label {
   font-size: 14px;
   padding: 6px 12px;
   margin-left: 20px;
+  top: 0;
 }
 #clinicPage .clinic .row {
   margin: 0;
@@ -9117,7 +9139,7 @@ label {
   color: #302a7a;
 }
 #clinicPage .clinic .col-xs-9.rev-form {
-  width: 670px;
+  width: 655px;
 }
 #clinicPage #clinicTabs .nav-pills > li > a {
   color: #0ea646;
@@ -9171,11 +9193,17 @@ label {
   opacity: 0.5;
 }
 
+#doctorGlobalMap.full > div,
+#clinicGlobalMap.full > #clinicMainMap {
+  height: 500px;
+  opacity: 1;
+}
+
 .doc-section {
   min-height: 115px;
 }
 .doc-section .doc-name h3, .doc-section .doc-name .h3 {
-  margin-left: 90px;
+  margin-left: 70px;
   color: #302a7a;
   font-weight: 700;
   margin-top: 0;
@@ -9183,7 +9211,7 @@ label {
   font-size: 18px;
 }
 .doc-section .doc-name h4 {
-  margin-left: 90px;
+  margin-left: 70px;
   color: #302a7a;
   margin-top: 5px;
   font-size: 14px;
@@ -9195,7 +9223,7 @@ label {
   margin-top: 3px;
 }
 .doc-section .doc-name .specialty {
-  margin-left: 90px;
+  margin-left: 70px;
   font-size: 13px;
   color: #0ea646;
   font-style: italic;
@@ -9221,7 +9249,7 @@ label {
   font-size: 13px;
   font-style: italic;
   margin-top: 7px;
-  margin-left: 90px;
+  margin-left: 70px;
 }
 .doc-section .doc-name .pac-age > span {
   display: inline-block;
@@ -9282,7 +9310,7 @@ label {
   width: 120px;
   padding-left: 0;
   padding-right: 0;
-  margin-right: 32px;
+  margin-right: 29px;
 }
 .row-photo .galleryImg:nth-child(n+7) {
   display: none;
@@ -9826,6 +9854,8 @@ ymaps .tel {
   margin-top: -1px;
   float: left;
   font-size: 14px;
+  top: 0;
+  margin-left: 0;
 }
 
 #searchResults {

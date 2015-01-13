@@ -83,6 +83,9 @@ h3 {
   margin-left: 10px;
   position: relative;
   font-size: 14px;
+  &:empty {
+  	display: none;
+  }
 }
 .mb30 {
 	h3 {
@@ -93,7 +96,7 @@ h3 {
 	color:#737373;
 	max-width: 720px;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 18px;
 	margin: 0 auto 45px;
 }
 .jumbotron {
@@ -164,7 +167,7 @@ h3 {
 		}
 	}
 	.container {
-		width:100%;
+		width:1200px;
 		min-width: 0;
 	}
 	.tab-pane .form-inline {
@@ -189,7 +192,7 @@ h3 {
 		p {
 			color:#555555;
 			font-weight: normal; // 300
-			font-size: 16px;
+			font-size: 14px;
 			&.lead {
 				color:#737373;
 				font-size: 18px;
@@ -212,6 +215,16 @@ h3 {
 		font-style: italic;
 		font-size: 13px;
 		font-weight: normal;
+	}
+}
+.container-fluid {
+	.container1200 {
+		width: 1160px;
+		min-width: 1160px;
+		padding-left: 0;
+		padding-right: 0;
+		// margin-left: -20px;
+		// margin-right: -20px;
 	}
 }
 #mainSearch {
@@ -238,17 +251,7 @@ h3 {
 		border-color: #fff;
 		font-weight: bold;
 		font-size: 14px;
-		padding:10px 26px;
-		-webkit-transition: background-color .2s linear;
-		-moz-transition: background-color .2s linear;
-		-o-transition: background-color .2s linear;
-		-ms-transition: background-color .2s linear;
-		transition: background-color .2s linear;
-		-webkit-transition: color .2s linear;
-		-moz-transition: color .2s linear;
-		-o-transition: color .2s linear;
-		-ms-transition: color .2s linear;
-		transition: color .2s linear;
+		padding:10px 26px;§
 		&:hover {
 			background-color: #fff;
 			color:#636057;
@@ -267,16 +270,6 @@ h3 {
 		font-weight: bold;
 		font-size: 14px;
 		padding:10px 26px;
-		-webkit-transition: background-color .2s linear;
-		-moz-transition: background-color .2s linear;
-		-o-transition: background-color .2s linear;
-		-ms-transition: background-color .2s linear;
-		transition: background-color .2s linear;
-		-webkit-transition: color .2s linear;
-		-moz-transition: color .2s linear;
-		-o-transition: color .2s linear;
-		-ms-transition: color .2s linear;
-		transition: color .2s linear;
 		&:hover {
 			background-color: #ffffff;
 			color:#0da646;
@@ -291,12 +284,16 @@ h3 {
 	column-count: 5;
 	.dl-horizontal {
 		margin-bottom: 0;
+		// white-space: nowrap;
 		dd {
 			padding-left: 19px;
 			width: 170px;
 		}
 		dt {
 			height: 22px;
+		}
+		dd:after {
+			display: inline;
 		}
 	}
 	.label {
@@ -522,6 +519,7 @@ h3 {
 .carousel-inner {
 	.blockquote {
 		display: inline-block;
+		font-size: 13px;
 	}
 }
 .fixh {
@@ -568,7 +566,7 @@ h3 {
 	color:#42ac48;
 	font-style: italic;
 	font-weight: normal; // 300
-	font-size: 14px;
+	font-size: 13px;
 }
 .media {
 	margin-bottom: 45px;
@@ -1195,7 +1193,7 @@ h3 {
 	h1 {
 		margin-top: 0;
 		font-weight: 300;
-		margin-left: -3px;
+		margin-left: 0;
 		padding-top: 0;
 		margin-bottom: 20px;
 	}
@@ -1595,6 +1593,8 @@ h3 {
         padding: 6px;
         width: 152px;
         text-align: center;
+        top: 0px;
+        margin-left: -2px;
         &:empty {
           display: none;
         }
@@ -1607,42 +1607,45 @@ h3 {
     }
   }
   &.compact {
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid $color_alto_approx;
-    &:last-child {
-      margin-bottom: 20px;
-    }
-    &:first-child {
-      padding-top: 0;
-    }
-    .doc-info {
-      margin: 0;
-      min-height: initial;
-    }
-    .price-label {
-      float: right;
-      position: relative;
-      margin-right: 30px;
-    }
-    .address {
-      padding-top: 0;
-      .metro {
-        display: inline-block;
-        margin: 0;
-        padding: 0 0 5px;
-      }
-    }
-    small {
-      display: inline-block;
-    }
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid $color_alto_approx;
+		&:last-child {
+		margin-bottom: 20px;
+		}
+		&:first-child {
+		padding-top: 0;
+		}
+		.doc-info {
+		margin: 0;
+		min-height: initial;
+		}
+		.price-label {
+		float: right;
+		position: relative;
+		margin-right: 30px;
+		}
+		.address {
+		padding-top: 0;
+		.metro {
+		display: inline-block;
+		margin: 0;
+		padding: 0 0 5px;
+		}
+		}
+		small {
+		display: inline-block;
+		}
   }
-  &.docVip {
-    padding: 20px 15px;
-    border: 1px solid $color_green_haze_approx;
-    &:after {
-      z-index: 1;
-    }
-  }
+	&.docVip {
+		padding: 20px 15px;
+		border: 1px solid $color_green_haze_approx;
+		&:after {
+			z-index: 1;
+		}
+	}
+}
+.modal-body .doctor_2_0 .doc-info .address {
+	margin-bottom: 20px;
 }
 .address {
   font-size: 13px;
@@ -1851,8 +1854,12 @@ h3 {
   }
   &.doctors-list {
     margin-top: 0;
+    .row {
+    	margin-left: 0;
+    	margin-right: 0;
+    }
     ul {
-      padding: 0 0 14px 0;
+      padding: 30px 0 14px 0;
       li {
         padding-left: 0;
         strong {
@@ -2218,8 +2225,14 @@ h3 {
 }
 .phone_invite {
 	font-size: 18px;
+	margin-bottom: 5px;
 	.tel {
 		color:#302a7a;
+		border:none;
+		font-size: 18px;
+		padding-left: 0;
+		margin-left: 0;
+		top:1px;
 	}
 }
 .switchToMobile {
@@ -2350,7 +2363,7 @@ h3 {
     margin-top: 5px;
   }
   .doc-promo {
-    padding: 10px 10px 0 10px;
+    padding: 5px 10px 0 10px;
     margin: 10px 0;
     //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
     border-radius: 6px;
@@ -2390,7 +2403,7 @@ h3 {
     padding: 10px 10px 0 10px;
   }
   .ajax-sms .form-control {
-    width: 210px;
+    width: 207px;
     margin-right: 9px;
     display: inline-block;
   }
@@ -2399,5 +2412,8 @@ h3 {
   z-index: 1063;
 }
 #ymapModal .modal-body {
-  padding: 0;
+  padding: 20px;
+  .modal-map {
+  	overflow: hidden;
+  }
 }
