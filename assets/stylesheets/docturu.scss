@@ -2417,3 +2417,6 @@ h3 {
   	overflow: hidden;
   }
 }
+.directory .col-xs-3:nth-child(4n+1) {
+	clear: left;
+}
