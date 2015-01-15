@@ -1172,13 +1172,14 @@ h3 {
 				width: 100%;
 				border-bottom:1px solid #eaeef3;
 				padding-bottom: 11px;
+				transition: border-color 0.2s linear;
 			}
 			&.active, &:hover {
 				background-color: #0da646;
-				border-bottom-color: #0da646;
+				border-bottom-color: #fff;
 				box-shadow:none;
 				span {
-					border-bottom-color: #0da646;
+					border-bottom-color: transparent;
 					color:#fff;
 				}
 			}
