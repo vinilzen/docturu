@@ -8813,8 +8813,9 @@ label {
 .similarClinics .h2,
 .similarDoctors .h2,
 .bestClinics .h2 {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: normal;
+  color: #302a7a;
 }
 .bestDoctors .col-xs-4,
 .similarClinics .col-xs-4,
