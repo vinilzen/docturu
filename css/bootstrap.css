@@ -9491,6 +9491,7 @@ label {
 #container-clinic .search-clinic-wrapper .clf-list .result {
   width: 55% !important;
   padding-right: 0;
+  padding-left: 15px;
 }
 #container-clinic .search-clinic-wrapper .clf-list .sort-type {
   width: 45% !important;
@@ -9582,7 +9583,7 @@ label {
   display: none;
 }
 #clinicList .row {
-  margin: 15px -15px;
+  margin: 15px -20px;
 }
 #clinicList hr {
   margin: 0;
