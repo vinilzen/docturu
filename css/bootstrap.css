@@ -5677,7 +5677,7 @@ select.form-control + .chosen-container .chosen-results li.group-result.group-op
 }
 
 #leftFilter select.form-control + .chosen-container-multi .chosen-choices li.search-choice {
-  width: 150px;
+  width: 100%;
 }
 
 #leftFilter #accordion .form-group.checkbox-slim {
@@ -5739,7 +5739,7 @@ strong {
 
 .nav.navbar-nav {
   padding-top: 5px;
-  padding-left: 45px;
+  padding-left: 87px;
 }
 
 .navbar-form {
@@ -6125,7 +6125,7 @@ h3.darkBlueTitle {
 }
 
 #clinicSearchPage .nav.navbar-nav {
-  padding-left: 38px;
+  padding-left: 75px;
 }
 
 #container-clinic {
@@ -7005,7 +7005,7 @@ h3.darkBlueTitle {
 }
 
 #doctorSort {
-  margin: 0 0 14px 0;
+  margin: 14px 0 14px 0;
   padding: 0 0 14px 0;
   border-bottom: 1px solid #e3e3e3;
 }
@@ -8121,6 +8121,37 @@ h3.darkBlueTitle {
   clear: left;
 }
 
+.showDoctorsOnMap.spb:after {
+  background-image: url("https://cdn.doctu.ru/design/images/map_spb.png");
+}
+.showDoctorsOnMap.msk:after {
+  background-image: url("https://cdn.doctu.ru/design/images/map_msk.png");
+}
+.showDoctorsOnMap.ekb:after {
+  background-image: url("https://cdn.doctu.ru/design/images/map_ekb.png");
+}
+.showDoctorsOnMap.nn:after {
+  background-image: url("https://cdn.doctu.ru/design/images/map_nn.png");
+}
+.showDoctorsOnMap.rostov:after {
+  background-image: url("https://cdn.doctu.ru/design/images/map_rostov.png");
+}
+.showDoctorsOnMap.perm:after {
+  background-image: url("https://cdn.doctu.ru/design/images/map_perm.png");
+}
+.showDoctorsOnMap.kazan:after {
+  background-image: url("https://cdn.doctu.ru/design/images/map_kazan.png");
+}
+.showDoctorsOnMap.krasnodar:after {
+  background-image: url("https://cdn.doctu.ru/design/images/map_krasnodar.png");
+}
+.showDoctorsOnMap.nsk:after {
+  background-image: url("https://cdn.doctu.ru/design/images/map_nsk.png");
+}
+.showDoctorsOnMap.ufa:after {
+  background-image: url("https://cdn.doctu.ru/design/images/map_ufa.png");
+}
+
 #doctorPage {
   margin: 0 0 20px 0;
 }
@@ -8836,7 +8867,7 @@ label {
 .similarDoctors .panel,
 .bestClinics .panel {
   box-shadow: none;
-  margin-bottom: 14px;
+  margin-bottom: 0;
 }
 .bestDoctors .panel-body,
 .similarClinics .panel-body,
@@ -9496,6 +9527,7 @@ label {
 #container-clinic .search-clinic-wrapper .clf-list .sort-type {
   width: 45% !important;
   padding-left: 0;
+  padding-right: 15px;
 }
 #container-clinic .search-clinic-wrapper .row:before, #container-clinic .search-clinic-wrapper .row:after {
   content: " ";

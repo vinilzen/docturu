@@ -26,7 +26,7 @@ strong {
 }
 .nav.navbar-nav {
 	padding-top: 5px;
-	padding-left: 45px;
+	padding-left: 87px;
 }
 .navbar-form {
 	margin-top: 13px;
@@ -420,7 +420,7 @@ h3 {
 }
 #clinicSearchPage {
   .nav.navbar-nav {
-    padding-left: 38px;
+    padding-left: 75px;
   }
 }
 #container-clinic {
@@ -1308,7 +1308,7 @@ h3 {
 	min-width: 1200px;
 }
 #doctorSort {
-	margin: 0 0 14px 0;
+	margin: 14px 0 14px 0;
 	padding: 0 0 14px 0;
 	border-bottom: 1px solid #e3e3e3;
 	.result {
@@ -2420,4 +2420,36 @@ h3 {
 }
 .directory .col-xs-3:nth-child(4n+1) {
 	clear: left;
+}
+.showDoctorsOnMap {
+	&.spb:after {
+	    background-image: url('https://cdn.doctu.ru/design/images/map_spb.png')
+	}
+	&.msk:after {
+	    background-image: url('https://cdn.doctu.ru/design/images/map_msk.png')
+	}
+	&.ekb:after {
+	    background-image: url('https://cdn.doctu.ru/design/images/map_ekb.png')
+	}    
+	&.nn:after {
+	    background-image: url('https://cdn.doctu.ru/design/images/map_nn.png')
+	}    
+	&.rostov:after {
+	    background-image: url('https://cdn.doctu.ru/design/images/map_rostov.png')
+	}    
+	&.perm:after {
+	    background-image: url('https://cdn.doctu.ru/design/images/map_perm.png')
+	}    
+	&.kazan:after {
+	    background-image: url('https://cdn.doctu.ru/design/images/map_kazan.png')
+	}    
+	&.krasnodar:after {
+	    background-image: url('https://cdn.doctu.ru/design/images/map_krasnodar.png')
+	}    
+	&.nsk:after {
+	    background-image: url('https://cdn.doctu.ru/design/images/map_nsk.png')
+	}    
+	&.ufa:after {
+	    background-image: url('https://cdn.doctu.ru/design/images/map_ufa.png')
+	}
 }
