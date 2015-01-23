@@ -101,11 +101,10 @@
 #clinicList {
   margin-bottom: 0px;
   .clinics_contacts {
-    height: 66px;
-    padding-top: 20px;
     text-align: center;
   }
   .clinic {
+    float: left;
     border: 1px solid #dedede;
     border-width: 1px 0 1px 0;
     margin-top: -1px;
@@ -115,6 +114,8 @@
     }
   }
   .row {
+    float: left;
+    width: 525px;
     margin: 15px -20px;
   }
   hr {
@@ -216,7 +217,7 @@
 .clinic.clinicHover,
 #clinicList .clinic:hover {
   border: 1px solid #0ea646 !important;
-  margin: -1px -16px;
+  margin: -1px -16px 0 -16px;
   padding: 0px 15px;
   border-radius: 10px;
 }
@@ -265,6 +266,10 @@
     content: " ";
     display: table;
     clear: none;
+  }
+  &.diagnostics_contacts_row {
+    float: left;
+    width: 525px;
   }
   .col-xs-8, .col-xs-4 {
     display: inline-block;

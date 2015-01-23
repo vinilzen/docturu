@@ -2033,6 +2033,8 @@ h3 {
   color: #2a6496;
 }
 .services-list {
+  float: left;
+  width: 485px;
   margin: 20px 0;
   h4 {
     color: #302a7a;
@@ -2040,6 +2042,9 @@ h3 {
   }
   .w70 {
     width: 70%;
+  }
+  &:empty {
+  	display: none;
   }
 }
 #clinicList div.tel, ymaps .tel {
@@ -2341,6 +2346,7 @@ h3 {
       color: #0ea646;
       font-style: italic;
       a {
+      	font-size: 13px;
         color: #0ea646;
       }
       span {

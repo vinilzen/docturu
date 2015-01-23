@@ -281,7 +281,7 @@ img {
 
 .img-responsive {
   display: block;
-  width: 100%;
+  width: 100% \9;
   max-width: 100%;
   height: auto;
 }
@@ -298,7 +298,7 @@ img {
   border-radius: 3px;
   transition: all 0.2s ease-in-out;
   display: inline-block;
-  width: 100%;
+  width: 100% \9;
   max-width: 100%;
   height: auto;
 }
@@ -1729,7 +1729,7 @@ input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
   line-height: 32px;
-  line-height: 1.42857;
+  line-height: 1.42857 \0;
 }
 input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control,
 .input-group-sm > input[type="date"].input-group-addon,
@@ -1809,7 +1809,7 @@ input[type="month"].input-lg,
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
   margin-left: -20px;
-  margin-top: 4px;
+  margin-top: 4px \9;
 }
 
 .radio + .radio,
@@ -4330,7 +4330,7 @@ a.label:hover, a.label:focus {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  width: 100%;
+  width: 100% \9;
   max-width: 100%;
   height: auto;
   line-height: 1;
@@ -7724,6 +7724,8 @@ h3.darkBlueTitle {
 }
 
 .services-list {
+  float: left;
+  width: 485px;
   margin: 20px 0;
 }
 .services-list h4 {
@@ -7732,6 +7734,9 @@ h3.darkBlueTitle {
 }
 .services-list .w70 {
   width: 70%;
+}
+.services-list:empty {
+  display: none;
 }
 
 #clinicList div.tel, ymaps .tel {
@@ -8042,6 +8047,7 @@ h3.darkBlueTitle {
   font-style: italic;
 }
 .modal-open .doc-modal .doc-name .specialty a, #doctorSearchPage.modal-open .doc-modal .doc-name .specialty a {
+  font-size: 13px;
   color: #0ea646;
 }
 .modal-open .doc-modal .doc-name .specialty span, #doctorSearchPage.modal-open .doc-modal .doc-name .specialty span {
@@ -8182,7 +8188,6 @@ h3.darkBlueTitle {
 #doctorPage .doc-info {
   position: relative;
   margin: 0 -15px 10px;
-  min-height: 225px;
 }
 #doctorPage .avatar {
   width: 150px;
@@ -9601,11 +9606,10 @@ label {
   margin-bottom: 0px;
 }
 #clinicList .clinics_contacts {
-  height: 66px;
-  padding-top: 20px;
   text-align: center;
 }
 #clinicList .clinic {
+  float: left;
   border: 1px solid #dedede;
   border-width: 1px 0 1px 0;
   margin-top: -1px;
@@ -9615,6 +9619,8 @@ label {
   display: none;
 }
 #clinicList .row {
+  float: left;
+  width: 525px;
   margin: 15px -20px;
 }
 #clinicList hr {
@@ -9714,7 +9720,7 @@ label {
 .clinic.clinicHover,
 #clinicList .clinic:hover {
   border: 1px solid #0ea646 !important;
-  margin: -1px -16px;
+  margin: -1px -16px 0 -16px;
   padding: 0px 15px;
   border-radius: 10px;
 }
@@ -9762,6 +9768,10 @@ label {
   content: " ";
   display: table;
   clear: none;
+}
+#container-clinic .search-clinic-wrapper .row.diagnostics_contacts_row {
+  float: left;
+  width: 525px;
 }
 #container-clinic .search-clinic-wrapper .row .col-xs-8, #container-clinic .search-clinic-wrapper .row .col-xs-4 {
   display: inline-block;
