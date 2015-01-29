@@ -445,12 +445,11 @@ cite {
   font-style: normal;
 }
 
-mark,
+/* mark,
 .mark {
-  background-color: #fcf8e3;
+  background-color: $state-warning-bg;
   padding: .2em;
-}
-
+} */
 .text-left {
   text-align: left;
 }
@@ -8156,6 +8155,30 @@ h3.darkBlueTitle {
 }
 .showDoctorsOnMap.ufa:after {
   background-image: url("https://cdn.doctu.ru/design/images/map_ufa.png");
+}
+
+.book_ico {
+  background-image: none !important;
+}
+
+section.doctor_2_0.docVip + section.doctor_2_0:not(.docVip) {
+  border-color: transparent;
+}
+
+.notEnoughInfo {
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  padding: 16px 16px 0;
+  margin-bottom: 16px;
+}
+.notEnoughInfo img {
+  float: left;
+}
+.notEnoughInfo p {
+  margin-left: 70px;
+  font-size: 20px !important;
+  margin-top: -2px;
+  color: #302a7a !important;
 }
 
 @font-face {
